@@ -1,3 +1,9 @@
+---
+layout: post
+title: Premier exemple
+---
+
+
 ## Titre 1
 
 Du texte, blabla c'est cool d'écrire n'importe quoi 

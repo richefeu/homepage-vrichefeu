@@ -41,15 +41,15 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: .875rem; /* 15px */
+  font-family: "Times New Roman", serif, Georgia;
+  font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", serif, Georgia;
   font-weight: 400;
   color: #313131;
-  letter-spacing: -.025rem;
+  letter-spacing: -.02rem;
 }
 
 
@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
  * Center the page content.
  */
 
+
 .container {
   max-width: 28rem;
 }
@@ -87,6 +88,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/*
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+@media only screen and (min-width: 993px){
+    .container {
+        width: 85%;
+    }
+}
+*/
 
 /*
  * Masthead

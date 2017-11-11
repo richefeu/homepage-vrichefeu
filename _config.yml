@@ -7,7 +7,7 @@ permalink:           pretty
 markdown:            kramdown
 title:               'HomePage'
 tagline:             ' Vincent Richefeu'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         "Mes recherches portent sur la physique et la mécanique des milieux granulaires en mettant l'accent sur les petites échelles (<i>i.e.</i> celles des contacts, des particules, et/ou des pores)"
 url:                 https://richefeu.github.io/homepage-vrichefeu/
 baseurl:             '/homepage-vrichefeu'
 paginate:            5

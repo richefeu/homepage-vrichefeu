@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Méthodes'
+title: 'Méthodes numériques'
 ---
 
 <div class="posts">

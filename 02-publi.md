@@ -3,14 +3,6 @@ layout: page
 title: Publications
 ---
 
-<!--
-TEST une équation : $$ x^2 + 2x = \lambda$$
-
-
-![ALT](/public/img/capillary_law.jpg)
-
--->
-
 ## Articles dans des journaux
 
 
@@ -50,7 +42,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
   <td style="width:180px">
-  <img src="/public/img/ISTE_ModelingGravityHazards.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/ISTE_ModelingGravityHazards.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
   <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", Sebtember 2016 (ISBN:9781785480768) </p>
@@ -65,7 +57,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
   <td style="width:180px">
-  <img src="/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
   J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjai (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011. 
@@ -74,7 +66,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 
 <tr>
   <td style="width:180px">
-  <img src="/public/img/MiMRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/MiMRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
   J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjai (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010. 
@@ -83,7 +75,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 
 <tr>
   <td style="width:180px">
-  <img src="/public/img/IUTAM.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/IUTAM.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
   J.-C. Bénet, J. Boscus, V. Richefeu (2003) <i>Interaction between aqueous solution transport and stress/strain in a porous medium</i>, IUTAM Symposium on the mechanics of physicochemical and electromechanical interactions in porous media, Rolduc, Kerkrade, Kluwer Academic Pub, The Netherlands (ISBN/SKU: 140203864X). 
@@ -92,7 +84,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 
 <tr>
   <td style="width:180px">
-  <img src="/public/img/MiMNicotWan.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/MiMNicotWan.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
   M. S. El Youssoufi, F. Radjaï, V. Richefeu, F. Soulié (2008) <i>Cohésion capillaire des milieux granulaires humides</i>, Micromécanique de la rupture dans les milieux granulaires. Ouvrage collectif coordonné par François Nicot et Richard Wan, Hermès Edition. 
@@ -101,7 +93,7 @@ TEST une équation : $$ x^2 + 2x = \lambda$$
 
 <tr>
   <td style="width:180px">
-  <img src="/public/img/MechModSpringer.jpg" alt="Book" style="width: 150px;"/>  
+  <img src="{{ site.baseurl }}/public/img/MechModSpringer.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
   J. Boscus, F. Cherblanc, V. Richefeu, J.-C. Bénet (2005) <i>Mechanical, electrical and osmotic consolidation of Agar gel</i>, Mechanical Modelling and Computational Issue in Civil Engineering, M. Frémond and F. Maceri (Eds), Springer. 

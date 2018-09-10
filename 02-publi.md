@@ -6,8 +6,8 @@ title: Publications
 ## Articles dans des journaux
 
 
-* [`PDF`](public/pdf/CG_richefeu.pdf) V. Richefeu, F. Radjai, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics
-* [`PDF`](public/pdf/PhysRevLett.115.238301.pdf) G. Combe, V. Richefeu, Marta Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301 (doi: 10.1103/PhysRevLett.115.238301)		
+* [`PDF`](/public/pdf/CG_richefeu.pdf) V. Richefeu, F. Radjai, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics
+* [`PDF`](/public/pdf/PhysRevLett.115.238301.pdf) G. Combe, V. Richefeu, Marta Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301 (doi: 10.1103/PhysRevLett.115.238301)		
 * [`PDF`](public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666  		
 * [`PDF`](public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjai (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (doi:10.1017/jfm.2014.676) (and the _Focus on Fluids_ by J.-N. Roux)
 * [`PDF`](public/pdf/daudon_villard_richefeu_mollon_CRM_2015.pdf) D. Daudon, P. Villard, V. Richefeu, G. Mollon (2014) _Influence of the morphology of slope and blocks on the energy dissipations in a rock avalanche_. C.R. Mecanique **343**(2), pp. 166-177  

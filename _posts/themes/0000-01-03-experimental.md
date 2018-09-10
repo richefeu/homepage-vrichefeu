@@ -2,6 +2,7 @@
 layout: post
 title: 'Micro-mécanique experimentale'
 category: themes
+mathjax: true
 ---
 
 

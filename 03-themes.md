@@ -3,7 +3,6 @@ layout: page
 title: 'Thèmes scientifiques'
 ---
 
-
 <div class="posts">
   <ol>
   {% for post in site.categories.themes %}
@@ -15,5 +14,4 @@ title: 'Thèmes scientifiques'
   {% endfor %}
 </ol>
 </div>
-
 

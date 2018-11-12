@@ -7,7 +7,7 @@ title: 'Méthodes numériques'
    <ol>
    {% for post in site.categories.methods %}
      <li>
-      <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a> 
+      <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
       <!--
       {% if post.image != 'none' %}
       <br/>
@@ -18,3 +18,4 @@ title: 'Méthodes numériques'
    {% endfor %}
    </ol>
 </div>
+

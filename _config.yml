@@ -10,7 +10,7 @@ tagline:             'Vincent Richefeu'
 description:         "Mes recherches portent sur la physique et la mécanique des milieux granulaires en mettant l'accent sur les petites échelles (<i>i.e.</i> celles des contacts, des particules, et/ou des pores)"
 url:                 "https://richefeu.github.io/homepage-vrichefeu"
 baseurl:             "/homepage-vrichefeu"
-paginate:            5
+#paginate:            5
 
 # About/contact
 author:

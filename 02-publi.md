@@ -3,12 +3,18 @@ layout: page
 title: Publications
 ---
 
-## Articles dans des journaux
+## Articles dans des journaux (peer-reviewed)
 
+* [`PDF`]() M. Tolomeo, V. Richefeu, G. Combe, J-N Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, accepted
+
+* [`PDF`](/public/pdf/entropy-20-00862.pdf) L Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, accepted
+
+* [`PDF`]() J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2018) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, IJNAMG, accepted
 
 * [`PDF`](/public/pdf/CG_richefeu.pdf) V. Richefeu, F. Radjai, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics **80**, pp. 353-359
 
-* [`PDF`](/public/pdf/PhysRevLett.115.238301.pdf) G. Combe, V. Richefeu, Marta Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301 (doi: 10.1103/PhysRevLett.115.238301)		
+* [`PDF`](/public/pdf/PhysRevLett.115.238301.pdf) G. Combe, V. Richefeu, Marta Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301 (doi: 10.1103/PhysRevLett.115.238301)
+	
 * [`PDF`](/public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666
 	
 * [`PDF`](/public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjai (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (see also the _Focus on Fluids_ by J.-N. Roux)

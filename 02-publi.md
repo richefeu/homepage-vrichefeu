@@ -37,7 +37,7 @@ title: Publications
 
 * [`PDF`](/public/pdf/RichefeuCZM2012.pdf) V. Richefeu, A. Chrysochoos, V. Huon, Y. Monerie, R. Peyroux, B. Wattrisse (2012) _Towards local identification of cohesive zone models using digital image correlation_. European Journal of Mechanics - A/Solids **34**, pp. 38-51
 
-* [`PDF`](/public/pdf/PackingJerier.pdf) J.-F. Jérier, B. Harthong, V. Richefeu, B. Chareyre, D. Imbault, F.-V. Donzé, P. Dorémus (2011) _Study of cold powder compaction by using the discrete element method_. Powder Technology **208**(2), pp. 537-541
+* [`PDF`](/public/pdf/ColdPowderCompaction.pdf) J.-F. Jérier, B. Harthong, V. Richefeu, B. Chareyre, D. Imbault, F.-V. Donzé, P. Dorémus (2011) _Study of cold powder compaction by using the discrete element method_. Powder Technology **208**(2), pp. 537-541
 
 * [`PDF`](/public/pdf/Packing_CMA2009.pdf) J.-F. Jérier, V. Richefeu, D. Imbault, F. Donzé (2010) _Packing spherical discrete elements for large scale simulations_. Computer Methods in Applied Mechanics and Engineering **199**(25-28), pp. 1668-1676
 

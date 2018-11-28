@@ -74,7 +74,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ISTE_ModelingGravityHazards.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", Sebtember 2016 (ISBN:9781785480768) </p>
+  <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", September 2016 (ISBN:9781785480768) </p>
   
 <p><b>Description</b>: the book provides state-of-the-art methods in the field of modeling of rock-flow hazards, with descriptions of applied numerical approaches. These approaches are based on the trajectography, discrete, or continuum strategies. The authors emphasize the discrete element method (DEM), which is first validated by comparison with laboratory experiments, then used to study the sensitivity of various parameters, and finally applied to real and natural cases. The book ends with an introduction to a hybrid continuum method able to bridge the gap between cases dominated by discreteness and those involving a very large number of elements.</p>
   </td>

@@ -5,9 +5,9 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* [`PDF`]() M. Tolomeo, V. Richefeu, G. Combe, J-N Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, accepted
+* [`PDF`]() M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, accepted
 
-* [`PDF`](/public/pdf/entropy-20-00862.pdf) L Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
+* [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 
 * [`PDF`]() J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2018) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, IJNAMG, accepted
 

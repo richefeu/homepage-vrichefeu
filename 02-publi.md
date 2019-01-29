@@ -5,7 +5,9 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* [`PDF`]() M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, accepted
+* [`PDF`]() F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, submitted
+
+* [`PDF`](/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, accepted
 
 * [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 

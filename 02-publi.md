@@ -11,7 +11,7 @@ title: Publications
 
 * [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 
-* [`PDF`]() J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2018) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, IJNAMG, accepted
+* [`PDF`](/public/pdf/FEMxDEM_IJNAMG_draft.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2018) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, IJNAMG, accepted
 
 * [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjai, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics **80**, pp. 353-359
 

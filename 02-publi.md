@@ -64,6 +64,8 @@ title: Publications
 
 ## Documents divers
 
+* HDR (bientôt)
+
 * [`PDF`](http://tel.archives-ouvertes.fr/docs/00/06/53/52/PDF/these-Richefeu.pdf) Thèse de doctorat (Ph.D thesis)
 
 * [`PDF`](http://hal.archives-ouvertes.fr/docs/00/13/20/74/PDF/rapport_DEA_Richefeu.pdf) Mémoire de DEA (Master thesis)
@@ -132,3 +134,11 @@ title: Publications
 </tr>
 </table>
 
+## Une selection (récente) de conférences
+
+* Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
+on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
+
+* Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjai, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
+
+* Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjai, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)

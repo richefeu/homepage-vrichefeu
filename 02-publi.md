@@ -64,7 +64,7 @@ title: Publications
 
 ## Documents divers
 
-* HDR (bientôt)
+* [`PDF`](https://tel.archives-ouvertes.fr/tel-02280044v2/document) Habilitation à Diriger des Recherches (HDR)
 
 * [`PDF`](http://tel.archives-ouvertes.fr/docs/00/06/53/52/PDF/these-Richefeu.pdf) Thèse de doctorat (Ph.D thesis)
 
@@ -134,7 +134,7 @@ title: Publications
 </tr>
 </table>
 
-## Une selection (récente) de conférences
+## Une selection de conférences récentes
 
 * Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
 on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
@@ -142,3 +142,7 @@ on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
 * Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjai, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
 
 * Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjai, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
+
+* X. Frank, S. Guessasma,  G. Della Valle, S. Nezamabadi, V. Richefeu, F. Radjaï, J.-Y. Delenne. _Modélisation péridynamique du comportement à la rupture de mousses solides_, Congrès du Groupe Français de Rhéologie, Montpellier, 2019.
+
+* X. Frank, J.-Y. Delenne, K. Lampoh, S. Nezamabadi, F. Radjaï, S. Guessasma, G. Della Valle, M. Kristiawan, A.-L. Reguerre, I. Jebalia, V. Richefeu. _Modélisation discrète de la déconstruction d’aliments - projet AIC MiDiDAM_, Poster presented at Métaséminaire CEPIA, Paris, 2018.

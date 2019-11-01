@@ -136,6 +136,11 @@ title: Publications
 
 ## Une selection de conférences récentes
 
+
+* Couture Cyrille, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
+
+* Couture Cyrille, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
+
 * Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
 on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
 

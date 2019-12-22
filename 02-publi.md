@@ -13,13 +13,13 @@ title: Publications
 
 * [`PDF`](/public/pdf/FEMxDEM_IJNAMG.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2019) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, Int J Numer Anal Methods Geomech **43**(5). pp. 919–955
 
-* [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjai, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics **80**, pp. 353-359
+* [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjaï, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics **80**, pp. 353-359
 
-* [`PDF`](/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, Marta Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301 (doi: 10.1103/PhysRevLett.115.238301)
+* [`PDF`](/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, M. Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301
 	
 * [`PDF`](/public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666
 	
-* [`PDF`](/public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjai (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (see also the _Focus on Fluids_ by J.-N. Roux)
+* [`PDF`](/public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjaï (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (see also the _Focus on Fluids_ by J.-N. Roux)
 
 * [`PDF`](/public/pdf/daudon_villard_richefeu_mollon_CRM_2015.pdf) D. Daudon, P. Villard, V. Richefeu, G. Mollon (2014) _Influence of the morphology of slope and blocks on the energy dissipations in a rock avalanche_. C.R. Mecanique **343**(2), pp. 166-177  
 
@@ -43,21 +43,21 @@ title: Publications
 
 * [`PDF`](/public/pdf/Packing_CMA2009.pdf) J.-F. Jérier, V. Richefeu, D. Imbault, F. Donzé (2010) _Packing spherical discrete elements for large scale simulations_. Computer Methods in Applied Mechanics and Engineering **199**(25-28), pp. 1668-1676
 
-* [`PDF`](/public/pdf/RadjaiRichefeu2009.pdf) F. Radjai, V. Richefeu (2009) _Bond anisotropy and cohesion of wet granular materials_. Phil. Trans. R. Soc. A **367**, pp. 5123-5138
+* [`PDF`](/public/pdf/RadjaiRichefeu2009.pdf) F. Radjaï, V. Richefeu (2009) _Bond anisotropy and cohesion of wet granular materials_. Phil. Trans. R. Soc. A **367**, pp. 5123-5138
 
 * [`PDF`](/public/pdf/AdvancesInDem.pdf) F. V. Donzé, V. Richefeu, S.-A. Magnier (2009) _Advances in Discrete Element Method Applied to Soil, Rock and Concrete Mechanics_. Electronic Journal of Geotechnical Engineering
 
-* [`PDF`](/public/pdf/CD_MechanicsMaterials.pdf) F. Radjai, V. Richefeu (2009) _Contact dynamics as a nonsmooth discrete element method_. Mechanics of Materials **41**, pp. 715-728
+* [`PDF`](/public/pdf/CD_MechanicsMaterials.pdf) F. Radjaï, V. Richefeu (2009) _Contact dynamics as a nonsmooth discrete element method_. Mechanics of Materials **41**, pp. 715-728
 
-* [`PDF`](/public/pdf/ptec_richefeu.pdf) V. Richefeu, M. S. El Youssoufi, E. Azéma, F. Radjai (2009) _Force transmission in dry and wet granular media_. Powder Technology **190**(1-2), pp. 258-263
+* [`PDF`](/public/pdf/ptec_richefeu.pdf) V. Richefeu, M. S. El Youssoufi, E. Azéma, F. Radjaï (2009) _Force transmission in dry and wet granular media_. Powder Technology **190**(1-2), pp. 258-263
 
-* [`PDF`](/public/pdf/Azema_EPJE08.pdf) E. Azéma, F. Radjai, R. Peyroux, V. Richefeu, G. Saussine (2008) _Short-time dynamics of a packing of polyhedral grains under horizontal vibrations_. European Physical Journal E **26**(3), pp. 327-335
+* [`PDF`](/public/pdf/Azema_EPJE08.pdf) E. Azéma, F. Radjaï, R. Peyroux, V. Richefeu, G. Saussine (2008) _Short-time dynamics of a packing of polyhedral grains under horizontal vibrations_. European Physical Journal E **26**(3), pp. 327-335
 
-* [`PDF`](/public/pdf/RichefeuNAG2007.pdf) V. Richefeu, M. S. El Youssoufi, R. Peyroux, F. Radjai (2007) _A model of capillary cohesion for numerical simulations of 3D polydisperse granular media_. International Journal for Numerical and Analytical Methods in Geomechanics **32**(11), pp. 1365-1383
+* [`PDF`](/public/pdf/RichefeuNAG2007.pdf) V. Richefeu, M. S. El Youssoufi, R. Peyroux, F. Radjaï (2007) _A model of capillary cohesion for numerical simulations of 3D polydisperse granular media_. International Journal for Numerical and Analytical Methods in Geomechanics **32**(11), pp. 1365-1383
 
-* [`PDF`](/public/pdf/EPJE07_Richefeu.pdf) V. Richefeu, F. Radjai, M. S. El Youssoufi (2006) _Stress transmission in wet granular materials_. European Physical Journal E **21**, pp. 359-369
+* [`PDF`](/public/pdf/EPJE07_Richefeu.pdf) V. Richefeu, F. Radjaï, M. S. El Youssoufi (2006) _Stress transmission in wet granular materials_. European Physical Journal E **21**, pp. 359-369
 
-* [`PDF`](/public/pdf/PRE06-richefeu.pdf) V. Richefeu, M. S. El Youssoufi, F. Radjai (2006) _Shear strength properties of wet granular materials_. Physical Review E **73**, 051304
+* [`PDF`](/public/pdf/PRE06-richefeu.pdf) V. Richefeu, M. S. El Youssoufi, F. Radjaï (2006) _Shear strength properties of wet granular materials_. Physical Review E **73**, 051304
 
 * [`PDF`](/public/pdf/CherblancBulletin.pdf) F. Cherblanc, I. Mrani, V. Richefeu, M. S. El Youssoufi, G. Fras, J.-C. Bénet (2002) _Couplages déformations/transport dans un milieu bi-constituant élastique_. Bulletin des Milieux Poreux et Transferts Hydriques **48**, pp. 99-105
 	
@@ -93,7 +93,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjai (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011. 
+  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjaï (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011. 
   </td>
 </tr>
 
@@ -102,7 +102,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/MiMRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjai (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010. 
+  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjaï (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010. 
   </td>
 </tr>
 
@@ -137,16 +137,16 @@ title: Publications
 ## Une selection de conférences récentes
 
 
-* Couture Cyrille, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
+* Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
 
-* Couture Cyrille, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
+* Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
 
 * Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
 on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
 
-* Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjai, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
+* Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjaï, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
 
-* Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjai, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
+* Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjaï, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
 
 * X. Frank, S. Guessasma,  G. Della Valle, S. Nezamabadi, V. Richefeu, F. Radjaï, J.-Y. Delenne. _Modélisation péridynamique du comportement à la rupture de mousses solides_, Congrès du Groupe Français de Rhéologie, Montpellier, 2019.
 

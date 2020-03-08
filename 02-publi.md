@@ -7,7 +7,7 @@ title: Publications
 
 * [`SN-Shared`](https://link.springer.com/epdf/10.1007/s40571-019-00236-1?author_access_token=i_-L2IDQ5ONK9uge054Akfe4RwlQNchNByi7wbcMAY7oNGM7P6wB6RQ94MOZcazaAulsWbv6AKrCbb-hEzLjdxbR_XlEaxwnak7xacQwi0N9oU_sDgkJ6yFOEJkYxbsUSQ3TuutUm6NxIXJFMixjNg%3D%3D) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
 
-* [`PDF`](/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures, in press
+* [`PDF`](/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures **187**, pp. 48-57
 
 * [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 
@@ -134,7 +134,7 @@ title: Publications
 </tr>
 </table>
 
-## Une selection de conférences récentes
+## Une selection de conférences (récentes)
 
 
 * Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France

@@ -5,6 +5,12 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
+* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, soumis
+
+* T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research, accepted
+
+* V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, accepted
+
 * [`SN-Shared`](https://link.springer.com/epdf/10.1007/s40571-019-00236-1?author_access_token=i_-L2IDQ5ONK9uge054Akfe4RwlQNchNByi7wbcMAY7oNGM7P6wB6RQ94MOZcazaAulsWbv6AKrCbb-hEzLjdxbR_XlEaxwnak7xacQwi0N9oU_sDgkJ6yFOEJkYxbsUSQ3TuutUm6NxIXJFMixjNg%3D%3D) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
 
 * [`PDF`](/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures **187**, pp. 48-57

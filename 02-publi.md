@@ -5,11 +5,17 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, soumis
+* V. Richefeu, R. Peyroux (2020) _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ (en préparation)
 
-* T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research, accepted
+* M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_, (en préparation)
 
-* V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, accepted
+* P. Huu Bui, V. Richefeu, F. Dufour (2020) _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics, (submitted)
+
+* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, (submitted)
+
+* [`Link`](https://www.sciencedirect.com/science/article/pii/S1001627920300536) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research, (in press, corrected proof)
+
+* [`PDF`](/public/pdf/Tracker.pdf)V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, (in press)
 
 * [`SN-Shared`](https://link.springer.com/epdf/10.1007/s40571-019-00236-1?author_access_token=i_-L2IDQ5ONK9uge054Akfe4RwlQNchNByi7wbcMAY7oNGM7P6wB6RQ94MOZcazaAulsWbv6AKrCbb-hEzLjdxbR_XlEaxwnak7xacQwi0N9oU_sDgkJ6yFOEJkYxbsUSQ3TuutUm6NxIXJFMixjNg%3D%3D) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
 

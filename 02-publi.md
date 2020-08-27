@@ -11,9 +11,9 @@ title: Publications
 
 * P. Huu Bui, V. Richefeu, F. Dufour (2020) _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics, (submitted)
 
-* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, (submitted)
+* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, (accepted)
 
-* [`Link`](https://www.sciencedirect.com/science/article/pii/S1001627920300536) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research, (in press, corrected proof)
+* [`PDF`](/public/pdf/Horiguchi2020.pdf) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research, (in press, corrected proof)
 
 * [`PDF`](/public/pdf/Tracker.pdf)V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, (in press)
 
@@ -148,6 +148,7 @@ title: Publications
 
 ## Une selection de conférences (récentes)
 
+* Vincent Richefeu, Modélisations numériques et analyses expérimentales basées sur des caractères discrets, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
 
 * Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
 

@@ -11,7 +11,7 @@ title: Publications
 
 * P. Huu Bui, V. Richefeu, F. Dufour (2020) _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics, (submitted)
 
-* B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface, (accepted)
+* [`PDF`](/public/pdf/Garcia2020.pdf) B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface **125**(11), November 2020,  https://doi.org/10.1029/2019JF005500
 
 * [`PDF`](/public/pdf/Horiguchi2020.pdf) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research **35**(6), pp. 621-635
 

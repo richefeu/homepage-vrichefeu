@@ -7,7 +7,7 @@ title: Publications
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ (en préparation)
 
-* M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_ (en préparation)
+* M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_ (submitted)
 
 * B. Garcia, P. Villard, V. Richefeu, D. Daudon  _Investigation of a full-scale rockfall test in a quarry using 3D complex-shaped discrete element simulations_, Engineering Geology (submitted)
 

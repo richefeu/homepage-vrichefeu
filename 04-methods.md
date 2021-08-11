@@ -30,11 +30,60 @@ Pour des aspects techniques sur différentes méthodes, voir [Computational Disc
  <img src="{{ site.baseurl }}/public/img/LBM_icon.png" alt="LBM" width="150px"/>
 </div>
 <div style="width:80%;float:left;">
- <p>Lattice Boltzmann Method ...</p>
+ <p>La méthode de Boltzmann sur réseau (LBM, Lattice Boltzmann Method) est une méthode de dynamique des fluides. Elle résoud l'équation discrète de Boltzmann pour simuler le comportement de fluides au moyen d'un schéma de collision-propagation. Il exist différentes méthodes de résolution (BGK, MRT...), mais le principe général du procédé de collision et de propagation permet de reproduire des comportements complexes de fluides. Dans sa forme la plus simple, les équation de Navier-Stokes sont satisfaites même si elle ne font pas explicitement partie de la modélisation.
+[Parler ici de multiphases - multicomposants]
+</p>
 </div>
 </div>
 
 
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/FEM_Thumb.png" alt="FEM" width="150px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>La méthode des éléments finis...</p>
+</div>
+</div>
+
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/FEMxDEM_icon.png" alt="FEMxDEM" width="150px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>La méthode des éléments finis...</p>
+</div>
+</div>
+
+
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/MPM_Thumb.png" alt="MPM" width="150px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>La méthode des points matériels...</p>
+</div>
+</div>
+
+
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/MPM+DEM_icon.png" alt="MPM+DEM" width="150px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>La méthode des points matériels...</p>
+</div>
+</div>
+
+
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/(MPM+DEM)xDEM_icon.png" alt="(MPM+DEM)xDEM" width="200px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>Couplage blabla</p>
+</div>
+</div>
 
 
 

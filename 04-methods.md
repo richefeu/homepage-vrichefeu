@@ -99,7 +99,7 @@ Une grille soujacente et fixe est utilis√©e pour projeter les informations port√
  <img src="{{ site.baseurl }}/public/img/(MPM+DEM)xDEM_icon.png" alt="(MPM+DEM)xDEM" width="200px"/>
 </div>
 <div style="width:80%;float:left;">
- <p>Couplage blabla</p>
+ <p>Couplage...</p>
 </div>
 </div>
 

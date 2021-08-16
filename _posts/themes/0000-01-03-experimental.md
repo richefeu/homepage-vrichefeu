@@ -12,9 +12,3 @@ Un premier volet de ce thème porte sur les fluctuations de déplacement des par
 
 Un second volet de ce thème concerne la détermination des forces de contacts dans un assemblage granulaire en ayant comme seules informations la cinématique des particules et le chargement extérieur.  En d’autres termes, il s’agit de développer une méthode pour la mesure de forces par traitement d’image et analyse inverse. La thèse de Mathias Tolomeo, pour laquelle j’ai obtenu une dérogation de l’école doctorale, est complètement dédiée à ce sujet. Sans entrer dans les détails, l’analyse inverse s’appui sur une méthode statique élastoplastique, développée par Jean-Noël Roux qui Co-encadre également la thèse.
 
-
-
-
-<!--
-Ce thème de recherche a été initié lors de mon arrivé au Laboratoire 3SR à Grenoble. Il est mener essentiellement en collaboration avec [Gael Combe](http://perso.3sr-grenoble.fr/users/gcombe/).
-L'aspect expérimental de la micro-mécanique est lié à l'utilisation de la machine 1g2e pour ... Au cours de la transformation des images sont régulièrement prises afin de mesurer la cinématique par une technique d'imagerie quantitative. -->

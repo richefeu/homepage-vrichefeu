@@ -99,7 +99,7 @@ Une grille soujacente et fixe est utilisée pour projeter les informations port�
  <img src="{{ site.baseurl }}/public/img/(MPM+DEM)xDEM_icon.png" alt="(MPM+DEM)xDEM" width="200px"/>
 </div>
 <div style="width:80%;float:left;">
- <p>Couplage...</p>
+ <p>Il s'agit là d'un travail en cours. L'idée est de réaliser le couplage à double échelle en utilisant la MPM au niveau macroscopique (avec la gestion des interactions avec des éléments rigides) et la DEM en guise de loi numérique homogénéisée au niveau des points matériels (équivalent à des points de Gauss).</p>
 </div>
 </div>
 

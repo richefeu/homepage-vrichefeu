@@ -7,11 +7,11 @@ title: Publications
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ (en préparation)
 
-* M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_ (submitted)
+* [`arXiv`](http://arxiv.org/abs/2110.12944) M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_ (submitted)
 
 * B. Garcia, P. Villard, V. Richefeu, D. Daudon  _Investigation of a full-scale rockfall test in a quarry using 3D complex-shaped discrete element simulations_, Engineering Geology (submitted)
 
-* P. Huu Bui, V. Richefeu, F. Dufour _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics (accepted)
+* [`PDF`](/public/pdf/IJDM_HPBui_2021.pdf) P. Huu Bui, V. Richefeu, F. Dufour _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics (accepted)
 
 * [`PDF`](/public/pdf/Garcia2020.pdf) B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface **125**(11), November 2020,  https://doi.org/10.1029/2019JF005500
 

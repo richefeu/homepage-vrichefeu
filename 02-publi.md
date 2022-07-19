@@ -7,7 +7,7 @@ title: Publications
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ (en préparation)
 
-* B. Garcia, P. Villard, V. Richefeu, D. Daudon  _Investigation of a full-scale rockfall test in a quarry using 3D complex-shaped discrete element simulations_, Engineering Geology (submitted)
+* B. Garcia, P. Villard, V. Richefeu, D. Daudon  _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology (re-submitted)
 
 * [`PDF`](/public/pdf/CPMStasiak2021.pdf) M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi (2022) _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_,  Comp. Part. Mech. https://doi.org/10.1007/s40571-021-00449-3
 
@@ -92,9 +92,14 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ISTE_ModelingGravityHazards.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", September 2016 (ISBN:9781785480768) </p>
+  <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", September 2016 (ISBN:9781785480768)
+  <a href="https://www.amazon.com/Modeling-Gravity-Hazards-Rockfalls-Landslides/dp/1785480766">Buy on Amazon</a>
+  </p>
+ 
   
-<p><b>Description</b>: the book provides state-of-the-art methods in the field of modeling of rock-flow hazards, with descriptions of applied numerical approaches. These approaches are based on the trajectography, discrete, or continuum strategies. The authors emphasize the discrete element method (DEM), which is first validated by comparison with laboratory experiments, then used to study the sensitivity of various parameters, and finally applied to real and natural cases. The book ends with an introduction to a hybrid continuum method able to bridge the gap between cases dominated by discreteness and those involving a very large number of elements.</p>
+<p><b>Description</b>: 
+Gravity hazards are a major concern to those living in mountainous areas. To protect infrastructure and human life in these areas, engineers require numerical tools for trajectory analysis, for application from fragmental rockfalls to large-scale avalanches or landslides. This book explores state-of-the-art methods to model the propagation (flows and stops) of masses, using the discrete element method (DEM) to study the evolution of kinetics during an event. Taking into account the shape of the blocks and the topology of the terrain provides an explicit and sophisticated consideration of geometries, eliminating the need for stochastic inputs to rockfall simulations.  This method is validated experimentally, before the authors apply it to real case studies.  The book ends with an introduction to and comparison with the material point method (MPM), a new and promising approach able to bridge the gap between cases dominated by discreteness and those involving a very large number of elements. Engineering consulting firms, researchers and students should find the approaches outlined in this book useful, whether designing prevention and protection systems for gravity hazards, or exploring new ways to model gravity hazards.
+</p>
   </td>
 </tr>
 </table>
@@ -150,7 +155,19 @@ title: Publications
 
 ## Une selection de conférences (récentes)
 
-* Vincent Richefeu, Modélisations numériques et analyses expérimentales basées sur des caractères discrets, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
+* Suzanne Lapillonne, Firmin Fontaine, Guillaume Piton, Vincent Richefeu, Frédéric Liébault, _Volume, Peak discharge and Froude Number of Debris-Flow Surges: Main Results of the Réal Monitoring Stations (France)_, 8th International Conference on Debris Flow Hazard Mitigation (DFHM8), 26-29 juin 2023, Torino
+
+* Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, Pascal Hagenmuller, _Double-scale modelling of avalanche release_, International Symposium on Snow, 25-30 septembre 2022, Davos Congress Centre, Davos, Switzerland
+
+* Suzanne Lapillonne, Fourtakas Georgios, Guillaume Piton, Vincent Richefeu, _Validation of DualSPHysics for viscous newtonian flow fronts_, International SPHERIC Workshop, Catania, June 6–9, 2022
+
+* Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, _Multiscale MPMxDEM method for granular flows with cohesive non-spherical particles, applications to snow avalanches_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril 2022, Oxford, UK
+
+* Duc-Chung Vu, Lhassan Amarsid, Jean-Yves Delenne, Vincent Richefeu, Farhang Radjai, _Elastic behavior of granular packings: effect of particle shape_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril, 2022 Oxford, UK
+
+* Vincent Richefeu, _Let's code the discrete element method for a deeper understanding_, TC105, 29 mars 2022
+
+* Vincent Richefeu, _Modélisations numériques et analyses expérimentales basées sur des caractères discrets_, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
 
 * Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
 

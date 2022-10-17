@@ -5,9 +5,27 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
+
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ (en préparation)
 
-* B. Garcia, P. Villard, V. Richefeu, D. Daudon  _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology (re-submitted)
+* G. Combe, V. Richefeu _Tensile stresses in a non-cohesive frictional granular material_ (en préparation)
+
+* V. Richefeu, G. Combe, L. Amarside, R. Prat, J.-Y. Delenne, F. Radjai _Discrete simulations with three-dimensionnal R-shapes: some technical and geometric strategies_ (en préparation)
+
+
+* Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne _Simulation of plant tissues with a system of bars at the membrane scale_ (en préparation)
+
+* K. Lampoh, V. Richefeu, F. Radjai _Argile_ (en préparation)
+
+* V. Richefeu, P. Villard _How does boulder shape influences their fall and deposition area?_ (en préparation)
+
+* B. Garcia, V. Richefeu, P. Villard _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_ Data-in-brief (en préparation)
+
+* S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_ (en préparation)
+
+* O. Ozenda, V. Richefeu, G. Chambon, G. Combe (xxxx) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ (en préparation)
+
+* [`PDF`](/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
 
 * [`PDF`](/public/pdf/CPMStasiak2021.pdf) M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi (2022) _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_,  Comp. Part. Mech. https://doi.org/10.1007/s40571-021-00449-3
 

@@ -21,13 +21,12 @@ title: Publications
 
 * B. Garcia, V. Richefeu, P. Villard _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_, Data-in-brief
 
-* S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_
-
-* O. Ozenda, V. Richefeu, G. Chambon, G. Combe _Discrete element cells as a constitutive law in the material point method: key points of implementation_
+* O. Ozenda, V. Richefeu, G. Chambon, G. Combe _Discrete element cells as a constitutive law in the material point method: key points of implementation_ (soumis à Acta Geotechnica)
 
 
 ## Articles dans des journaux (peer-reviewed)
 
+* [`preprint`](https://egusphere.copernicus.org/preprints/2023/egusphere-2022-1297/) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_, https://doi.org/10.5194/egusphere-2022-1297
 
 * [`PDF`](/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
 

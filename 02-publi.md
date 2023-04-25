@@ -26,7 +26,7 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* [`preprint`](https://egusphere.copernicus.org/preprints/2023/egusphere-2022-1297/) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_, https://doi.org/10.5194/egusphere-2022-1297
+* [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_, https://doi.org/10.5194/egusphere-2022-1297
 
 * [`PDF`](/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
 
@@ -177,6 +177,8 @@ Gravity hazards are a major concern to those living in mountainous areas. To pro
 ## Une selection de conférences (récentes)
 
 * Suzanne Lapillonne, Firmin Fontaine, Guillaume Piton, Vincent Richefeu, Frédéric Liébault, _Volume, Peak discharge and Froude Number of Debris-Flow Surges: Main Results of the Réal Monitoring Stations (France)_, 8th International Conference on Debris Flow Hazard Mitigation (DFHM8), 26-29 juin 2023, Torino
+
+* Olivier Ozenda, Vincent Richefeu, Guillaume Chambon, Pascal Hagenmuller, _A multiscale MPMxDEM model for simulating snowpack deformation and failure_, EGU General Assembly 2023, 23-28 avril 2023, Vienna, Austria 
 
 * Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, Pascal Hagenmuller, _Double-scale modelling of avalanche release_, International Symposium on Snow, 25-30 septembre 2022, Davos Congress Centre, Davos, Switzerland
 

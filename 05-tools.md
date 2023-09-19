@@ -3,7 +3,7 @@ layout: page
 title: 'Outils numériques'
 ---
 
-Parmi les outils numériques que le développe, certains ont pris une importance particulière. Il s'agit de :
+Parmi les outils numériques que je développe, certains ont pris une importance particulière. Il s'agit de :
 
 <div class="posts">
   <ol>

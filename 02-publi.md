@@ -12,7 +12,6 @@ title: Publications
 
 * V. Richefeu, G. Combe, L. Amarside, R. Prat, J.-Y. Delenne, F. Radjai _Discrete simulations with three-dimensionnal R-shapes: some technical and geometric strategies_ 
 
-
 * Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne _Simulation of plant tissues with a system of bars at the membrane scale_ 
 
 * K. Lampoh, V. Richefeu, F. Radjai _Organisation of clay platelets as a function of their stiffness and length_ 
@@ -23,6 +22,7 @@ title: Publications
 
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe _Discrete element cells as a constitutive law in the material point method: key points of implementation_ (soumis à Acta Geotechnica)
 
+* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_
 
 ## Articles dans des journaux (peer-reviewed)
 

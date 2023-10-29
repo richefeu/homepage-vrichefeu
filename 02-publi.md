@@ -3,14 +3,14 @@ layout: page
 title: Publications
 ---
 
-## Articles en preparation (provisoirs)
+## Articles en preparation (titres provisoirs)
 
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ 
 
 * G. Combe, V. Richefeu _Tensile stresses in a non-cohesive frictional granular material_ 
 
-* V. Richefeu, G. Combe, L. Amarside, R. Prat, J.-Y. Delenne, F. Radjai _Discrete simulations with three-dimensionnal R-shapes: some technical and geometric strategies_ 
+* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-Y. Delenne, F. Radjai _Discrete simulations with three-dimensionnal R-shapes: some technical and geometric strategies_ 
 
 * Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne _Simulation of plant tissues with a system of bars at the membrane scale_ 
 
@@ -18,15 +18,29 @@ title: Publications
 
 * V. Richefeu, P. Villard _How does boulder shape influences their fall and deposition area?_
 
-* B. Garcia, V. Richefeu, P. Villard _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_, Data-in-brief
+* B. Garcia, V. Richefeu, P. Villard (Data-in-brief) _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_ 
 
-* O. Ozenda, V. Richefeu, G. Chambon, G. Combe _Discrete element cells as a constitutive law in the material point method: key points of implementation_ (soumis à Acta Geotechnica)
 
-* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_
+## Articles soumis (ou prêt pour soumission)
+
+
+
+
+* D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (Granular Matter) _Macro-elasticity of granular materials composed of polyhedral particles_
+
+* D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (Powder Technology) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_
+
+* S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (Journal non encore choisi) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
+
+* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (Computers and Geotechnics) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_
+
+* O. Ozenda, V. Richefeu, G. Chambon, G. Combe (Acta Geotechnica) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
+
 
 ## Articles dans des journaux (peer-reviewed)
 
-* [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton _Debris-flow surges of a very active alpine torrent: a field database_, https://doi.org/10.5194/egusphere-2022-1297
+
+* [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton (2023) _Debris-flow surges of a very active alpine torrent: a field database_, Natural Hazards and Earth System Sciences **23**(4), pp. 1241-1256
 
 * [`PDF`](/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
 

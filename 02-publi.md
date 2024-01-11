@@ -24,8 +24,6 @@ title: Publications
 ## Articles soumis (ou prêt pour soumission)
 
 
-* D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (Granular Matter) _Macro-elasticity of granular materials composed of polyhedral particles_
-
 * S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (Journal non encore choisi) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
 * A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (Computers and Geotechnics) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_
@@ -36,6 +34,8 @@ title: Publications
 ## Articles dans des journaux (peer-reviewed)
 
 * [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
+
+* [`PDF`](/public/pdf/GranularMatter_elasticity.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Macro-elasticity of granular materials composed of polyhedral particles_, Granular Matter 26(6), https://doi.org/10.1007/s10035-023-01382-3
 
 * [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton (2023) _Debris-flow surges of a very active alpine torrent: a field database_, Natural Hazards and Earth System Sciences **23**(4), pp. 1241-1256
 

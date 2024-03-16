@@ -26,12 +26,12 @@ title: Publications
 
 * S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (Journal non encore choisi) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
-* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (Computers and Geotechnics) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_
-
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe (Acta Geotechnica) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
 
 
 ## Articles dans des journaux (peer-reviewed)
+
+* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics
 
 * [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
 

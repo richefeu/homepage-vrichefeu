@@ -130,12 +130,33 @@ title: Publications
   </p>
   </td>
 </tr>
+
 <tr>
   <td style="width:180px">
   <img src="{{ site.baseurl }}/public/img/RockableRocks.png" alt="rockable" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/rockable"> Rockable </a> est un code DEM écrit en C++. Les deux principales spécificités du code sont (*i*) l'utilisation de formes sphéro-polyédriques, (*ii*) la gestion d'interfaces cassables.
+  <p> <a href="https://github.com/richefeu/rockable"> Rockable </a> est un code DEM écrit en C++. Les deux principales spécificités du code sont (i) l'utilisation de formes sphéro-polyédriques, (ii) la gestion d'interfaces cassables.
+  </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/ptracker-logo.png" alt="p-tracker" style="width: 150px;"/>  
+  </td>
+  <td>  
+  <p> <a href="https://github.com/richefeu/ptracker"> p-tracker </a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
+  </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/mpmxdem_logo.png" alt="mpmxdem" style="width: 150px;"/>  
+  </td>
+  <td>  
+  <p> <a href="https://github.com/richefeu/mpmxdem"> mpmxdem </a> est une solution polyvalente permettant d'exécuter des simulations par la méthode des points matériels (MPM) avec des modèles constitutifs classiques. En outre, il offre la possibilité d'intégrer des simulations par la méthode des éléments discrets (DEM) 2D/3D avec des conditions aux limites périodiques au sein d'une simulation MPM. Cette intégration permet de générer en direct une loi constitutive homogénéisée numériquement.
   </p>
   </td>
 </tr>

@@ -23,8 +23,9 @@ title: Publications
 
 ## Articles soumis (ou prêt pour soumission)
 
+* D.-C. Vu et al. (soumie à Physical Review E) _Particle fracture regimes from impact simulations_
 
-* S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (Journal non encore choisi) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
+* S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (soumis à Journal of Advances in Modeling Earth Systems) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe (Acta Geotechnica) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
 
@@ -115,6 +116,30 @@ title: Publications
 * [`PDF`](http://tel.archives-ouvertes.fr/docs/00/06/53/52/PDF/these-Richefeu.pdf) Thèse de doctorat (Ph.D thesis)
 
 * [`PDF`](http://hal.archives-ouvertes.fr/docs/00/13/20/74/PDF/rapport_DEA_Richefeu.pdf) Mémoire de DEA (Master thesis)
+
+
+## Calcul scientifique
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/toofus_logo.png" alt="toofus" style="width: 150px;"/>  
+  </td>
+  <td>  
+  <p> <a href="https://github.com/richefeu/toofus">Toofus</a> rassemble une collection d'outils sous la forme de fichiers d'en-tête autonomes qui peuvent être inclus dans les sources C++ sans autre complication.
+  </p>
+  </td>
+</tr>
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/RockableRocks.png" alt="rockable" style="width: 150px;"/>  
+  </td>
+  <td>  
+  <p> <a href="https://github.com/richefeu/rockable"> Rockable </a> est un code DEM écrit en C++. Les deux principales spécificités du code sont (*i*) l'utilisation de formes sphéro-polyédriques, (*ii*) la gestion d'interfaces cassables.
+  </p>
+  </td>
+</tr>
+</table>
 
 ## Ouvrage
 

@@ -146,7 +146,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ptracker-logo.png" alt="p-tracker" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/ptracker"> p-tracker </a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
+  <p> <a href="https://github.com/richefeu/p-tracker"> p-tracker </a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
   </p>
   </td>
 </tr>

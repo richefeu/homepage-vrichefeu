@@ -32,7 +32,8 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics
+
+* [`PDF`](/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
 
 * [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
 

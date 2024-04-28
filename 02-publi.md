@@ -3,6 +3,7 @@ layout: page
 title: Publications
 ---
 
+<!--
 ## Articles en preparation (titres provisoirs)
 
 
@@ -19,11 +20,11 @@ title: Publications
 * V. Richefeu, P. Villard _How does boulder shape influences their fall and deposition area?_
 
 * B. Garcia, V. Richefeu, P. Villard (Data-in-brief) _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_ 
+-->
 
 
 ## Articles soumis (ou prêt pour soumission)
 
-* D.-C. Vu et al. (soumie à Physical Review E) _Particle fracture regimes from impact simulations_
 
 * S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (soumis à Journal of Advances in Modeling Earth Systems) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
@@ -32,6 +33,8 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
+
+* D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjai (accepté à Physical Review E) _Particle fracture regimes from impact simulations_
 
 * [`PDF`](/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
 
@@ -186,6 +189,27 @@ Gravity hazards are a major concern to those living in mountainous areas. To pro
 ## Chapitres d'ouvrages
 
 <table border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/JPaume_book.jpeg" alt="Book" style="width: 150px;"/>  
+  </td>
+  <td>  
+  V. Richefeu, P. Villard, S. Vaucelle (2024) <i>Étude de rebonds de balles sur les carreaux de sols historiques des jeux de paume de Versailles et Villers-Cotterêts</i>, in Archéologie et histoire des jeux de paume en France
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605. 
+  </td>
+</tr>
+
+<tr>
+  <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/JPaume_book.jpeg" alt="Book" style="width: 150px;"/>  
+  </td>
+  <td>  
+  C. Alix, F. Médard, V. Richefeu (2024) <i>Les balles de jeu de paume d’Orléans</i>, in Archéologie et histoire des jeux de paume en France
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605. 
+  </td>
+</tr>
+
 <tr>
   <td style="width:180px">
   <img src="{{ site.baseurl }}/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  

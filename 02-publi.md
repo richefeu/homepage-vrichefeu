@@ -196,7 +196,7 @@ Gravity hazards are a major concern to those living in mountainous areas. To pro
   </td>
   <td>  
   V. Richefeu, P. Villard, S. Vaucelle (2024) <i>Étude de rebonds de balles sur les carreaux de sols historiques des jeux de paume de Versailles et Villers-Cotterêts</i>, in Archéologie et histoire des jeux de paume en France
-De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605. 
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
   </td>
 </tr>
 
@@ -206,7 +206,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   </td>
   <td>  
   C. Alix, F. Médard, V. Richefeu (2024) <i>Les balles de jeu de paume d’Orléans</i>, in Archéologie et histoire des jeux de paume en France
-De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605. 
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
   </td>
 </tr>
 
@@ -215,7 +215,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjaï (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011. 
+  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjaï (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011 
   </td>
 </tr>
 
@@ -224,7 +224,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/MiMRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjaï (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010. 
+  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjaï (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010 
   </td>
 </tr>
 
@@ -233,7 +233,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/IUTAM.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  J.-C. Bénet, J. Boscus, V. Richefeu (2003) <i>Interaction between aqueous solution transport and stress/strain in a porous medium</i>, IUTAM Symposium on the mechanics of physicochemical and electromechanical interactions in porous media, Rolduc, Kerkrade, Kluwer Academic Pub, The Netherlands (ISBN/SKU: 140203864X). 
+  J.-C. Bénet, J. Boscus, V. Richefeu (2003) <i>Interaction between aqueous solution transport and stress/strain in a porous medium</i>, IUTAM Symposium on the mechanics of physicochemical and electromechanical interactions in porous media, Rolduc, Kerkrade, Kluwer Academic Pub, The Netherlands (ISBN/SKU: 140203864X)
   </td>
 </tr>
 
@@ -242,7 +242,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/MiMNicotWan.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  M. S. El Youssoufi, F. Radjaï, V. Richefeu, F. Soulié (2008) <i>Cohésion capillaire des milieux granulaires humides</i>, Micromécanique de la rupture dans les milieux granulaires. Ouvrage collectif coordonné par François Nicot et Richard Wan, Hermès Edition. 
+  M. S. El Youssoufi, F. Radjaï, V. Richefeu, F. Soulié (2008) <i>Cohésion capillaire des milieux granulaires humides</i>, Micromécanique de la rupture dans les milieux granulaires. Ouvrage collectif coordonné par François Nicot et Richard Wan, Hermès Edition 
   </td>
 </tr>
 
@@ -251,7 +251,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/MechModSpringer.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  J. Boscus, F. Cherblanc, V. Richefeu, J.-C. Bénet (2005) <i>Mechanical, electrical and osmotic consolidation of Agar gel</i>, Mechanical Modelling and Computational Issue in Civil Engineering, M. Frémond and F. Maceri (Eds), Springer. 
+  J. Boscus, F. Cherblanc, V. Richefeu, J.-C. Bénet (2005) <i>Mechanical, electrical and osmotic consolidation of Agar gel</i>, Mechanical Modelling and Computational Issue in Civil Engineering, M. Frémond and F. Maceri (Eds), Springer
   </td>
 </tr>
 </table>

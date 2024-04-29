@@ -34,7 +34,7 @@ title: Publications
 ## Articles dans des journaux (peer-reviewed)
 
 
-* D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjai (accepté à Physical Review E) _Particle fracture regimes from impact simulations_
+* [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
 
 * [`PDF`](/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
 

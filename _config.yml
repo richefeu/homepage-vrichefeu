@@ -7,7 +7,7 @@ permalink:           pretty
 markdown:            kramdown
 title:               'HomePage'
 tagline:             'Vincent Richefeu'
-description:         "Mes recherches portent sur la physique et la mécanique des milieux granulaires en focalisant sur les petites échelles (<i>i.e.</i>, celles des contacts, des particules, et/ou des pores)"
+description:         "Physique des milieux granulaires des éléments discrets à l'ouvrage"
 url:                 "https://richefeu.github.io/homepage-vrichefeu"
 baseurl:             "/homepage-vrichefeu"
 #paginate:            5
@@ -16,7 +16,7 @@ baseurl:             "/homepage-vrichefeu"
 author:
   name:              Vincent Richefeu
   url:               http://www.3sr-grenoble.fr
-  email:             vincent.richefeu@3sr-grenoble.fr
+  email:             vincent.richefeu@univ-grenoble-alpes.fr
 
 # Custom vars
 version:             1.0.0

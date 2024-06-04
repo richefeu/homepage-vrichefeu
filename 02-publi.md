@@ -25,7 +25,7 @@ title: Publications
 
 ## Articles soumis (ou prêt pour soumission)
 
-* I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (Géotechnique etters) _A simple deiscrete approach to explore the response of swelling and softening particles_
+* I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (Géotechnique Letters) _A simple deiscrete approach to explore the response of swelling and softening particles_
 
 * S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 

@@ -198,6 +198,12 @@ Gravity hazards are a major concern to those living in mountainous areas. To pro
   <td>  
   V. Richefeu, P. Villard, S. Vaucelle (2024) <i>Étude de rebonds de balles sur les carreaux de sols historiques des jeux de paume de Versailles et Villers-Cotterêts</i>, in Archéologie et histoire des jeux de paume en France
 De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
+
+	<p>
+		<a href="https://inrap.hal.science/hal-04653286">HAL</a>, 
+		<a href="https://www.amazon.com/Arch%C3%A9ologie-histoire-jeux-paume-France/dp/2271151600/ref=sr_1_1?dib=eyJ2IjoiMSJ9.avjpFO-cZyDXrt8U4MGpji8f5Rsll44AMlVoTFTtFVrMFCKZxopBXeu1KB8R_sMLcQfVkxJUe5_U5iZ85_qXzzR5GXnSPoTzFiF80jOpz1wzENtxbfC0aVtP2-WL0zTlR03PJEoxe3CSvb9WiF57mw.Cb3ZJllyObDnDlqesrHZ0L8eb694dSq_8Z96VHWuyds&dib_tag=se&qid=1722495496&refinements=p_27%3AJEAN-YVES+DUFOUR&s=books&sr=1-1)">Amazon</a>, 
+		<a href="https://www.cnrseditions.fr/catalogue/revues/ra-26-archeologie-et-histoire-des-jeux-de-paume-en-france/">CNRS-Editions</a>
+	</p>
   </td>
 </tr>
 
@@ -208,6 +214,12 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <td>  
   C. Alix, F. Médard, V. Richefeu (2024) <i>Les balles de jeu de paume d’Orléans</i>, in Archéologie et histoire des jeux de paume en France
 De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
+
+	<p>
+		<a href="https://inrap.hal.science/hal-04653286">HAL</a>, 
+		<a href="https://www.amazon.com/Arch%C3%A9ologie-histoire-jeux-paume-France/dp/2271151600/ref=sr_1_1?dib=eyJ2IjoiMSJ9.avjpFO-cZyDXrt8U4MGpji8f5Rsll44AMlVoTFTtFVrMFCKZxopBXeu1KB8R_sMLcQfVkxJUe5_U5iZ85_qXzzR5GXnSPoTzFiF80jOpz1wzENtxbfC0aVtP2-WL0zTlR03PJEoxe3CSvb9WiF57mw.Cb3ZJllyObDnDlqesrHZ0L8eb694dSq_8Z96VHWuyds&dib_tag=se&qid=1722495496&refinements=p_27%3AJEAN-YVES+DUFOUR&s=books&sr=1-1)">Amazon</a>, 
+		<a href="https://www.cnrseditions.fr/catalogue/revues/ra-26-archeologie-et-histoire-des-jeux-de-paume-en-france/">CNRS-Editions</a>
+	</p>
   </td>
 </tr>
 

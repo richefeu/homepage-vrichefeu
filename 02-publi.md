@@ -20,20 +20,41 @@ title: Publications
 * V. Richefeu, P. Villard _How does boulder shape influences their fall and deposition area?_
 
 * B. Garcia, V. Richefeu, P. Villard (Data-in-brief) _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_ 
+
+
+* K. Ayed, V. Richefeu, S. Mora, J.-Y. Delenne, S. Nezamabadi (en préparation) Quantitative analysis of X-ray images: An experimental investigation of the compaction of spherical hydrogels particles (en preparation) -> plutôt mettre dans du texte
+
+* M. Mahmoud, V. Richefeu, L. Amarsid, J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
+
+
 -->
 
 
 ## Articles soumis (ou prêt pour soumission)
 
-* I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (Géotechnique Letters) _A simple discrete approach to explore the response of swelling and softening particles_
-
-* S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe (Acta Geotechnica) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
+
+* Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
+
+* Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (prêt à soumettre) _Compaction and packing states of soft core-shell particles_ 
+
+* Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (prêt à soumettre) _Deformation and rupture of plant tissues: effect of disorder_
+
+* V. Richefeu, R. Peyroux (prêt à soumettre) _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_
+
+* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, J.-Y. Delenne, S. Nezamabadi, 
+F. Radjai (prêt à soumettre) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_
 
 
 ## Articles dans des journaux (peer-reviewed)
 
+
+* [`PDF`](/public/pdf/ExaDEM2025.pdf) R. Prat, T. Carrard, L. Amarsid, V. Richefeu, C.E. Doncecchi, P. Lafourcade, G. Latu, J.-M. Vanson (2025) _ExaDEM: a HPC application based on exaNBody targeting scalable DEM simulations with complex particle shapes_ Journal of Open Source Software **10**(106), 7484
+
+* [`PDF`](/public/pdf/Vego2025.pdf) I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (2025) _A simple discrete approach to explore the response of swelling and softening particles_ Géotechnique Letters **15**(2)
+
+* [`preprint`](https://www.authorea.com/users/716808/articles/701523-towards-debris-flows-simulation-using-dualsphysics-v5-2-internal-behaviour-of-viscous-flows-and-mixtures) S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (2024) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
 
 * [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
 
@@ -141,7 +162,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/RockableRocks.png" alt="rockable" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/rockable"> Rockable </a> est un code DEM écrit en C++. Les deux principales spécificités du code sont (i) l'utilisation de formes sphéro-polyédriques, (ii) la gestion d'interfaces cassables.
+  <p> <a href="https://github.com/richefeu/rockable">Rockable</a> est un code DEM écrit en C++. Les deux principales spécificités du code sont (i) l'utilisation de formes sphéro-polyédriques, (ii) la gestion d'interfaces cassables.
   </p>
   </td>
 </tr>
@@ -151,7 +172,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ptracker-logo.png" alt="p-tracker" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/p-tracker"> p-tracker </a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
+  <p> <a href="https://github.com/richefeu/p-tracker">p-tracker</a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
   </p>
   </td>
 </tr>
@@ -161,7 +182,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/mpmxdem_logo.png" alt="mpmxdem" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/mpmxdem"> mpmxdem </a> est une solution polyvalente permettant d'exécuter des simulations par la méthode des points matériels (MPM) avec des modèles constitutifs classiques. En outre, il offre la possibilité d'intégrer des simulations par la méthode des éléments discrets (DEM) 2D/3D avec des conditions aux limites périodiques au sein d'une simulation MPM. Cette intégration permet de générer en direct une loi constitutive homogénéisée numériquement.
+  <p> <a href="https://github.com/richefeu/mpmxdem">mpmxdem</a> est une solution polyvalente permettant d'exécuter des simulations par la méthode des points matériels (MPM) avec des modèles constitutifs classiques. En outre, il offre la possibilité d'intégrer des simulations par la méthode des éléments discrets (DEM) 2D/3D avec des conditions aux limites périodiques au sein d'une simulation MPM. Cette intégration permet de générer en direct une loi constitutive homogénéisée numériquement.
   </p>
   </td>
 </tr>

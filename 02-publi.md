@@ -54,7 +54,7 @@ F. Radjai (prêt à soumettre) _Advanced strategies for discrete simulations wit
 
 * [`PDF`](/public/pdf/Vego2025.pdf) I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (2025) _A simple discrete approach to explore the response of swelling and softening particles_ Géotechnique Letters **15**(2)
 
-* [`preprint`](https://www.authorea.com/users/716808/articles/701523-towards-debris-flows-simulation-using-dualsphysics-v5-2-internal-behaviour-of-viscous-flows-and-mixtures) S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (2024) _Towards debris flows simulation using SPH: Validation of internal behaviours of viscous mixtures and numerical experiments on debris flow fronts_
+* [`preprint`](https://www.authorea.com/users/716808/articles/701523-towards-debris-flows-simulation-using-dualsphysics-v5-2-internal-behaviour-of-viscous-flows-and-mixtures) S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (2025) _Towards viscous debris flows simulation using DualSPHysics v5.2: Internal behaviour of viscous flows and mixtures_ Geoscientific Model Development
 
 * [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjai (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
 

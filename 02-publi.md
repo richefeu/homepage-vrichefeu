@@ -33,22 +33,24 @@ title: Publications
 ## Articles soumis (ou prêt pour soumission)
 
 
-* O. Ozenda, V. Richefeu, G. Chambon, G. Combe (Acta Geotechnica) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
+* O. Ozenda, V. Richefeu, G. Chambon, G. Combe (prêt à soumettre) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
 
 * Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
 
-* Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (prêt à soumettre) _Compaction and packing states of soft core-shell particles_ 
+* Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (soumis à PNAS) _Compaction and packing states of soft core-shell particles_ 
 
 * Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (prêt à soumettre) _Deformation and rupture of plant tissues: effect of disorder_
 
 * V. Richefeu, R. Peyroux (prêt à soumettre) _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_
 
 * V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, J.-Y. Delenne, S. Nezamabadi, 
-F. Radjai (prêt à soumettre) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_
+F. Radjai (soumis) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_
 
 
 ## Articles dans des journaux (peer-reviewed)
 
+
+* [`PDF`](/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu. J.-Y. Delenne, F. Radjai (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
 
 * [`PDF`](/public/pdf/ExaDEM2025.pdf) R. Prat, T. Carrard, L. Amarsid, V. Richefeu, C.E. Doncecchi, P. Lafourcade, G. Latu, J.-M. Vanson (2025) _ExaDEM: a HPC application based on exaNBody targeting scalable DEM simulations with complex particle shapes_ Journal of Open Source Software **10**(106), 7484
 

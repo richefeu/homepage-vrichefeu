@@ -195,10 +195,31 @@ F. Radjai (soumis) _Advanced strategies for discrete simulations with three-dime
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
   <td style="width:180px">
+  <img src="{{ site.baseurl }}/public/img/ellipses-book.png" alt="BookMS" style="width: 150px;"/>
+  </td>
+  <td>
+  <p>V. Richefeu, G. Hivin, J. Lisi, P. Villard (2025) <i><strong>Les fondements de la mécanique des structures</strong> - Une introduction à l'usage des étudiants du BUT Génie civil - construction durable (GCCD)</i>, Référence Sciences. Bientôt disponible aux Editions Ellipses (16.12.2025).
+  <a href="https://www.editions-ellipses.fr/accueil/16700-31096-les-fondements-de-la-mecanique-des-structures-une-introduction-a-l-usage-des-etudiants-du-but-genie-civil-construction-durable-gccd-9782340108974.html#/1-format_disponible-broche">Pré-commander</a>
+  </p>
+  <p><b>Description</b>: 
+    L'ouvrage explore les principes essentiels liés au calcul d'un élément courant que l'on retrouve dans la plupart des ouvrages de génie civil : la poutre horizontale. Il aborde l'étude de son équilibre statique, ainsi que l'analyse des contraintes et des déplacements subis sous l'action de son chargement. Le cas des poutres continues, reposant sur plusieurs appuis consécutifs, est également abordé. Il simplifie certains concepts complexes pour les rendre plus compréhensibles pour un large public.
+</p>
+<p>
+Chaque chapitre présente les concepts fondamentaux, les principes de calcul et les méthodologies pratiques, accompagnés d'exercices corrigés. 
+</p>
+<p>
+Ce livre répond aux exigences actuelles du référentiel du Bachelor Universitaire de Technologie (BUT) Génie Civil et Construction Durable (GCCD) pour les compétences liées au calcul des structures simples. 
+</p>
+  
+  </td>
+</tr>
+
+<tr>
+  <td style="width:180px">
   <img src="{{ site.baseurl }}/public/img/ISTE_ModelingGravityHazards.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  <p>V. Richefeu et P. Villard (2016) <i>Modeling Gravity Hazards from Rockfalls to Landslides</i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", September 2016 (ISBN:9781785480768)
+  <p>V. Richefeu et P. Villard (2016) <i><strong>Modeling Gravity Hazards from Rockfalls to Landslides</strong></i>, dans la série ISTE-WILEY "Discrete Granular Mechanics", September 2016 (ISBN:9781785480768)
   <a href="https://www.amazon.com/Modeling-Gravity-Hazards-Rockfalls-Landslides/dp/1785480766">Buy on Amazon</a>
   </p>
  

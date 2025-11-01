@@ -50,7 +50,7 @@ F. Radjai (soumis) _Advanced strategies for discrete simulations with three-dime
 ## Articles dans des journaux (peer-reviewed)
 
 
-* [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology
+* [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
 
 * [`PDF`](/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu. J.-Y. Delenne, F. Radjai (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
 

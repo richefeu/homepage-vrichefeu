@@ -6,7 +6,6 @@ title: Publications
 <!--
 ## Articles en preparation (titres provisoirs)
 
-
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ 
 
 * G. Combe, V. Richefeu _Tensile stresses in a non-cohesive frictional granular material_ 
@@ -19,13 +18,9 @@ title: Publications
 
 * V. Richefeu, P. Villard _How does boulder shape influences their fall and deposition area?_
 
-* B. Garcia, V. Richefeu, P. Villard (Data-in-brief) _Input data for dynamic simulations of boulder falls on digital terrains with complex geometries. Datasets for benchmarking are provided_ 
-
-
 * K. Ayed, V. Richefeu, S. Mora, J.-Y. Delenne, S. Nezamabadi (en préparation) Quantitative analysis of X-ray images: An experimental investigation of the compaction of spherical hydrogels particles (en preparation) -> plutôt mettre dans du texte
 
 * M. Mahmoud, V. Richefeu, L. Amarsid, J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
-
 
 -->
 
@@ -35,20 +30,20 @@ title: Publications
 
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe (prêt à soumettre) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
 
-* Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
-
 * Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (soumis à PNAS) _Compaction and packing states of soft core-shell particles_ 
 
 * Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (prêt à soumettre) _Deformation and rupture of plant tissues: effect of disorder_
 
 * V. Richefeu, R. Peyroux (prêt à soumettre) _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_
 
-* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, J.-Y. Delenne, S. Nezamabadi, 
-F. Radjai (soumis) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_
+* Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
+
+* B. Garcia, V. Richefeu, P. Villard, D. Daudon, F. Bourrier (Prêt à soumettre à Data-in-brief) _Experimental and digital datasets for dynamic 3D simulations of boulder falls on digital terrains with complex geometries_ 
 
 
 ## Articles dans des journaux (peer-reviewed)
 
+* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, S. Nezamabadi, P. Mutabaruka, J.-Y. Delenne, F. Radjai (2025) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_ Computer Physics Communications (accepté)
 
 * [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
 
@@ -317,33 +312,45 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
 
 ## Une selection de conférences (récentes)
 
-* Suzanne Lapillonne, Firmin Fontaine, Guillaume Piton, Vincent Richefeu, Frédéric Liébault, _Volume, Peak discharge and Froude Number of Debris-Flow Surges: Main Results of the Réal Monitoring Stations (France)_, 8th International Conference on Debris Flow Hazard Mitigation (DFHM8), 26-29 juin 2023, Torino
+* [`HAL`](https://hal.science/hal-05400439) G. Combe, B. Al Tfaily, V. Richefeu _Negative grain-pressures in frictional cohesionless granular media with elongated particles_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Olivier Ozenda, Vincent Richefeu, Guillaume Chambon, Pascal Hagenmuller, _A multiscale MPMxDEM model for simulating snowpack deformation and failure_, EGU General Assembly 2023, 23-28 avril 2023, Vienna, Austria 
+* [`HAL`](https://hal.science/hal-05400445) M. Komodromos, V. Richefeu, G. Viggiani, G. Combe _Analysis of two-dimensional displacement fluctuations in granular media_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, Pascal Hagenmuller, _Double-scale modelling of avalanche release_, International Symposium on Snow, 25-30 septembre 2022, Davos Congress Centre, Davos, Switzerland
+* [`HAL`](https://hal.science/hal-05400458) Q. Rousseau, G. Combe, V. Richefeu _A simple micro-inspired model for granular materials made of hollow crushable particles_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Suzanne Lapillonne, Fourtakas Georgios, Guillaume Piton, Vincent Richefeu, _Validation of DualSPHysics for viscous newtonian flow fronts_, International SPHERIC Workshop, Catania, June 6–9, 2022
+* [`HAL`](https://hal.science/hal-05400471) V. A. Quach, O. Ozenda, G. Chambon, G. Combe, V. Richefeu _Exploring inertial effects in the flow of granular media: double-scale approach MPM×DEM_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, _Multiscale MPMxDEM method for granular flows with cohesive non-spherical particles, applications to snow avalanches_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril 2022, Oxford, UK
+* [`HAL`](https://hal.science/hal-05400477) G. Combe, V. Richefeu, M. Stasiak, G. Armand, J. Zghondi _Particle-based modeling of continuum quasi-fragile matter fragmenting into granular-like packing_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Duc-Chung Vu, Lhassan Amarsid, Jean-Yves Delenne, Vincent Richefeu, Farhang Radjai, _Elastic behavior of granular packings: effect of particle shape_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril, 2022 Oxford, UK
+* [`HAL`](https://hal.science/hal-05392356) M. Thouret, C. Mayer-Laigle, K. Lampoh, V. Richefeu, J.-Y. Delenne, _Study on the grinding of unsaturated quartz sand_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
-* Vincent Richefeu, _Let's code the discrete element method for a deeper understanding_, TC105, 29 mars 2022
+* [`HAL`](https://hal.inrae.fr/hal-04240853) Suzanne Lapillonne, Firmin Fontaine, Guillaume Piton, Vincent Richefeu, Frédéric Liébault, _Volume, Peak discharge and Froude Number of Debris-Flow Surges: Main Results of the Réal Monitoring Stations (France)_, 8th International Conference on Debris Flow Hazard Mitigation (DFHM8), 26-29 juin 2023, Torino
 
-* Vincent Richefeu, _Modélisations numériques et analyses expérimentales basées sur des caractères discrets_, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
+* [`EGU`](https://meetingorganizer.copernicus.org/EGU23/EGU23-15567.html) Olivier Ozenda, Vincent Richefeu, Guillaume Chambon, Pascal Hagenmuller, _A multiscale MPMxDEM model for simulating snowpack deformation and failure_, EGU General Assembly 2023, 23-28 avril 2023, Vienna, Austria 
 
-* Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
+* [`HAL`](https://hal.science/hal-04936384) Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, Pascal Hagenmuller, _Double-scale modelling of avalanche release_, International Symposium on Snow, 25-30 septembre 2022, Davos Congress Centre, Davos, Switzerland
 
-* Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
+* [`HAL`](https://hal.science/hal-03937562) Suzanne Lapillonne, Fourtakas Georgios, Guillaume Piton, Vincent Richefeu, _Validation of DualSPHysics for viscous newtonian flow fronts_, International SPHERIC Workshop, Catania, June 6–9, 2022
+
+* [`HAL`](https://hal.science/hal-04936392) Olivier Ozenda, Guillaume Chambon, Vincent Richefeu, _Multiscale MPMxDEM method for granular flows with cohesive non-spherical particles, applications to snow avalanches_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril 2022, Oxford, UK
+
+* [`HAL`](https://hal.science/hal-04169617) Duc-Chung Vu, Lhassan Amarsid, Jean-Yves Delenne, Vincent Richefeu, Farhang Radjai, _Elastic behavior of granular packings: effect of particle shape_, 18th European Mechanics of Materials Conference (EMMC18), 4-6 avril, 2022 Oxford, UK
+
+* [`Youtube`](https://www.youtube.com/watch?v=n7NWEpIKbJE) Vincent Richefeu, _Let's code the discrete element method for a deeper understanding_, TC105, 29 mars 2022
+
+* [`HAL`](https://hal.univ-grenoble-alpes.fr/hal-04936398) Vincent Richefeu, _Modélisations numériques et analyses expérimentales basées sur des caractères discrets_, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
+
+* [`HAL`](https://hal.science/hal-02338132) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
+
+* [`HAL`](https://hal.univ-grenoble-alpes.fr/hal-02338130) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
 
 * Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
 on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
 
-* Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjaï, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
+* [`HAL`](https://hal.inrae.fr/hal-04182607) Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjaï, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
 
-* Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjaï, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
+* [`HAL`](https://hal.inrae.fr/hal-02940109) Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjaï, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
 
-* X. Frank, S. Guessasma,  G. Della Valle, S. Nezamabadi, V. Richefeu, F. Radjaï, J.-Y. Delenne. _Modélisation péridynamique du comportement à la rupture de mousses solides_, Congrès du Groupe Français de Rhéologie, Montpellier, 2019.
+* [`HAL`](https://hal.inrae.fr/hal-02931636) X. Frank, S. Guessasma,  G. Della Valle, S. Nezamabadi, V. Richefeu, F. Radjaï, J.-Y. Delenne. _Modélisation péridynamique du comportement à la rupture de mousses solides_, Congrès du Groupe Français de Rhéologie, Montpellier, 2019.
 
-* X. Frank, J.-Y. Delenne, K. Lampoh, S. Nezamabadi, F. Radjaï, S. Guessasma, G. Della Valle, M. Kristiawan, A.-L. Reguerre, I. Jebalia, V. Richefeu. _Modélisation discrète de la déconstruction d’aliments - projet AIC MiDiDAM_, Poster presented at Métaséminaire CEPIA, Paris, 2018.
+* [`HAL`](https://hal.science/hal-01918035) X. Frank, J.-Y. Delenne, K. Lampoh, S. Nezamabadi, F. Radjaï, S. Guessasma, G. Della Valle, M. Kristiawan, A.-L. Reguerre, I. Jebalia, V. Richefeu. _Modélisation discrète de la déconstruction d’aliments - projet AIC MiDiDAM_, Poster presented at Métaséminaire CEPIA, Paris, 2018.

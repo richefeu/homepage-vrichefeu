@@ -8,10 +8,6 @@ title: Publications
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ 
 
-* G. Combe, V. Richefeu _Tensile stresses in a non-cohesive frictional granular material_ 
-
-* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-Y. Delenne, F. Radjai _Discrete simulations with three-dimensionnal R-shapes: some technical and geometric strategies_ 
-
 * Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne _Simulation of plant tissues with a system of bars at the membrane scale_ 
 
 * K. Lampoh, V. Richefeu, F. Radjai _Organisation of clay platelets as a function of their stiffness and length_ 
@@ -22,12 +18,6 @@ title: Publications
 
 * M. Mahmoud, V. Richefeu, L. Amarsid, J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
 
--->
-
-
-## Articles soumis (ou prêt pour soumission)
-
-
 * O. Ozenda, V. Richefeu, G. Chambon, G. Combe (prêt à soumettre) _Discrete element cells as a constitutive law in the material point method: key points of implementation_ 
 
 * Y. Trivino, F. Radjai, V. Richefeu, K. Lampoh, J.-Y. Delenne (soumis à PNAS) _Compaction and packing states of soft core-shell particles_ 
@@ -36,6 +26,11 @@ title: Publications
 
 * V. Richefeu, R. Peyroux (prêt à soumettre) _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_
 
+-->
+
+
+## Articles soumis (ou prêt pour soumission)
+
 * Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
 
 * B. Garcia, V. Richefeu, P. Villard, D. Daudon, F. Bourrier (Prêt à soumettre à Data-in-brief) _Experimental and digital datasets for dynamic 3D simulations of boulder falls on digital terrains with complex geometries_ 
@@ -43,7 +38,7 @@ title: Publications
 
 ## Articles dans des journaux (peer-reviewed)
 
-* V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, S. Nezamabadi, P. Mutabaruka, J.-Y. Delenne, F. Radjai (2025) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_ Computer Physics Communications (accepté)
+* [`Online`](https://doi.org/10.1016/j.cpc.2025.109997) V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, S. Nezamabadi, P. Mutabaruka, J.-Y. Delenne, F. Radjai (2026) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_ Computer Physics Communications **30**, 109997, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2025.109997
 
 * [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
 

@@ -31,12 +31,13 @@ title: Publications
 
 ## Articles soumis (ou prêt pour soumission)
 
-* Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (soumis à Journal of Computational Physics) _A soft particle dynamics method based on shape degrees of freedom_
-
 * B. Garcia, V. Richefeu, P. Villard, D. Daudon, F. Bourrier (Prêt à soumettre à Data-in-brief) _Experimental and digital datasets for dynamic 3D simulations of boulder falls on digital terrains with complex geometries_ 
 
 
 ## Articles dans des journaux (peer-reviewed)
+
+
+* [`Online`](https://doi.org/10.1016/j.cpc.2026.110030) Y. Trivino, V. Richefeu, F. Radjai, K. Lampoh, J.-Y. Delenne (2026) _A soft particle dynamics method based on shape degrees of freedom for core-shell particles_ Computer Physics Communications **321**, 110030, https://doi.org/10.1016/j.cpc.2026.110030
 
 * [`Online`](https://doi.org/10.1016/j.cpc.2025.109997) V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, S. Nezamabadi, P. Mutabaruka, J.-Y. Delenne, F. Radjai (2026) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_ Computer Physics Communications **30**, 109997, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2025.109997
 
@@ -190,8 +191,8 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ellipses-book.png" alt="BookMS" style="width: 150px;"/>
   </td>
   <td>
-  <p>V. Richefeu, G. Hivin, J. Lisi, P. Villard (2025) <i><strong>Les fondements de la mécanique des structures</strong> - Une introduction à l'usage des étudiants du BUT Génie civil - construction durable (GCCD)</i>, Référence Sciences. Bientôt disponible aux Editions Ellipses (16.12.2025).
-  <a href="https://www.editions-ellipses.fr/accueil/16700-31096-les-fondements-de-la-mecanique-des-structures-une-introduction-a-l-usage-des-etudiants-du-but-genie-civil-construction-durable-gccd-9782340108974.html#/1-format_disponible-broche">Pré-commander</a>
+  <p>V. Richefeu, G. Hivin, J. Lisi, P. Villard (2025) <i><strong>Les fondements de la mécanique des structures</strong> - Une introduction à l'usage des étudiants du BUT Génie civil - construction durable (GCCD)</i>, Référence Sciences.  Disponible aux 
+  <a href="https://www.editions-ellipses.fr/accueil/16700-31096-les-fondements-de-la-mecanique-des-structures-une-introduction-a-l-usage-des-etudiants-du-but-genie-civil-construction-durable-gccd-9782340108974.html#/1-format_disponible-broche">Editions Ellipses</a> (16.12.2025).
   </p>
   <p><b>Description</b>: 
     L'ouvrage explore les principes essentiels liés au calcul d'un élément courant que l'on retrouve dans la plupart des ouvrages de génie civil : la poutre horizontale. Il aborde l'étude de son équilibre statique, ainsi que l'analyse des contraintes et des déplacements subis sous l'action de son chargement. Le cas des poutres continues, reposant sur plusieurs appuis consécutifs, est également abordé. Il simplifie certains concepts complexes pour les rendre plus compréhensibles pour un large public.

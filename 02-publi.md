@@ -4,7 +4,7 @@ title: Publications
 ---
 
 <!--
-## Articles en preparation (titres provisoirs)
+## Articles en préparation (titres provisoires)
 
 * V. Richefeu, R. Peyroux _A Discrete Life-Element Model (DLEM) for cell growth, division and motility_ 
 
@@ -53,7 +53,7 @@ title: Publications
 
 * K. Ayed, V. Richefeu, S. Mora, J.-Y. Delenne, S. Nezamabadi (en préparation) Quantitative analysis of X-ray images: An experimental investigation of the compaction of spherical hydrogels particles (en preparation) -> plutôt mettre dans du texte
 
-* M. Mahmoud, V. Richefeu, L. Amarsid. J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
+* M. Mahmoud, V. Richefeu, L. Amarsid, J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
  
 ## Articles dans des journaux (peer-reviewed)
 
@@ -64,7 +64,7 @@ title: Publications
 
 * [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
 
-* [`PDF`](/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu. J.-Y. Delenne, F. Radjaï (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
+* [`PDF`](/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu, J.-Y. Delenne, F. Radjaï (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
 
 * [`PDF`](/public/pdf/ExaDEM2025.pdf) R. Prat, T. Carrard, L. Amarsid, V. Richefeu, C.E. Doncecchi, P. Lafourcade, G. Latu, J.-M. Vanson (2025) _ExaDEM: a HPC application based on exaNBody targeting scalable DEM simulations with complex particle shapes_ Journal of Open Source Software **10**(106), 7484
 
@@ -72,13 +72,13 @@ title: Publications
 
 * [`preprint`](https://www.authorea.com/users/716808/articles/701523-towards-debris-flows-simulation-using-dualsphysics-v5-2-internal-behaviour-of-viscous-flows-and-mixtures) S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (2025) _Towards viscous debris flows simulation using DualSPHysics v5.2: Internal behaviour of viscous flows and mixtures_ Geoscientific Model Development
 
-* [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
+* [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
 
 * [`PDF`](/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
 
-* [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
+* [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
 
-* [`PDF`](/public/pdf/GranularMatter_elasticity.pdf) D.-C. Vu, L. Amarsid. J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Macro-elasticity of granular materials composed of polyhedral particles_, Granular Matter **26**(6), https://doi.org/10.1007/s10035-023-01382-3
+* [`PDF`](/public/pdf/GranularMatter_elasticity.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Macro-elasticity of granular materials composed of polyhedral particles_, Granular Matter **26**(6), https://doi.org/10.1007/s10035-023-01382-3
 
 * [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton (2023) _Debris-flow surges of a very active alpine torrent: a field database_, Natural Hazards and Earth System Sciences **23**(4), pp. 1241-1256
 
@@ -92,7 +92,7 @@ title: Publications
 
 * [`PDF`](/public/pdf/Horiguchi2020.pdf) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research **35**(6), pp. 621-635
 
-* [`PDF`](/public/pdf/Tracker.pdf)V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, First Published June 29, 2020, https://doi.org/10.1111/str.12362
+* [`PDF`](/public/pdf/Tracker.pdf) V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, First Published June 29, 2020, https://doi.org/10.1111/str.12362
 
 * [`SN-Shared`](https://link.springer.com/epdf/10.1007/s40571-019-00236-1?author_access_token=i_-L2IDQ5ONK9uge054Akfe4RwlQNchNByi7wbcMAY7oNGM7P6wB6RQ94MOZcazaAulsWbv6AKrCbb-hEzLjdxbR_XlEaxwnak7xacQwi0N9oU_sDgkJ6yFOEJkYxbsUSQ3TuutUm6NxIXJFMixjNg%3D%3D) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
 
@@ -100,11 +100,11 @@ title: Publications
 
 * [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 
-* [`PDF`](/public/pdf/FEMxDEM_IJNAMG.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2019) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, Int J Numer Anal Methods Geomech **43**(5). pp. 919–955
+* [`PDF`](/public/pdf/FEMxDEM_IJNAMG.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2019) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, Int J Numer Anal Methods Geomech **43**(5), pp. 919–955
 
-* [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjaï, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computer and Geotechnics **80**, pp. 353-359
+* [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjaï, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computers and Geotechnics **80**, pp. 353-359
 
-* [`PDF`](/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, M. Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letter **115**, 238301
+* [`PDF`](/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, M. Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letters **115**, 238301
 	
 * [`PDF`](/public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666
 	
@@ -114,11 +114,11 @@ title: Publications
 
 * [`PDF`](/public/pdf/nhess-14-3175-2014.pdf) P. Bottelin, D. Jongmans, D. Daudon, A. Mathy, A. Helmstetter, V. Bonilla-Sierra, H. Cadet, D. Amitrano, V. Richefeu, L. Lorier, L. Baillet, P. Villard, F. Donzé (2014) _Seismic and mechanical studies of the artificially triggered rockfall at the Mount Néron (French Alps, December 2011)_. Nat. Hazards Earth Syst. Sci. **14**(2), 2014, pp. 3175-3193
 
-* [`PDF`](/public/pdf/JauvertCMBB2013.pdf) S. Jauvert, R. Peyroux, V. Richefeu (2013) _A mechanical model for cell motility and tissue morphogenesis_. Computer Methods in Biomechanicsand Biomedical Engineering **16**(1), pp. 13-14
+* [`PDF`](/public/pdf/JauvertCMBB2013.pdf) S. Jauvert, R. Peyroux, V. Richefeu (2013) _A mechanical model for cell motility and tissue morphogenesis_. Computer Methods in Biomechanics and Biomedical Engineering **16**(1), pp. 13-14
 
 * [`PDF`](/public/pdf/Fluct_GeoLetters.pdf) V. Richefeu, G. Combe, G. Viggiani (2012) _An experimental assessment of displacement fluctuations in a 2D granular material subjected to shear_. Géotechnique Letters **2**, pp. 113-118
 
-* [`PDF`](/public/pdf/JGR_Mollon2012.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2012) _Numerical simulation of rock avalanches: influence of local dissipative contact model on the collective behavior of granular flows_. Journal of Geophysical Resarch **117**, F02036
+* [`PDF`](/public/pdf/JGR_Mollon2012.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2012) _Numerical simulation of rock avalanches: influence of local dissipative contact model on the collective behavior of granular flows_. Journal of Geophysical Research **117**, F02036
 
 * [`PDF`](/public/pdf/Richefeu_et_al_2012.pdf) V. Richefeu, G. Mollon, D. Daudon, P. Villard (2012) _Dissipative contacts and realistic block shapes for modeling rock avalanches_. Engineering Geology vol. **149-150**, pp. 78-92
 
@@ -188,7 +188,7 @@ title: Publications
   <img src="{{ site.baseurl }}/public/img/ptracker-logo.png" alt="p-tracker" style="width: 150px;"/>  
   </td>
   <td>  
-  <p> <a href="https://github.com/richefeu/p-tracker">p-tracker</a> est un outil pour les corrélations d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer le DIC.
+  <p> <a href="https://github.com/richefeu/p-tracker">p-tracker</a> est un outil de corrélation d'images numériques (DIC) écrit en C++. Le projet a été initié sous le nom de tracker (sans le p- avant). La particularité du code est qu'il peut suivre les positions 2D des particules sur les photographies sans en perdre. Cela n'est pas possible avec un outil de corrélation conventionnel, aussi performant soit-il. L'accent mis sur la nature discrète du suivi explique pourquoi la méthode est appelée Particle Image Tracking (PIT) plutôt que DIC. Cependant, l'outil est toujours capable d'effectuer de la DIC.
   </p>
   </td>
 </tr>
@@ -213,7 +213,7 @@ title: Publications
   </td>
   <td>
   <p>V. Richefeu, G. Hivin, J. Lisi, P. Villard (2025) <i><strong>Les fondements de la mécanique des structures</strong> - Une introduction à l'usage des étudiants du BUT Génie civil - construction durable (GCCD)</i>, Référence Sciences.  Disponible aux 
-  <a href="https://www.editions-ellipses.fr/accueil/16700-31096-les-fondements-de-la-mecanique-des-structures-une-introduction-a-l-usage-des-etudiants-du-but-genie-civil-construction-durable-gccd-9782340108974.html#/1-format_disponible-broche">Editions Ellipses</a> (16.12.2025).
+  <a href="https://www.editions-ellipses.fr/accueil/16700-31096-les-fondements-de-la-mecanique-des-structures-une-introduction-a-l-usage-des-etudiants-du-but-genie-civil-construction-durable-gccd-9782340108974.html#/1-format_disponible-broche">Éditions Ellipses</a> (16.12.2025).
   </p>
   <p><b>Description</b>: 
     L'ouvrage explore les principes essentiels liés au calcul d'un élément courant que l'on retrouve dans la plupart des ouvrages de génie civil : la poutre horizontale. Il aborde l'étude de son équilibre statique, ainsi que l'analyse des contraintes et des déplacements subis sous l'action de son chargement. Le cas des poutres continues, reposant sur plusieurs appuis consécutifs, est également abordé. Il simplifie certains concepts complexes pour les rendre plus compréhensibles pour un large public.
@@ -255,7 +255,7 @@ Gravity hazards are a major concern to those living in mountainous areas. To pro
   </td>
   <td>  
   V. Richefeu, P. Villard, S. Vaucelle (2024) <i>Étude de rebonds de balles sur les carreaux de sols historiques des jeux de paume de Versailles et Villers-Cotterêts</i>, in Archéologie et histoire des jeux de paume en France
-De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), sous la direction de Jean-Yves Dufour, CNRS Éditions, EAN : 9782271151605, mai 2024
 
 	<p>
 		<a href="https://inrap.hal.science/hal-04653286">HAL</a>, 
@@ -271,7 +271,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   </td>
   <td>  
   C. Alix, F. Médard, V. Richefeu (2024) <i>Les balles de jeu de paume d’Orléans</i>, in Archéologie et histoire des jeux de paume en France
-De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de Jean-Yves Dufour, CNRS Editions, EAN : 9782271151605, mai 2024
+De Versailles à la Marseillaise (XVIe - XVIIIe siècle), sous la direction de Jean-Yves Dufour, CNRS Éditions, EAN : 9782271151605, mai 2024
 
 	<p>
 		<a href="https://inrap.hal.science/hal-04653286">HAL</a>, 
@@ -286,7 +286,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/WileyRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>  
-  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjaï (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjai et Frédéric Dubois, iSTE, Wiley Ed., February 2011 
+  J.-Y. Delenne, V. Richefeu, V. Topin, F. Radjaï (2011) <i>Numerical modeling of cohesive interactions in Discrete Numerical Modeling of Granular Materials</i>, in Discrete-Element Modeling of Granular Materials, Ouvrage collectif coordonné par Farhang Radjaï et Frédéric Dubois, ISTE, Wiley Ed., February 2011 
   </td>
 </tr>
 
@@ -295,7 +295,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
   <img src="{{ site.baseurl }}/public/img/MiMRadjaiDubois.jpg" alt="Book" style="width: 150px;"/>  
   </td>
   <td>
-  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjaï (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjaï et Frédéric Dubois, Lavoisier, Editions HERMES Science, Juin 2010 
+  J.-Y. Delenne, M. S. El Youssoufi, V. Richefeu, V. Topin, F. Radjaï (2010) <i>Modélisation numérique des interactions cohésives, dans Modélisation numérique discrète des matériaux granulaires</i>, Modélisation numérique discrète des matériaux granulaires (Série Géomatériaux, MIM), Ouvrage collectif coordonné par Farhang Radjaï et Frédéric Dubois, Lavoisier, Editions HERMES Science, juin 2010 
   </td>
 </tr>
 
@@ -327,7 +327,7 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
 </tr>
 </table>
 
-## Une selection de conférences (récentes)
+## Une sélection de conférences (récentes)
 
 * [`HAL`](https://hal.science/hal-05400439) G. Combe, B. Al Tfaily, V. Richefeu _Negative grain-pressures in frictional cohesionless granular media with elongated particles_ Powder and Grains 2025 - The 10th international conference on the micromechanics of granular media, 8-12 décembre, Goa, India
 
@@ -357,14 +357,14 @@ De Versailles à la Marseillaise (XVIe - XVIIIe siècle), Sous la direction de J
 
 * [`HAL`](https://hal.univ-grenoble-alpes.fr/hal-04936398) Vincent Richefeu, _Modélisations numériques et analyses expérimentales basées sur des caractères discrets_, Séminaire IATE-PMMD, 9 April 2020, Montpellier, France 
 
-* [`HAL`](https://hal.science/hal-02338132) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictionnal granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
+* [`HAL`](https://hal.science/hal-02338132) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A double-scale FEMxDEM model applied to cohesive-frictional granular materials in polyaxial loading conditions_, ALERT European Workshop 2020, Sep 2019, Aussois, France
 
-* [`HAL`](https://hal.univ-grenoble-alpes.fr/hal-02338130) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictionnal granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
+* [`HAL`](https://hal.univ-grenoble-alpes.fr/hal-02338130) Couture Cyrille-B, Jacques Desrues, Vincent Richefeu, Pierre Bésuelle, Frédéric Collin, _A multi-scale FEMxDEM model applied to cohesive-frictional granular geomaterials_, 8th International Conference on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands
 
 * Marta Stasiak, Gaël Combe, Vincent Richefeu, _Discrete Element Model involving the breakage of tube-shaped particles_, 8th International Conference
 on Discrete Element Methods, 21-26 July 2019, Enschede, Netherlands.
 
-* [`HAL`](https://hal.inrae.fr/hal-04182607) Vincent Richefeu, Xavier Franck, Jean-Yves Delenne, Farhang Radjaï, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
+* [`HAL`](https://hal.inrae.fr/hal-04182607) Vincent Richefeu, Xavier Frank, Jean-Yves Delenne, Farhang Radjaï, _Lattice Boltzmann simulations of the wetting of granular materials_, EMI International Conference, 3-5 July 2019, Lyon, France.
 
 * [`HAL`](https://hal.inrae.fr/hal-02940109) Jean-Yves Delenne, Lhassan Amarsid, Patrick Mutabaruka, Vincent Richefeu, Farhang Radjaï, _Numerical modelling of fluid-grains interactions_, Powders and Granular Materials Challenges and Future Trends, 6-7 June 2019, Montpellier (France)
 

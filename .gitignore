@@ -47,5 +47,6 @@ Makefile
 README-local.md
 CORRECTIONS.md
 DATA_FOR_CLAUDE/
+sources_imagettes/
 .local/
 .jekyll-cache/

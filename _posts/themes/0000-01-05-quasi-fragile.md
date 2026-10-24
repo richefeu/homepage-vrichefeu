@@ -4,9 +4,31 @@ title: 'Matériaux quasi-fragiles'
 category: themes
 ---
 
-Ce thème résulte d’une collaboration avec Yann Malécot (co-encadrement de la thèse d’Ewa Piotrowska) d’une part, et avec Frédéric Dufour (co-encadrement de la thèse de Phuoc Bui Huu) d’autre part. Il s’agissait, dans cette thématique nouvelle pour moi, de deux thèses ayant des verrous scientifiques très différents. 
+Le béton ou les roches ne cassent pas d'un coup : une multitude de micro-fissures apparaît avant qu'une fissure franche ne se forme. Pour suivre ce processus, j'utilise la [méthode des éléments sur réseau]({{ site.baseurl }}/04-methods/) (LEM) : le matériau est représenté par un réseau d'éléments qui se rompent un à un, et sa mésostructure (granulats, matrice, interfaces, vides) est décrite explicitement. Ce thème est né de deux collaborations, avec Yann Malécot et avec Frédéric Dufour.
 
-Le contexte général du projet de recherche de la première thèse était la vulnérabilité des infrastructures complexes en béton (barrages, réacteurs nucléaires, *etc*.) sous chargements extrêmes, tels que les impacts balistiques. Dans ces situations, le béton subit de très fortes contraintes triaxiales ; en particulier, la pénétration du projectile dans une structure en béton engendre une compression triaxiale dynamique. La possibilité de prédire numériquement la réponse d’un béton sous ces conditions extrêmes avec un modèle numérique est essentielle puisque les tests dynamiques à grande échelle et les tests de laboratoire sont très coûteux et chronophages. Nous avons choisi une approche de LEM dynamique pour réaliser des simulations 2D de béton à une échelle mésoscopique en distinguant les phases granulat, matrice, vides ainsi que leurs interfaces. Ces essais numériques ont permis d’étudier l’influence des pressions de confinement extrêmement fortes (jusqu’à 650 MPa) et de la méso-structure (forme/taille des granulats, fractions de vides, *etc*.)
+#### Le béton sous chargements extrêmes
 
-La seconde thèse s’intéresse également aux matériaux quasi-fragiles (pour ne pas dire les bétons) mais se focalise plus sur le lien qui peut exister entre une longueur interne et l’hétérogénéité du matériau. Cette longueur interne est introduite dans les modèles non locaux pour remédier au problème lié à la sensibilité du maillage qui est une pathologie des modèles d'endommagement classiques, lorsqu'il s'agit de matériaux adoucissants. L’outil numérique utilisé pour ces investigations est la LEM dans sa version quasi-statique. Celle-ci permet l’étude des ouvertures de fissure lien par lien avec pour conséquence la possibilité d’obtenir une réponse de type snap-back. En plus de fournir quelques recommandations sur l'extraction d'une longueur interne (nécessaire pour les modèles non locaux) à partir de la méso-structure du matériau, les études donnent un aperçu de l'origine mésoscopique de la taille de la Fracture Process Zone (FPZ) et la longueur caractéristique du matériau, et par conséquent sur l'origine et la nature du comportement non linéaire du matériau. Un algorithme de couplage multi-échelles « bord à bord » entre une approche macroscopique FEM et l’approche mésoscopique LEM a été proposé. Il s’agit d’un outil prometteur pour la simulation de grandes structures constituées de matériaux quasi-fragiles.
+Comment réagit une enceinte de réacteur ou un barrage à l'impact d'un projectile ? Le béton y subit des compressions triaxiales très intenses, que les essais en vraie grandeur ne permettent guère d'explorer car ils sont coûteux et difficiles à instrumenter.
 
+Dans la thèse d'Ewa Piotrowska (co-encadrée avec Yann Malécot), des simulations LEM dynamiques en 2D, à l'échelle des granulats, ont permis d'étudier l'effet de confinements extrêmes (jusqu'à 650 MPa) et celui de la mésostructure : forme et taille des granulats, proportion de vides.
+
+#### D'où vient la longueur interne du matériau ?
+
+Les modèles d'endommagement utilisés en ingénierie ont besoin d'une « longueur interne » pour donner des résultats indépendants du maillage. Mais quelle valeur lui donner, et à quoi correspond-elle physiquement ?
+
+Dans la thèse de Huu Phuoc Bui (co-encadrée avec Frédéric Dufour), des essais de traction simulés en LEM, en suivant les ruptures lien par lien, ont permis de relier la largeur de la zone de fissuration (*fracture process zone*) à la mésostructure.
+
+<img src="{{ site.baseurl }}/public/img/qf_fissures_lem.jpg" alt="Fissuration simulée par la méthode des éléments sur réseau" style="display: block; margin: auto; max-width: 100%;" width="680px"/>
+<p style="text-align: center; font-size: 0.85em;">Fissures simulées dans des éprouvettes entaillées pour quatre tailles d'inclusions (rouge : inclusions, gris : matrice). Les éléments rompus apparaissent en noir (macro-fissure) et en bleu (micro-fissures).</p>
+
+**Ce que l'on en retient :**
+
+- sur de grandes éprouvettes, la zone de fissuration est proportionnelle à la taille maximale des granulats ;
+- l'espacement entre les inclusions caractérise mieux le matériau que leur taille ;
+- cette zone dépend aussi de la géométrie de l'éprouvette : ce n'est donc pas une propriété intrinsèque du matériau, une mise en garde utile pour qui veut calibrer un modèle non local.
+
+Un couplage « bord à bord » entre éléments finis (à grande échelle) et LEM (là où la fissure se développe) a également été proposé, pour simuler de grandes structures à un coût raisonnable.
+
+#### Publication principale
+
+- H.P. Bui, V. Richefeu, F. Dufour (2021). *Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method*, International Journal of Damage Mechanics. [`PDF`]({{ site.baseurl }}/public/pdf/IJDM_HPBui_2021.pdf)

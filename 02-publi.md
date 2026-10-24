@@ -29,6 +29,7 @@ title: Publications
 -->
 
 
+<!--
 ## Articles dans les tuyaux
 
 * Y. Trivino, C. Barron, D. Legland, V. Richefeu, F. Radjaï, X. Frank, J.-Y. Delenne (soumis) _Characterizing plant cell-structure to generate synthetic analogues: application to maize stem tissues_
@@ -55,6 +56,8 @@ title: Publications
 
 * M. Mahmoud, V. Richefeu, L. Amarsid, J.-Y. Delenne, S. Mora (en préparation) Experimentation for the validation of discrete element simulations in powder mixing-grinding
  
+-->
+
 ## Articles dans des journaux (peer-reviewed)
 
 

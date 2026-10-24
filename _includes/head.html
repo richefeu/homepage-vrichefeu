@@ -31,5 +31,19 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   
+  <!-- Formules : $...$ ou \(...\) en ligne, $$...$$ ou \[...\] centrées -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: false,
+        tags: 'ams',
+        packages: {'[+]': ['ams']}
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+
   {% include google-analytics.html %}
 </head>

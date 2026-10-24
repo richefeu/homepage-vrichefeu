@@ -1,0 +1,198 @@
+/*
+ * Surcouche de mise en forme (chargée après poole.css et lanyon.css).
+ * Objectif : clarté et lisibilité, sans changer la palette du thème (theme-base-08).
+ */
+
+:root {
+  --accent: #ac4142;
+  --texte: #444;
+  --titres: #2b2b2b;
+  --discret: #777;
+  --filet: #e8e8e8;
+  --fond-doux: #f7f7f7;
+  --police: "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --police-code: "SFMono-Regular", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Typographie de base */
+html {
+  font-family: var(--police);
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 38em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  color: var(--texte);
+  font-size: 1.0625rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Colonne de lecture : environ 75 caractères par ligne */
+.container {
+  max-width: 46rem;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--police);
+  color: var(--titres);
+  font-weight: 600;
+  letter-spacing: -.01em;
+  line-height: 1.25;
+}
+h1 { font-size: 1.85rem; }
+h2 { font-size: 1.4rem;  margin-top: 2.25rem; }
+h3 { font-size: 1.2rem;  margin-top: 2rem; }
+h4 { font-size: 1.15rem; margin-top: 2rem; margin-bottom: .6rem; }
+h5, h6 { font-size: 1rem; margin-top: 1.5rem; }
+
+.page-title,
+.post-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: .6rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+.page-title + *,
+.post-title + * {
+  clear: both;
+}
+
+/* Texte courant */
+p, ul, ol, dl {
+  margin-bottom: 1.1rem;
+}
+li {
+  margin-bottom: .3rem;
+}
+li > ul, li > ol {
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+strong, b {
+  color: var(--titres);
+  font-weight: 600;
+}
+
+/* Liens : couleur du thème, soulignement fin au survol */
+a {
+  text-underline-offset: .18em;
+  text-decoration-thickness: 1px;
+}
+.container a:hover,
+.container a:focus {
+  text-decoration: underline;
+}
+
+/* Images et légendes */
+.content img {
+  border-radius: 2px;
+}
+.content p[style*="text-align: center"] {
+  color: var(--discret);
+  line-height: 1.45;
+  margin-top: .4rem;
+  margin-bottom: 1.6rem;
+}
+
+/* Blocs « imagette + texte » (page Méthodes) : hauteur ajustée au contenu */
+.content div[style*="height:200px"] {
+  height: auto !important;
+  overflow: hidden;
+}
+
+/* Citations et encadrés */
+blockquote {
+  margin: 1.2rem 0;
+  padding: .6rem 1rem;
+  color: var(--texte);
+  background-color: var(--fond-doux);
+  border-left: 3px solid var(--accent);
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Code */
+code, pre {
+  font-family: var(--police-code);
+}
+code {
+  font-size: 82%;
+  padding: .15em .4em;
+  color: var(--accent);
+  background-color: var(--fond-doux);
+}
+pre {
+  font-size: .8rem;
+  border: 1px solid var(--filet);
+  border-radius: 3px;
+  background-color: var(--fond-doux);
+}
+pre code {
+  color: inherit;
+  background: transparent;
+}
+
+/* Filets et tableaux */
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--filet);
+}
+table {
+  font-size: .95em;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid var(--filet);
+  padding: .35rem .6rem;
+}
+th {
+  background-color: var(--fond-doux);
+  font-weight: 600;
+}
+
+/* En-tête du site */
+.masthead {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--filet);
+}
+.masthead-title {
+  font-family: var(--police);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.masthead-title small {
+  font-size: 80%;
+  font-weight: 400;
+  color: #a0a0a0;
+  margin-left: .3rem;
+}
+
+/* Barre latérale */
+.sidebar {
+  font-family: var(--police);
+  font-size: .95rem;
+}
+.sidebar-item p {
+  line-height: 1.45;
+}
+.sidebar-nav-item {
+  padding: .55rem 1rem;
+}
+.sidebar-item li {
+  list-style: none;
+  margin-bottom: .2rem;
+}

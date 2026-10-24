@@ -41,3 +41,11 @@ validation-report.json
 # Folders to ignore
 node_modules
 bower_components
+
+# Prévisualisation locale
+Makefile
+README-local.md
+CORRECTIONS.md
+DATA_FOR_CLAUDE/
+.local/
+.jekyll-cache/

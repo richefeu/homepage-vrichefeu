@@ -65,93 +65,93 @@ title: Publications
 
 * [`Online`](https://doi.org/10.1016/j.cpc.2025.109997) V. Richefeu, G. Combe, L. Amarsid, R. Prat, J.-M. Vanson, S. Nezamabadi, P. Mutabaruka, J.-Y. Delenne, F. Radjaï (2026) _Advanced strategies for discrete simulations with three-dimensional R-shapes in Rockable framework_ Computer Physics Communications **30**, 109997, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2025.109997
 
-* [`PDF`](/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
+* [`PDF`]({{ site.baseurl }}/public/pdf/Thouret2025.pdf) M. Thouret, C. Mayer-Laigle, V. Richefeu, K. Lampoh, J.-Y. Delenne (2025) _A modified Rittinger model for the grinding of wet granular media_ Powder Technology **469**(1), 1 February 2026, 121775
 
-* [`PDF`](/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu, J.-Y. Delenne, F. Radjaï (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
+* [`PDF`]({{ site.baseurl }}/public/pdf/ChungVu2025.pdf) D.-C. Vu, L. Amarsid, V. Richefeu, J.-Y. Delenne, F. Radjaï (2025) _Quasistatic rheology of granular materials composed of dodecahedra_ The European Physical Journal Special Topics, https://doi.org/10.1140/epjs/s11734-025-01907-2 
 
-* [`PDF`](/public/pdf/ExaDEM2025.pdf) R. Prat, T. Carrard, L. Amarsid, V. Richefeu, C.E. Doncecchi, P. Lafourcade, G. Latu, J.-M. Vanson (2025) _ExaDEM: a HPC application based on exaNBody targeting scalable DEM simulations with complex particle shapes_ Journal of Open Source Software **10**(106), 7484
+* [`PDF`]({{ site.baseurl }}/public/pdf/ExaDEM2025.pdf) R. Prat, T. Carrard, L. Amarsid, V. Richefeu, C.E. Doncecchi, P. Lafourcade, G. Latu, J.-M. Vanson (2025) _ExaDEM: a HPC application based on exaNBody targeting scalable DEM simulations with complex particle shapes_ Journal of Open Source Software **10**(106), 7484
 
-* [`PDF`](/public/pdf/Vego2025.pdf) I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (2025) _A simple discrete approach to explore the response of swelling and softening particles_ Géotechnique Letters **15**(2)
+* [`PDF`]({{ site.baseurl }}/public/pdf/Vego2025.pdf) I. Vego, V. Richefeu, G. Felekis, A. Tengattini, G. Viggiani (2025) _A simple discrete approach to explore the response of swelling and softening particles_ Géotechnique Letters **15**(2)
 
 * [`PDF`](https://hal.science/hal-05316843/document) S. Lapillonne, G. Fourtakas, V. Richefeu, G. Piton, G. Chambon (2025) _Towards viscous debris flow simulation using DualSPHysics v5.2: internal behaviour of viscous flows and mixtures_ Geoscientific Model Development **18**(19), pp. 7059-7075
 
-* [`PDF`](/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
+* [`PDF`]({{ site.baseurl }}/public/pdf/ChungFracture.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Particle fracture regimes from impact simulations_, Physical Review E **109**(4), 044907
 
-* [`PDF`](/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
+* [`PDF`]({{ site.baseurl }}/public/pdf/GayBerneDLVO.pdf) A. Casarella, A. Tarantino, V. Richefeu, A. di Donna (2024) _Evaluation and improvement of Gay-Berne interaction potential to simulate 3D DLVO interaction of clay particles_, Computers and Geotechnics **170**, 106221
 
-* [`PDF`](/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
+* [`PDF`]({{ site.baseurl }}/public/pdf/Chung2024_Rheology.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Rheology and scaling behavior of polyhedral particle flows in rotating drums_, Powder Technology **434**, 119338
 
-* [`PDF`](/public/pdf/GranularMatter_elasticity.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Macro-elasticity of granular materials composed of polyhedral particles_, Granular Matter **26**(6), https://doi.org/10.1007/s10035-023-01382-3
+* [`PDF`]({{ site.baseurl }}/public/pdf/GranularMatter_elasticity.pdf) D.-C. Vu, L. Amarsid, J.-Y. Delenne, V. Richefeu, F. Radjaï (2024) _Macro-elasticity of granular materials composed of polyhedral particles_, Granular Matter **26**(6), https://doi.org/10.1007/s10035-023-01382-3
 
-* [`PDF`](/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton (2023) _Debris-flow surges of a very active alpine torrent: a field database_, Natural Hazards and Earth System Sciences **23**(4), pp. 1241-1256
+* [`PDF`]({{ site.baseurl }}/public/pdf/nhess-23-1241-2023.pdf) S. Lapillonne, F. Fontaine, F. Liebault, V. Richefeu, G. Piton (2023) _Debris-flow surges of a very active alpine torrent: a field database_, Natural Hazards and Earth System Sciences **23**(4), pp. 1241-1256
 
-* [`PDF`](/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
+* [`PDF`]({{ site.baseurl }}/public/pdf/C2ROP_EngGeol2022.pdf) B. Garcia, P. Villard, V. Richefeu, D. Daudon (2022) _Comparison of full-scale rockfall tests with 3D complex-shaped discrete element simulations_, Engineering Geology **310**, 106855
 
-* [`PDF`](/public/pdf/CPMStasiak2021.pdf) M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi (2022) _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_,  Comp. Part. Mech. https://doi.org/10.1007/s40571-021-00449-3
+* [`PDF`]({{ site.baseurl }}/public/pdf/CPMStasiak2021.pdf) M. Stasiak, G. Combe, V. Richefeu, P. Villard, G. Armand, J. Zghondi (2022) _High compression of granular assemblies of brittle hollow particles. Investigation through a 3D discrete element model_,  Comp. Part. Mech. https://doi.org/10.1007/s40571-021-00449-3
 
-* [`PDF`](/public/pdf/IJDM_HPBui_2021.pdf) P. Huu Bui, V. Richefeu, F. Dufour (2021) _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics, First Published: September 7, https://doi.org/10.1177/10567895211045118
+* [`PDF`]({{ site.baseurl }}/public/pdf/IJDM_HPBui_2021.pdf) P. Huu Bui, V. Richefeu, F. Dufour (2021) _Microstructural dimension involved in the damage of concrete-like materials: an examination by the lattice element method_, International Journal of Damage Mechanics, First Published: September 7, https://doi.org/10.1177/10567895211045118
 
-* [`PDF`](/public/pdf/Garcia2020.pdf) B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface **125**(11), November 2020,  https://doi.org/10.1029/2019JF005500
+* [`PDF`]({{ site.baseurl }}/public/pdf/Garcia2020.pdf) B. Garcia, V. Richefeu, J. Baroth, D. Daudon, P. Villard (2020) _Collision of shaped boulders with sand substrate investigated by experimental, stochastic and discrete approaches_, JGR - Earth Surface **125**(11), November 2020,  https://doi.org/10.1029/2019JF005500
 
-* [`PDF`](/public/pdf/Horiguchi2020.pdf) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research **35**(6), pp. 621-635
+* [`PDF`]({{ site.baseurl }}/public/pdf/Horiguchi2020.pdf) T. Horiguchi, V. Richefeu (2020) _Post-analysis simulation of the collapse of an open sabo dam of steel pipes subjected to boulder laden debris flow_, International Journal of Sediment Research **35**(6), pp. 621-635
 
-* [`PDF`](/public/pdf/Tracker.pdf) V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, First Published June 29, 2020, https://doi.org/10.1111/str.12362
+* [`PDF`]({{ site.baseurl }}/public/pdf/Tracker.pdf) V. Richefeu, G. Combe (2020) _The Particle Image Tracking technique: an accurate optical method for measuring individual kinematics of rigid particles_, Strain, First Published June 29, 2020, https://doi.org/10.1111/str.12362
 
-* [`SN-Shared`](https://link.springer.com/epdf/10.1007/s40571-019-00236-1?author_access_token=i_-L2IDQ5ONK9uge054Akfe4RwlQNchNByi7wbcMAY7oNGM7P6wB6RQ94MOZcazaAulsWbv6AKrCbb-hEzLjdxbR_XlEaxwnak7xacQwi0N9oU_sDgkJ6yFOEJkYxbsUSQ3TuutUm6NxIXJFMixjNg%3D%3D) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
+* [`PDF`]({{ site.baseurl }}/public/pdf/Gracia2019.pdf) F. Gracia, P. Villard, V. Richefeu (2019) _Comparison of two numerical approaches (DEM and MPM) applied to unsteady flow_, Computational Particle Mechanics, **6**(4), pp. 591-609
 
-* [`PDF`](/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures **187**, pp. 48-57
+* [`PDF`]({{ site.baseurl }}/public/pdf/Tolomeo_accepted_IJSS.pdf) M. Tolomeo, V. Richefeu, G. Combe, J.-N. Roux, G. Viggiani (2018) _An assessment of discrete element approaches to infer intergranular forces from experiments on 2D granular media_, International Journal of Solids and Structures **187**, pp. 48-57
 
-* [`PDF`](/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
+* [`PDF`]({{ site.baseurl }}/public/pdf/entropy-20-00862.pdf) L. Viallon-Galinier, G. Combe, V. Richefeu, A.P.F. Atman (2018) _Emergence of shear bands in confined granular systems: singularity of the q-statistics_, Entropy, **20**(11), 862
 
-* [`PDF`](/public/pdf/FEMxDEM_IJNAMG.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2019) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, Int J Numer Anal Methods Geomech **43**(5), pp. 919–955
+* [`PDF`]({{ site.baseurl }}/public/pdf/FEMxDEM_IJNAMG.pdf) J. Desrues, A. Argilaga, D. Caillerie, G. Combe, T.K. Nguyen, V. Richefeu, S. dal Pont (2019) _From discrete to continuum modelling of Boundary Value Problems in Geomechanics: an integrated FEM-DEM  approach_, Int J Numer Anal Methods Geomech **43**(5), pp. 919–955
 
-* [`PDF`](/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjaï, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computers and Geotechnics **80**, pp. 353-359
+* [`PDF`]({{ site.baseurl }}/public/pdf/ComputerAndGeotechnics.pdf) V. Richefeu, F. Radjaï, J.-Y. Delenne (2016) _Lattice Boltzmann modelling of liquid distribution in unsaturated granular media_, Computers and Geotechnics **80**, pp. 353-359
 
-* [`PDF`](/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, M. Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letters **115**, 238301
+* [`PDF`]({{ site.baseurl }}/public/pdf/PRL2015.pdf) G. Combe, V. Richefeu, M. Stasiak, A.P.F. Atman (2015) _Experimental validation of nonextensive scaling law in confined granular media_. Physical Review Letters **115**, 238301
 	
-* [`PDF`](/public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666
+* [`PDF`]({{ site.baseurl }}/public/pdf/GRMA2015.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2015) _Discrete modelling of rock avalanches: sensitivity to block and slope geometries_. Granular Matter **17**(5), pp. 645-666
 	
-* [`PDF`](/public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjaï (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (see also the _Focus on Fluids_ by J.-N. Roux)
+* [`PDF`]({{ site.baseurl }}/public/pdf/JFM2014.pdf) J.-Y. Delenne, V. Richefeu, F. Radjaï (2015) _Liquid clustering and capillary pressure in granular media_. J. Fluid Mech. **762**, R5 (see also the _Focus on Fluids_ by J.-N. Roux)
 
-* [`PDF`](/public/pdf/daudon_villard_richefeu_mollon_CRM_2015.pdf) D. Daudon, P. Villard, V. Richefeu, G. Mollon (2014) _Influence of the morphology of slope and blocks on the energy dissipations in a rock avalanche_. C.R. Mecanique **343**(2), pp. 166-177  
+* [`PDF`]({{ site.baseurl }}/public/pdf/daudon_villard_richefeu_mollon_CRM_2015.pdf) D. Daudon, P. Villard, V. Richefeu, G. Mollon (2014) _Influence of the morphology of slope and blocks on the energy dissipations in a rock avalanche_. C.R. Mecanique **343**(2), pp. 166-177  
 
-* [`PDF`](/public/pdf/nhess-14-3175-2014.pdf) P. Bottelin, D. Jongmans, D. Daudon, A. Mathy, A. Helmstetter, V. Bonilla-Sierra, H. Cadet, D. Amitrano, V. Richefeu, L. Lorier, L. Baillet, P. Villard, F. Donzé (2014) _Seismic and mechanical studies of the artificially triggered rockfall at the Mount Néron (French Alps, December 2011)_. Nat. Hazards Earth Syst. Sci. **14**(2), 2014, pp. 3175-3193
+* [`PDF`]({{ site.baseurl }}/public/pdf/nhess-14-3175-2014.pdf) P. Bottelin, D. Jongmans, D. Daudon, A. Mathy, A. Helmstetter, V. Bonilla-Sierra, H. Cadet, D. Amitrano, V. Richefeu, L. Lorier, L. Baillet, P. Villard, F. Donzé (2014) _Seismic and mechanical studies of the artificially triggered rockfall at the Mount Néron (French Alps, December 2011)_. Nat. Hazards Earth Syst. Sci. **14**(2), 2014, pp. 3175-3193
 
-* [`PDF`](/public/pdf/JauvertCMBB2013.pdf) S. Jauvert, R. Peyroux, V. Richefeu (2013) _A mechanical model for cell motility and tissue morphogenesis_. Computer Methods in Biomechanics and Biomedical Engineering **16**(1), pp. 13-14
+* [`PDF`]({{ site.baseurl }}/public/pdf/JauvertCMBB2013.pdf) S. Jauvert, R. Peyroux, V. Richefeu (2013) _A mechanical model for cell motility and tissue morphogenesis_. Computer Methods in Biomechanics and Biomedical Engineering **16**(1), pp. 13-14
 
-* [`PDF`](/public/pdf/Fluct_GeoLetters.pdf) V. Richefeu, G. Combe, G. Viggiani (2012) _An experimental assessment of displacement fluctuations in a 2D granular material subjected to shear_. Géotechnique Letters **2**, pp. 113-118
+* [`PDF`]({{ site.baseurl }}/public/pdf/Fluct_GeoLetters.pdf) V. Richefeu, G. Combe, G. Viggiani (2012) _An experimental assessment of displacement fluctuations in a 2D granular material subjected to shear_. Géotechnique Letters **2**, pp. 113-118
 
-* [`PDF`](/public/pdf/JGR_Mollon2012.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2012) _Numerical simulation of rock avalanches: influence of local dissipative contact model on the collective behavior of granular flows_. Journal of Geophysical Research **117**, F02036
+* [`PDF`]({{ site.baseurl }}/public/pdf/JGR_Mollon2012.pdf) G. Mollon, V. Richefeu, P. Villard, D. Daudon (2012) _Numerical simulation of rock avalanches: influence of local dissipative contact model on the collective behavior of granular flows_. Journal of Geophysical Research **117**, F02036
 
-* [`PDF`](/public/pdf/Richefeu_et_al_2012.pdf) V. Richefeu, G. Mollon, D. Daudon, P. Villard (2012) _Dissipative contacts and realistic block shapes for modeling rock avalanches_. Engineering Geology vol. **149-150**, pp. 78-92
+* [`PDF`]({{ site.baseurl }}/public/pdf/Richefeu_et_al_2012.pdf) V. Richefeu, G. Mollon, D. Daudon, P. Villard (2012) _Dissipative contacts and realistic block shapes for modeling rock avalanches_. Engineering Geology vol. **149-150**, pp. 78-92
 
-* [`PDF`](/public/pdf/Harthong_et_al_2012.pdf) B. Harthong, J.-F. Jérier, V. Richefeu, B. Chareyre, P. Dorémus, D. Imbault, F.-V. Donzé. Contact impingement in packings of elastic-plastic spheres: application to powder compaction. International Journal of Mechanical Sciences **61**(1), pp. 32-43
+* [`PDF`]({{ site.baseurl }}/public/pdf/Harthong_et_al_2012.pdf) B. Harthong, J.-F. Jérier, V. Richefeu, B. Chareyre, P. Dorémus, D. Imbault, F.-V. Donzé. Contact impingement in packings of elastic-plastic spheres: application to powder compaction. International Journal of Mechanical Sciences **61**(1), pp. 32-43
 
-* [`PDF`](/public/pdf/EPL_CEGEO.pdf) CEGEO, B. Saint-Cyr, K. Szarf, C. Voivret, E. Azéma, V. Richefeu, J.-Y. Delenne, G. Combe, C. Nouguier-Lehon, P. Villard, P. Sornay, M. Chaze, F. Radjaï (2011) _Particle shape dependence in granular media_. EPL **98**(4), 44008
+* [`PDF`]({{ site.baseurl }}/public/pdf/EPL_CEGEO.pdf) CEGEO, B. Saint-Cyr, K. Szarf, C. Voivret, E. Azéma, V. Richefeu, J.-Y. Delenne, G. Combe, C. Nouguier-Lehon, P. Villard, P. Sornay, M. Chaze, F. Radjaï (2011) _Particle shape dependence in granular media_. EPL **98**(4), 44008
 
-* [`PDF`](/public/pdf/RichefeuCZM2012.pdf) V. Richefeu, A. Chrysochoos, V. Huon, Y. Monerie, R. Peyroux, B. Wattrisse (2012) _Towards local identification of cohesive zone models using digital image correlation_. European Journal of Mechanics - A/Solids **34**, pp. 38-51
+* [`PDF`]({{ site.baseurl }}/public/pdf/RichefeuCZM2012.pdf) V. Richefeu, A. Chrysochoos, V. Huon, Y. Monerie, R. Peyroux, B. Wattrisse (2012) _Towards local identification of cohesive zone models using digital image correlation_. European Journal of Mechanics - A/Solids **34**, pp. 38-51
 
-* [`PDF`](/public/pdf/ColdPowderCompaction.pdf) J.-F. Jérier, B. Harthong, V. Richefeu, B. Chareyre, D. Imbault, F.-V. Donzé, P. Dorémus (2011) _Study of cold powder compaction by using the discrete element method_. Powder Technology **208**(2), pp. 537-541
+* [`PDF`]({{ site.baseurl }}/public/pdf/ColdPowderCompaction.pdf) J.-F. Jérier, B. Harthong, V. Richefeu, B. Chareyre, D. Imbault, F.-V. Donzé, P. Dorémus (2011) _Study of cold powder compaction by using the discrete element method_. Powder Technology **208**(2), pp. 537-541
 
-* [`PDF`](/public/pdf/Packing_CMA2009.pdf) J.-F. Jérier, V. Richefeu, D. Imbault, F. Donzé (2010) _Packing spherical discrete elements for large scale simulations_. Computer Methods in Applied Mechanics and Engineering **199**(25-28), pp. 1668-1676
+* [`PDF`]({{ site.baseurl }}/public/pdf/Packing_CMA2009.pdf) J.-F. Jérier, V. Richefeu, D. Imbault, F. Donzé (2010) _Packing spherical discrete elements for large scale simulations_. Computer Methods in Applied Mechanics and Engineering **199**(25-28), pp. 1668-1676
 
-* [`PDF`](/public/pdf/RadjaiRichefeu2009.pdf) F. Radjaï, V. Richefeu (2009) _Bond anisotropy and cohesion of wet granular materials_. Phil. Trans. R. Soc. A **367**, pp. 5123-5138
+* [`PDF`]({{ site.baseurl }}/public/pdf/RadjaiRichefeu2009.pdf) F. Radjaï, V. Richefeu (2009) _Bond anisotropy and cohesion of wet granular materials_. Phil. Trans. R. Soc. A **367**, pp. 5123-5138
 
-* [`PDF`](/public/pdf/AdvancesInDem.pdf) F. V. Donzé, V. Richefeu, S.-A. Magnier (2009) _Advances in Discrete Element Method Applied to Soil, Rock and Concrete Mechanics_. Electronic Journal of Geotechnical Engineering
+* [`PDF`]({{ site.baseurl }}/public/pdf/AdvancesInDem.pdf) F. V. Donzé, V. Richefeu, S.-A. Magnier (2009) _Advances in Discrete Element Method Applied to Soil, Rock and Concrete Mechanics_. Electronic Journal of Geotechnical Engineering
 
-* [`PDF`](/public/pdf/CD_MechanicsMaterials.pdf) F. Radjaï, V. Richefeu (2009) _Contact dynamics as a nonsmooth discrete element method_. Mechanics of Materials **41**, pp. 715-728
+* [`PDF`]({{ site.baseurl }}/public/pdf/CD_MechanicsMaterials.pdf) F. Radjaï, V. Richefeu (2009) _Contact dynamics as a nonsmooth discrete element method_. Mechanics of Materials **41**, pp. 715-728
 
-* [`PDF`](/public/pdf/ptec_richefeu.pdf) V. Richefeu, M. S. El Youssoufi, E. Azéma, F. Radjaï (2009) _Force transmission in dry and wet granular media_. Powder Technology **190**(1-2), pp. 258-263
+* [`PDF`]({{ site.baseurl }}/public/pdf/ptec_richefeu.pdf) V. Richefeu, M. S. El Youssoufi, E. Azéma, F. Radjaï (2009) _Force transmission in dry and wet granular media_. Powder Technology **190**(1-2), pp. 258-263
 
-* [`PDF`](/public/pdf/Azema_EPJE08.pdf) E. Azéma, F. Radjaï, R. Peyroux, V. Richefeu, G. Saussine (2008) _Short-time dynamics of a packing of polyhedral grains under horizontal vibrations_. European Physical Journal E **26**(3), pp. 327-335
+* [`PDF`]({{ site.baseurl }}/public/pdf/Azema_EPJE08.pdf) E. Azéma, F. Radjaï, R. Peyroux, V. Richefeu, G. Saussine (2008) _Short-time dynamics of a packing of polyhedral grains under horizontal vibrations_. European Physical Journal E **26**(3), pp. 327-335
 
-* [`PDF`](/public/pdf/RichefeuNAG2007.pdf) V. Richefeu, M. S. El Youssoufi, R. Peyroux, F. Radjaï (2007) _A model of capillary cohesion for numerical simulations of 3D polydisperse granular media_. International Journal for Numerical and Analytical Methods in Geomechanics **32**(11), pp. 1365-1383
+* [`PDF`]({{ site.baseurl }}/public/pdf/RichefeuNAG2007.pdf) V. Richefeu, M. S. El Youssoufi, R. Peyroux, F. Radjaï (2007) _A model of capillary cohesion for numerical simulations of 3D polydisperse granular media_. International Journal for Numerical and Analytical Methods in Geomechanics **32**(11), pp. 1365-1383
 
-* [`PDF`](/public/pdf/EPJE07_Richefeu.pdf) V. Richefeu, F. Radjaï, M. S. El Youssoufi (2006) _Stress transmission in wet granular materials_. European Physical Journal E **21**, pp. 359-369
+* [`PDF`]({{ site.baseurl }}/public/pdf/EPJE07_Richefeu.pdf) V. Richefeu, F. Radjaï, M. S. El Youssoufi (2006) _Stress transmission in wet granular materials_. European Physical Journal E **21**, pp. 359-369
 
-* [`PDF`](/public/pdf/PRE06-richefeu.pdf) V. Richefeu, M. S. El Youssoufi, F. Radjaï (2006) _Shear strength properties of wet granular materials_. Physical Review E **73**, 051304
+* [`PDF`]({{ site.baseurl }}/public/pdf/PRE06-richefeu.pdf) V. Richefeu, M. S. El Youssoufi, F. Radjaï (2006) _Shear strength properties of wet granular materials_. Physical Review E **73**, 051304
 
-* [`PDF`](/public/pdf/CherblancBulletin.pdf) F. Cherblanc, I. Mrani, V. Richefeu, M. S. El Youssoufi, G. Fras, J.-C. Bénet (2002) _Couplages déformations/transport dans un milieu bi-constituant élastique_. Bulletin des Milieux Poreux et Transferts Hydriques **48**, pp. 99-105
+* [`PDF`]({{ site.baseurl }}/public/pdf/CherblancBulletin.pdf) F. Cherblanc, I. Mrani, V. Richefeu, M. S. El Youssoufi, G. Fras, J.-C. Bénet (2002) _Couplages déformations/transport dans un milieu bi-constituant élastique_. Bulletin des Milieux Poreux et Transferts Hydriques **48**, pp. 99-105
 	
 
 ## Documents divers

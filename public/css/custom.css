@@ -196,3 +196,51 @@ th {
   list-style: none;
   margin-bottom: .2rem;
 }
+
+/* Bouton du menu latéral : deux traits fins qui pivotent en croix à l'ouverture */
+.sidebar-toggle,
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle,
+.theme-base-08 .sidebar-toggle:active,
+.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  top: .95rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  color: var(--accent);
+}
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+  box-shadow: none;
+}
+.sidebar-toggle:before,
+.sidebar-toggle:after,
+.sidebar-toggle:active:before,
+#sidebar-checkbox:focus ~ .sidebar-toggle:before,
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  content: "";
+  position: absolute;
+  left: .5rem;
+  width: 1.25rem;
+  height: 1.5px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+}
+.sidebar-toggle:before { top: calc(50% - 4px); }
+.sidebar-toggle:after  { top: calc(50% + 3px); }
+
+.sidebar-toggle:hover,
+#sidebar-checkbox:focus-visible ~ .sidebar-toggle {
+  background-color: rgba(172, 65, 66, .08);
+}
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  top: calc(50% - .75px);
+  transform: rotate(45deg);
+}
+#sidebar-checkbox:checked ~ .sidebar-toggle:after {
+  top: calc(50% - .75px);
+  transform: rotate(-45deg);
+}

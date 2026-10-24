@@ -21,6 +21,17 @@ Pour des aspects techniques sur différentes méthodes, voir [Computational Disc
 
 <div style="width:100%;height:200px">
 <div style="width:20%;float:left;">
+ <img src="{{ site.baseurl }}/public/img/CoreShell_icon.png" alt="Core-shell" width="150px"/>
+</div>
+<div style="width:80%;float:left;">
+ <p>La méthode « cœur-coquille » (<i>core-shell</i>), implémentée dans le code <a href="https://github.com/richefeu/l-hyphen">l-hyphen</a>, simule en 2D des particules molles qui changent de forme. La paroi de chaque particule est une coquille de nœuds reliés par des barres élastiques ou élasto-plastiques, qui résistent à l'étirement et à la flexion ; un cœur, dont la rigidité contrôle les variations de volume, représente par exemple la pression d'un fluide interne. La masse est portée par les nœuds, intégrés en temps comme en DEM, ce qui rend la méthode efficace. Elle s'applique aussi bien à des particules molles en contact (imagette, à gauche) qu'à des tissus où les cellules partagent leurs parois, comme le bois (à droite) : mousses, émulsions, capsules, tissus végétaux ou grains déformables (voir le thème <a href="{{ site.baseurl }}{% link _posts/themes/0000-01-08-particules-deformables.md %}">particules déformables</a>).</p>
+</div>
+</div>
+
+<hr>
+
+<div style="width:100%;height:200px">
+<div style="width:20%;float:left;">
  <img src="{{ site.baseurl }}/public/img/LEM_icon.png" alt="LEM" width="150px"/>
 </div>
 <div style="width:80%;float:left;">
@@ -96,7 +107,7 @@ Une grille sous-jacente et fixe est utilisée pour projeter les informations por
 
 <div style="width:100%;height:200px">
 <div style="width:20%;float:left;">
- <img src="{{ site.baseurl }}/public/img/(MPM+DEM)xDEM_icon.png" alt="(MPM+DEM)xDEM" width="200px"/>
+ <img src="{{ site.baseurl }}/public/img/(MPM+DEM)xDEM_icon.png" alt="(MPM+DEM)xDEM" width="150px"/>
 </div>
 <div style="width:80%;float:left;">
  <p>Il s'agit là d'un travail en cours. L'idée est de réaliser le couplage à double échelle en utilisant la MPM au niveau macroscopique (avec la gestion des interactions avec des éléments rigides) et la DEM en guise de loi numérique homogénéisée au niveau des points matériels (équivalent à des points de Gauss).</p>

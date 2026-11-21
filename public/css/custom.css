@@ -244,3 +244,61 @@ th {
   top: calc(50% - .75px);
   transform: rotate(-45deg);
 }
+
+/* Page Pédagogie : livre et grille de cartes */
+.carte-livre {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1.1rem;
+}
+.carte-livre > a {
+  flex: none;
+}
+.carte-livre img {
+  display: block;
+  width: 120px;
+  height: auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.2rem;
+  margin: 1.2rem 0 2rem;
+}
+.container a.carte {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--filet);
+  border-radius: 4px;
+  overflow: hidden;
+  color: var(--texte);
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.container a.carte:hover,
+.container a.carte:focus {
+  text-decoration: none;
+  border-color: var(--accent);
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+.carte img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  border-bottom: 1px solid var(--filet);
+}
+.carte strong {
+  padding: .7rem .9rem .2rem;
+  color: var(--accent);
+}
+.carte span {
+  padding: 0 .9rem .9rem;
+  font-size: .92em;
+  line-height: 1.45;
+}
+@media (max-width: 30em) {
+  .carte-livre { flex-direction: column; }
+}

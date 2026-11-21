@@ -14,6 +14,23 @@ Mon fil conducteur : allier rigueur et accessibilité. Pour cela, je fabrique de
   <p><em>Les fondements de la mécanique des structures – Une introduction à l'usage des étudiants du BUT Génie civil – construction durable</em>, Éditions Ellipses (2025), écrit avec G. Hivin, J. Lisi et P. Villard, enseignants au département. Une introduction claire et appliquée aux principes essentiels de la mécanique des structures.</p>
 </div>
 
+#### En complément du livre : des animations
+
+Chaque notion du cours est résumée en quelques lignes et illustrée par de courtes animations, à regarder à son rythme, y compris sur un téléphone.
+
+<div class="cartes">
+  <a class="carte" href="{{ site.baseurl }}/animations/MS1/site_MS1/">
+    <img src="{{ site.baseurl }}/animations/MS1/site_MS1/vignettes/DiagrammesSynthese.jpg" alt="Animation : tracé des diagrammes V et M"/>
+    <strong>Statique et efforts internes</strong>
+    <span>Forces, moments, équilibre, liaisons, efforts internes et treillis : 37 animations.</span>
+  </a>
+  <a class="carte" href="{{ site.baseurl }}/animations/MS2/site_MS2/">
+    <img src="{{ site.baseurl }}/animations/MS2/site_MS2/vignettes/DiagrammeNavier.jpg" alt="Animation : diagramme de Navier"/>
+    <strong>Résistance des matériaux</strong>
+    <span>Caractéristiques des sections, contraintes normales, choix d'un profilé, déformée et flèche : 21 animations.</span>
+  </a>
+</div>
+
 #### Des applications en ligne
 
 Elles fonctionnent directement dans le navigateur, sans installation, aussi bien en TD au vidéoprojecteur qu'en autonomie. Chaque modification relance le calcul, et des exemples de difficulté croissante sont fournis.
@@ -40,17 +57,3 @@ Elles fonctionnent directement dans le navigateur, sans installation, aussi bien
     <span>Méthode de Dreux-Gorisse : courbes granulométriques et composition du béton.</span>
   </a>
 </div>
-
-<!--
-#### Des animations
-
-Modèle d'une animation (copier le bloc dans la grille, et mettre le fichier dans public/img ou apps/) :
-
-<div class="cartes">
-  <a class="carte" href="{{ site.baseurl }}/apps/NOM_ANIMATION/">
-    <img src="{{ site.baseurl }}/public/img/pedago_NOM.jpg" alt="..."/>
-    <strong>Titre de l'animation</strong>
-    <span>Ce qu'elle fait comprendre, en une phrase.</span>
-  </a>
-</div>
--->

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Forces, moments, équilibre, actions de liaison, efforts internes dans les poutres et treillis. Un résumé et des animations pour chaque notion.">
+<title>MS1 — Statique et efforts internes</title><style>
+:root{--fond:#fff;--texte:#1a1a1a;--doux:#6b6b6b;--trait:#e6e6e6;--accent:#0b5c78}
+@media (prefers-color-scheme:dark){:root{--fond:#121212;--texte:#e6e6e6;--doux:#9a9a9a;--trait:#2a2a2a;--accent:#7cc4dc}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:980px;margin:0 auto;padding:56px 20px 80px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{margin:0 0 48px}
+.code{font-size:.85rem;letter-spacing:.12em;color:var(--doux)}
+h1{font-size:2.2rem;font-weight:600;letter-spacing:-.01em;line-height:1.2;margin:4px 0 12px}
+.intro{color:var(--doux);max-width:640px;margin:0}
+.sommaire{list-style:none;padding:0;margin:0 0 24px;columns:2;column-gap:40px;counter-reset:c}
+.sommaire li{counter-increment:c;padding:3px 0;break-inside:avoid}
+.sommaire li::before{content:counter(c,decimal-leading-zero);color:var(--doux);font-variant-numeric:tabular-nums;margin-right:12px;font-size:.85rem}
+section{border-top:1px solid var(--trait);padding-top:40px;margin-top:56px}
+h2{font-size:1.45rem;font-weight:600;margin:0 0 16px}
+h2 span{color:var(--doux);font-weight:400;font-variant-numeric:tabular-nums;margin-right:14px}
+.resume{max-width:680px}.resume p{margin:0 0 12px}
+sub{line-height:0}
+.f{font-family:"STIX Two Text","Cambria Math",Georgia,serif;font-size:1.05em;white-space:nowrap}
+table{border-collapse:collapse;margin:8px 0 4px;font-size:.95rem}
+th{text-align:left;font-weight:600;color:var(--doux);font-size:.85rem}
+td,th{padding:6px 24px 6px 0;border-bottom:1px solid var(--trait)}
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:32px 24px;margin-top:32px}
+.videos video{width:100%;display:block;aspect-ratio:16/9;background:#000;border-radius:6px}
+.videos h3{font-size:1rem;font-weight:600;margin:10px 0 2px}
+.videos p{margin:0;color:var(--doux);font-size:.9rem}
+footer{margin-top:80px;color:var(--doux);font-size:.85rem}
+@media (max-width:600px){.page{padding-top:32px}h1{font-size:1.7rem}.sommaire{columns:1}}
+</style></head>
+<body><div class="page"><header><div class="code">MS1</div><h1>Statique et efforts internes</h1><p class="intro">Forces, moments, équilibre, actions de liaison, efforts internes dans les poutres et treillis. Un résumé et des animations pour chaque notion.</p></header>
+<ol class="sommaire"><li><a href="#forces">Forces</a></li><li><a href="#moments">Moment d&#x27;une force</a></li><li><a href="#pfs">Principe fondamental de la statique</a></li><li><a href="#liaisons">Liaisons</a></li><li><a href="#actions">Actions de liaison d&#x27;une poutre</a></li><li><a href="#coupure">Efforts internes</a></li><li><a href="#diagrammes">Diagrammes des efforts internes</a></li><li><a href="#treillis">Treillis</a></li></ol>
+<section id="forces"><h2><span>01</span>Forces</h2>
+<div class="resume">
+<p>Une force est définie par son intensité F (en newtons), sa direction et son sens. Pour calculer, on la remplace
+par ses deux composantes suivant les axes : <i class="f">F<sub>X</sub> = F cos θ</i> et <i class="f">F<sub>Y</sub> = F sin θ</i>,
+où θ est l'angle mesuré depuis l'axe X dans le sens trigonométrique. Les signes viennent alors d'eux-mêmes.</p>
+<p>Si l'angle est donné par rapport à la verticale, le cosinus va au côté adjacent à l'angle. Si la direction est donnée
+par une pente, on utilise directement les rapports de longueurs. La résultante de plusieurs forces s'obtient
+en sommant les composantes.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DecompositionForce.jpg"><source src="videos/DecompositionForce.mp4" type="video/mp4"></video>
+<h3>Décomposer une force</h3><p>Composantes, signes, angle par rapport à la verticale, pente.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ResultanteForces.jpg"><source src="videos/ResultanteForces.mp4" type="video/mp4"></video>
+<h3>Résultante de plusieurs forces</h3><p>Somme des composantes et quadrant de l&#x27;angle.</p></figure></div></section><section id="moments"><h2><span>02</span>Moment d&#x27;une force</h2>
+<div class="resume">
+<p>Le moment d'une force par rapport à un point O mesure sa capacité à faire tourner :
+<i class="f">M<sub>/O</sub> = ± F × d</i>, où d est la distance entre O et la ligne d'action de la force (le bras de levier).
+Il s'exprime en N·m. Il est positif si la force fait tourner dans le sens trigonométrique.</p>
+<p>Pour une force inclinée, on additionne les moments de ses deux composantes. Le moment résultant dépend
+du point choisi, sauf pour un couple : deux forces opposées et décalées ont le même moment en tout point.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/Intro.jpg"><source src="videos/Intro.mp4" type="video/mp4"></video>
+<h3>Pourquoi le moment ?</h3><p>La clé de serrage, définition et convention de signe.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/BrasDeLevier.jpg"><source src="videos/BrasDeLevier.mp4" type="video/mp4"></video>
+<h3>Le bras de levier</h3><p>Trouver le signe, puis la distance.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ForceInclinee.jpg"><source src="videos/ForceInclinee.mp4" type="video/mp4"></video>
+<h3>Force inclinée</h3><p>Moment des deux composantes.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/MomentResultant.jpg"><source src="videos/MomentResultant.mp4" type="video/mp4"></video>
+<h3>Moment résultant</h3><p>Le résultat dépend du point.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/Couple.jpg"><source src="videos/Couple.mp4" type="video/mp4"></video>
+<h3>Couple de forces</h3><p>Le même moment en tout point.</p></figure></div></section><section id="pfs"><h2><span>03</span>Principe fondamental de la statique</h2>
+<div class="resume">
+<p>Un solide est en équilibre si la somme des forces est nulle <i class="f">ΣF<sub>X</sub> = 0, ΣF<sub>Y</sub> = 0</i>
+et si la somme des moments en un point quelconque est nulle <i class="f">ΣM<sub>/A</sub> = 0</i>.
+Dans le plan, cela fournit trois équations. On a intérêt à écrire l'équation de moment au point où passent
+le plus d'inconnues.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/PFSPatate.jpg"><source src="videos/PFSPatate.mp4" type="video/mp4"></video>
+<h3>L&#x27;équilibre d&#x27;un solide</h3><p>Pourquoi il faut à la fois ΣF = 0 et ΣM = 0.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/PFSPoutreL.jpg"><source src="videos/PFSPoutreL.mp4" type="video/mp4"></video>
+<h3>Application à une structure en L</h3><p>Bras de levier vertical et réaction négative.</p></figure></div></section><section id="liaisons"><h2><span>04</span>Liaisons</h2>
+<div class="resume">
+<p>Une liaison bloque certains mouvements. Chaque mouvement bloqué crée une action inconnue, et chaque mouvement libre
+une action nulle. On dessine les inconnues dans le sens positif : le signe du résultat donne le sens réel.</p>
+<table><tr><th>Liaison</th><th>Mouvements bloqués</th><th>Inconnues</th></tr>
+<tr><td>Appui simple</td><td>une translation</td><td>1</td></tr>
+<tr><td>Articulation</td><td>deux translations</td><td>2 (X, Y)</td></tr>
+<tr><td>Encastrement</td><td>deux translations et la rotation</td><td>3 (X, Y, C)</td></tr></table></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/AppuiSimple.jpg"><source src="videos/AppuiSimple.mp4" type="video/mp4"></video>
+<h3>L&#x27;appui simple</h3><p>Une inconnue, perpendiculaire au support.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/Articulation.jpg"><source src="videos/Articulation.mp4" type="video/mp4"></video>
+<h3>L&#x27;articulation</h3><p>Deux inconnues.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/Encastrement.jpg"><source src="videos/Encastrement.mp4" type="video/mp4"></video>
+<h3>L&#x27;encastrement</h3><p>Deux forces et un couple.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/LiaisonsBilan.jpg"><source src="videos/LiaisonsBilan.mp4" type="video/mp4"></video>
+<h3>Récapitulatif</h3><p>Les trois liaisons côte à côte.</p></figure></div></section><section id="actions"><h2><span>05</span>Actions de liaison d&#x27;une poutre</h2>
+<div class="resume">
+<p>On isole la poutre, on remplace chaque liaison par ses inconnues, puis on vérifie qu'il y en a exactement trois
+(poutre isostatique). On écrit ensuite l'équation de moment au point où passent le plus d'inconnues, puis les deux
+équations de forces, et on contrôle le résultat avec un moment en un autre point.</p>
+<p>Une charge répartie q se remplace par une force q × longueur, placée au milieu de la zone chargée.
+Un couple appliqué intervient dans l'équation de moment, mais pas dans celles des forces.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsMethode.jpg"><source src="videos/ReactionsMethode.mp4" type="video/mp4"></video>
+<h3>La méthode</h3><p>Articulation, appui simple et une force.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/Isostatisme.jpg"><source src="videos/Isostatisme.mp4" type="video/mp4"></video>
+<h3>Compter les inconnues</h3><p>Isostatique, hyperstatique ou mécanisme.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsChargeRepartie.jpg"><source src="videos/ReactionsChargeRepartie.mp4" type="video/mp4"></video>
+<h3>Charge répartie</h3><p>Force équivalente d&#x27;une charge partielle.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsForceInclineeCouple.jpg"><source src="videos/ReactionsForceInclineeCouple.mp4" type="video/mp4"></video>
+<h3>Force inclinée et couple</h3><p>Composantes et couple appliqué.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsConsole.jpg"><source src="videos/ReactionsConsole.mp4" type="video/mp4"></video>
+<h3>Poutre encastrée</h3><p>Le couple d&#x27;encastrement.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsPorteAFaux.jpg"><source src="videos/ReactionsPorteAFaux.mp4" type="video/mp4"></video>
+<h3>Porte-à-faux</h3><p>Une réaction peut être négative.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsAppuiIncline.jpg"><source src="videos/ReactionsAppuiIncline.mp4" type="video/mp4"></video>
+<h3>Appui incliné</h3><p>Une inconnue de direction connue.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/ReactionsPieges.jpg"><source src="videos/ReactionsPieges.mp4" type="video/mp4"></video>
+<h3>Erreurs fréquentes</h3><p>Les points à vérifier.</p></figure></div></section><section id="coupure"><h2><span>06</span>Efforts internes</h2>
+<div class="resume">
+<p>On coupe la poutre à une abscisse x et on étudie l'équilibre d'une des deux parties. La coupure fait apparaître
+trois efforts internes : l'effort normal N, l'effort tranchant V et le moment fléchissant M. L'équilibre
+de la partie isolée donne N(x), V(x) et M(x).</p>
+<p>Les expressions changent à chaque force ponctuelle, appui, couple, et au début ou à la fin d'une charge répartie :
+la poutre se découpe en tronçons. On peut garder la partie gauche ou la partie droite, et on choisit la plus simple.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/EffortsInternesIntro.jpg"><source src="videos/EffortsInternesIntro.mp4" type="video/mp4"></video>
+<h3>N, V et M</h3><p>Ce que représentent les efforts internes.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/CoupureUnTroncon.jpg"><source src="videos/CoupureUnTroncon.mp4" type="video/mp4"></video>
+<h3>Un tronçon</h3><p>Poutre sous charge répartie.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/CoupureDeuxTroncons.jpg"><source src="videos/CoupureDeuxTroncons.mp4" type="video/mp4"></video>
+<h3>Deux tronçons</h3><p>Force ponctuelle, partie gauche ou droite.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/CoupureConsole.jpg"><source src="videos/CoupureConsole.mp4" type="video/mp4"></video>
+<h3>Console encastrée</h3><p>Sans calculer les réactions.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/CoupureAstuce.jpg"><source src="videos/CoupureAstuce.mp4" type="video/mp4"></video>
+<h3>Gauche ou droite</h3><p>Choisir la partie la plus simple.</p></figure></div></section><section id="diagrammes"><h2><span>07</span>Diagrammes des efforts internes</h2>
+<div class="resume">
+<p>Les diagrammes peuvent se tracer sans écrire les équations. L'effort normal N est constant entre deux forces
+parallèles à la poutre : positif si la poutre est tirée, négatif si elle est poussée. L'effort tranchant V
+se construit force par force, en balayant la poutre : chaque force ponctuelle crée un saut, une charge répartie une pente.</p>
+<p>Le moment fléchissant vérifie <i class="f">V = −dM/dx</i> : les aires sous le diagramme de V donnent les variations de M,
+et M est extrémal là où V s'annule.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeN.jpg"><source src="videos/DiagrammeN.mp4" type="video/mp4"></video>
+<h3>Effort normal</h3><p>Traction et compression.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeVPonctuelle.jpg"><source src="videos/DiagrammeVPonctuelle.mp4" type="video/mp4"></video>
+<h3>Effort tranchant, forces ponctuelles</h3><p>Un saut par force.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeVRepartie.jpg"><source src="videos/DiagrammeVRepartie.mp4" type="video/mp4"></video>
+<h3>Effort tranchant, charge répartie</h3><p>Une pente égale à q.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeMVelo.jpg"><source src="videos/DiagrammeMVelo.mp4" type="video/mp4"></video>
+<h3>Moment fléchissant et pente</h3><p>V donne la pente de M.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeMAires.jpg"><source src="videos/DiagrammeMAires.mp4" type="video/mp4"></video>
+<h3>Moment fléchissant et aires</h3><p>M à partir des aires sous V.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/DiagrammesSynthese.jpg"><source src="videos/DiagrammesSynthese.mp4" type="video/mp4"></video>
+<h3>Exemple complet</h3><p>Porte-à-faux et charge partielle.</p></figure></div></section><section id="treillis"><h2><span>08</span>Treillis</h2>
+<div class="resume">
+<p>Un treillis est formé de barres articulées à leurs extrémités et chargées aux nœuds. Chaque barre ne transmet
+qu'un effort normal, de traction ou de compression. Le degré d'hyperstaticité vaut <i class="f">H = b + r − 2n</i>
+(barres, inconnues de liaison, nœuds).</p>
+<p>Méthode des nœuds : on écrit l'équilibre de chaque nœud, en commençant par un nœud qui n'a que deux barres inconnues.
+Méthode des sections : on coupe au plus trois barres, puis on écrit l'équilibre d'une des deux parties.</p></div><div class="videos"><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/TreillisIntro.jpg"><source src="videos/TreillisIntro.mp4" type="video/mp4"></video>
+<h3>Pourquoi des triangles ?</h3><p>Hypothèses, traction et compression.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/TreillisHyperstaticite.jpg"><source src="videos/TreillisHyperstaticite.mp4" type="video/mp4"></video>
+<h3>Degré d&#x27;hyperstaticité</h3><p>Compter barres, nœuds et liaisons.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/TreillisMethodeNoeuds.jpg"><source src="videos/TreillisMethodeNoeuds.mp4" type="video/mp4"></video>
+<h3>Méthode des nœuds</h3><p>Équilibre nœud par nœud.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/TreillisMethodeSection.jpg"><source src="videos/TreillisMethodeSection.mp4" type="video/mp4"></video>
+<h3>Méthode des sections</h3><p>Couper trois barres.</p></figure><figure style="margin:0">
+<video controls playsinline preload="none" poster="vignettes/TreillisPieges.jpg"><source src="videos/TreillisPieges.mp4" type="video/mp4"></video>
+<h3>Erreurs fréquentes</h3><p>Les points à vérifier.</p></figure></div></section>
+<footer>IUT Génie Civil – Construction Durable, Université Grenoble Alpes. Animations réalisées avec Manim.</footer></div></body></html>

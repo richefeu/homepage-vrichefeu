@@ -1,0 +1,117 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>MS2 — cours animé</title><style>
+:root{--fond:#f7f7f5;--carte:#fff;--texte:#1d1d1f;--doux:#5f6368;--accent:#1f6f8b;--bord:#e2e2df}
+@media (prefers-color-scheme:dark){:root{--fond:#16181b;--carte:#202328;--texte:#e8e8e6;--doux:#a4a8ae;--accent:#6cc3e0;--bord:#33373d}}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--fond);color:var(--texte);line-height:1.55}
+header{padding:28px 20px 12px;max-width:1150px;margin:auto}h1{margin:0 0 4px;font-size:1.7rem}header p{margin:0;color:var(--doux)}
+nav{position:sticky;top:0;z-index:5;background:var(--fond);border-bottom:1px solid var(--bord)}
+nav div{max-width:1150px;margin:auto;padding:8px 16px;display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:var(--accent);text-decoration:none;font-size:.9rem;padding:3px 9px;border:1px solid var(--bord);border-radius:14px}
+main{max-width:1150px;margin:auto;padding:0 16px 60px}section{margin-top:34px}
+h2{font-size:1.35rem;margin:0 0 6px}h2 small{color:var(--doux);font-weight:400;font-size:.85rem;margin-left:8px}
+.resume{background:var(--carte);border:1px solid var(--bord);border-radius:10px;padding:6px 18px;margin:10px 0 16px}
+.f{font-family:"Cambria Math","STIX Two Math",Georgia,serif;background:rgba(127,127,127,.12);padding:1px 6px;border-radius:4px;white-space:nowrap}
+table{border-collapse:collapse;margin:8px 0 12px}td,th{border:1px solid var(--bord);padding:4px 10px;text-align:left}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.video{background:var(--carte);border:1px solid var(--bord);border-radius:10px;overflow:hidden}
+.video video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+.video div{padding:8px 12px 12px}.video h3{margin:0 0 3px;font-size:1rem}.video p{margin:0;color:var(--doux);font-size:.88rem}
+.video a{font-size:.8rem;color:var(--accent)}footer{color:var(--doux);font-size:.85rem;text-align:center;padding:20px}
+</style></head>
+<body><header><h1>MS2 — Résistance des matériaux : sections, contraintes, flèches</h1>
+<p>Résumé du cours et animations (IUT GCCD, BUT). Chaque vidéo se lit dans la page ou se télécharge.</p></header>
+<nav><div><a href="#sections">Caractéristiques des sections</a><a href="#navier">Contraintes normales : le diagramme de Navier</a><a href="#admissibles">Contraintes admissibles et choix d&#x27;un profilé</a><a href="#deformee">Déformée et flèche maximale</a></div></nav><main><section id="sections"><h2>Caractéristiques des sections<small>§1</small></h2>
+<div class="resume">
+<p>Le <b>barycentre</b> G d'une section composée de formes simples se trouve avec
+<span class="f">Y<sub>G</sub> = Σ S<sub>i</sub> Y<sub>Gi</sub> / Σ S<sub>i</sub></span>, les hauteurs étant mesurées depuis le point
+le plus bas de la section complète (un trou compte avec S<sub>i</sub> &lt; 0).</p>
+<p>Le <b>moment quadratique</b> I<sub>GZ</sub> mesure la répartition de la matière autour de l'axe horizontal Z passant par G
+(unité&nbsp;: cm<sup>4</sup> ou mm<sup>4</sup>)&nbsp;: <span class="f">b h<sup>3</sup>/12</span> pour un rectangle,
+<span class="f">π D<sup>4</sup>/64</span> pour un disque.</p>
+<ul>
+<li>Doubler la hauteur multiplie I<sub>GZ</sub> par 8, doubler la largeur seulement par 2.</li>
+<li>Théorème de Huygens&nbsp;: <span class="f">I<sub>GZ</sub> = Σ (I<sub>GiZ</sub> + d<sub>i</sub><sup>2</sup> S<sub>i</sub>)</span>,
+avec d<sub>i</sub> = Y<sub>Gi</sub> − Y<sub>G</sub>.</li>
+<li>Profilés&nbsp;: on lit A, y<sub>s</sub>, I<sub>y</sub>, I<sub>z</sub> dans le catalogue, dans la colonne qui correspond à l'orientation
+(axes y, z du catalogue ≠ axes Y, Z du cours).</li>
+</ul></div><div class="grille"><article class="video">
+<video controls playsinline preload="none" poster="vignettes/Barycentre.jpg"><source src="videos/Barycentre.mp4" type="video/mp4"></video>
+<div><h3>Le barycentre d&#x27;une section</h3><p>Formes simples, sections composées, formule de Y_G.</p><a href="videos/Barycentre.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/BarycentreT.jpg"><source src="videos/BarycentreT.mp4" type="video/mp4"></video>
+<div><h3>Exemple : section en T</h3><p>Y_G = 9,5 cm, pièges et vérifications.</p><a href="videos/BarycentreT.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/BarycentreEvidement.jpg"><source src="videos/BarycentreEvidement.mp4" type="video/mp4"></video>
+<div><h3>Enlever de la matière</h3><p>Un trou compte négativement : Y_G = 5,5 cm.</p><a href="videos/BarycentreEvidement.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/MomentQuadratique.jpg"><source src="videos/MomentQuadratique.mp4" type="video/mp4"></video>
+<div><h3>Le moment quadratique</h3><p>Règle à plat / sur chant, b h³/12, effet de h³, disque.</p><a href="videos/MomentQuadratique.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/Huygens.jpg"><source src="videos/Huygens.mp4" type="video/mp4"></video>
+<div><h3>Théorème de Huygens</h3><p>Transport d² S : section en T (884 cm⁴), section évidée (1288 cm⁴).</p><a href="videos/Huygens.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/ProfilesUPE.jpg"><source src="videos/ProfilesUPE.mp4" type="video/mp4"></video>
+<div><h3>Lire le catalogue (UPE 120)</h3><p>En C, en U, en ∩ : la bonne colonne et les unités.</p><a href="videos/ProfilesUPE.mp4" download>Télécharger</a></div></article></div></section><section id="navier"><h2>Contraintes normales : le diagramme de Navier<small>§2.1</small></h2>
+<div class="resume">
+<p>La contrainte normale σ est une densité de force sur la section (MPa = N/mm²), positive en traction,
+négative en compression&nbsp;: <span class="f">σ(x, y) = N(x)/S − M(x) y / I<sub>GZ</sub></span>
+(y mesuré depuis G, vers le haut&nbsp;; M en N·mm, I<sub>GZ</sub> en mm<sup>4</sup>).</p>
+<ul>
+<li>N seul&nbsp;: σ uniforme = N/S. M seul&nbsp;: σ proportionnelle à y, nulle en G (fibre neutre).</li>
+<li>Le diagramme de Navier est une droite&nbsp;: pente −M/I<sub>GZ</sub>, valeur N/S en G.
+Les contraintes extrêmes sont en haut (y<sub>sup</sub>) et en bas (y<sub>inf</sub>) de la section.</li>
+<li>Fibre neutre&nbsp;: σ(y<sub>0</sub>) = 0. Elle se déplace avec N et peut sortir de la section.</li>
+<li>Allure rapide&nbsp;: M fait tourner l'axe vertical (↺ si M &gt; 0, ↻ si M &lt; 0), N le décale de N/S.</li>
+</ul></div><div class="grille"><article class="video">
+<video controls playsinline preload="none" poster="vignettes/ContrainteNormale.jpg"><source src="videos/ContrainteNormale.mp4" type="video/mp4"></video>
+<div><h3>La contrainte normale</h3><p>σ = dF/dS, effet de N, effet de M (flexion), formule et unités.</p><a href="videos/ContrainteNormale.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/DiagrammeNavier.jpg"><source src="videos/DiagrammeNavier.mp4" type="video/mp4"></video>
+<div><h3>Le diagramme de Navier</h3><p>Section en T : N seul, M seul, superposition, fibre neutre.</p><a href="videos/DiagrammeNavier.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/NavierEnDirect.jpg"><source src="videos/NavierEnDirect.mp4" type="video/mp4"></video>
+<div><h3>Effet de N et de M</h3><p>La droite tourne avec M, se décale avec N.</p><a href="videos/NavierEnDirect.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/NavierTableau.jpg"><source src="videos/NavierTableau.mp4" type="video/mp4"></video>
+<div><h3>Les 9 cas</h3><p>Allure du diagramme selon les signes de N et M.</p><a href="videos/NavierTableau.mp4" download>Télécharger</a></div></article></div></section><section id="admissibles"><h2>Contraintes admissibles et choix d&#x27;un profilé<small>§2.2 – 2.5</small></h2>
+<div class="resume">
+<p>Une section résiste si toutes ses contraintes restent dans l'intervalle admissible
+<span class="f">σ<sub>min</sub> &lt; σ &lt; σ<sub>max</sub></span> (σ<sub>max</sub> &gt; 0 en traction, σ<sub>min</sub> &lt; 0 en compression).
+Il suffit de vérifier les fibres extrêmes, en haut (y<sub>sup</sub>) et en bas (y<sub>inf</sub>).</p>
+<ul>
+<li>Si une limite est dépassée&nbsp;: réduire la charge ou la portée, changer de matériau, augmenter h (I ∝ h³),
+précontraindre (N &lt; 0) ou renforcer la zone tendue (armatures).</li>
+<li>Section non symétrique&nbsp;: σ<sub>sup</sub> ≠ −σ<sub>inf</sub>&nbsp;; la fibre la plus éloignée de G est la plus sollicitée,
+et l'orientation de la section compte.</li>
+<li>Profilés&nbsp;: <span class="f">|σ| = |M| / w<sub>el,Z</sub></span> avec w<sub>el,Z</sub> = I<sub>GZ</sub> / max(−y<sub>inf</sub>, y<sub>sup</sub>)
+(colonne W<sub>el,y</sub> ou W<sub>el,z</sub> selon l'orientation)&nbsp;; le signe se lit sur le dessin.</li>
+<li>Choisir un profilé&nbsp;: <span class="f">(w<sub>el,Z</sub>)<sub>min</sub> = |M<sub>crit</sub>| / σ<sub>max</sub></span>,
+puis la plus petite valeur supérieure dans la bonne colonne du catalogue.</li>
+</ul></div><div class="grille"><article class="video">
+<video controls playsinline preload="none" poster="vignettes/ContraintesAdmissibles.jpg"><source src="videos/ContraintesAdmissibles.mp4" type="video/mp4"></video>
+<div><h3>Contraintes admissibles</h3><p>Poutre en béton : le haut est trop tendu.</p><a href="videos/ContraintesAdmissibles.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/SolutionsRupture.jpg"><source src="videos/SolutionsRupture.mp4" type="video/mp4"></video>
+<div><h3>Éviter la rupture</h3><p>Les 5 solutions, en direct.</p><a href="videos/SolutionsRupture.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/SectionNonSymetrique.jpg"><source src="videos/SectionNonSymetrique.mp4" type="video/mp4"></video>
+<div><h3>Section non symétrique</h3><p>Section en T, puis retournée : l&#x27;orientation compte.</p><a href="videos/SectionNonSymetrique.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/NavierUPE.jpg"><source src="videos/NavierUPE.mp4" type="video/mp4"></video>
+<div><h3>UPE 120 et module de flexion</h3><p>En C et en ∩ : W_el,y, W_el,z, I_z.</p><a href="videos/NavierUPE.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/ChoixProfile.jpg"><source src="videos/ChoixProfile.mp4" type="video/mp4"></video>
+<div><h3>Choisir un profilé</h3><p>La méthode en 5 étapes avec le catalogue.</p><a href="videos/ChoixProfile.mp4" download>Télécharger</a></div></article></div></section><section id="deformee"><h2>Déformée et flèche maximale<small>§3</small></h2>
+<div class="resume">
+<p>La courbure de la poutre est proportionnelle au moment&nbsp;: <span class="f">M(x) = E I<sub>GZ</sub> × u<sub>y</sub>''(x)</span>
+(E I<sub>GZ</sub>&nbsp;: rigidité en flexion). On intègre deux fois u<sub>y</sub>'' = M/(E I<sub>GZ</sub>)&nbsp;; chaque intégration
+ajoute une constante, déterminée par les conditions aux limites.</p>
+<ul>
+<li>Appui ou articulation&nbsp;: u<sub>y</sub> = 0. Encastrement&nbsp;: u<sub>y</sub> = 0 et u<sub>y</sub>' = 0.
+Entre deux tronçons&nbsp;: même déplacement et même pente.</li>
+<li>Rotation&nbsp;: ω(x) = u<sub>y</sub>'(x) (petites rotations). Un tronçon sans moment reste droit.</li>
+<li>Flèche&nbsp;: f = −u<sub>y</sub> (positive vers le bas)&nbsp;; f<sub>max</sub> au point où |u<sub>y</sub>| est maximal.
+Console&nbsp;: <span class="f">Fℓ³/3EI</span> (force en bout), <span class="f">qℓ⁴/8EI</span> (charge répartie).</li>
+<li>Dimensionner&nbsp;: isoler I<sub>GZ</sub> dans f<sub>max</sub> ≤ f<sub>adm</sub>, puis choisir le profilé dans la bonne colonne (I<sub>y</sub> ou I<sub>z</sub>).</li>
+</ul></div><div class="grille"><article class="video">
+<video controls playsinline preload="none" poster="vignettes/CourbureMoment.jpg"><source src="videos/CourbureMoment.mp4" type="video/mp4"></video>
+<div><h3>Courbure et moment</h3><p>M = E I C, puis deux intégrations.</p><a href="videos/CourbureMoment.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/ConditionsLimites.jpg"><source src="videos/ConditionsLimites.mp4" type="video/mp4"></video>
+<div><h3>Conditions aux limites</h3><p>Appui, encastrement, continuité entre tronçons.</p><a href="videos/ConditionsLimites.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/DeformeeConsoleRepartie.jpg"><source src="videos/DeformeeConsoleRepartie.mp4" type="video/mp4"></video>
+<div><h3>Exemple 1 : console, charge répartie</h3><p>Déformée et rotation pas à pas.</p><a href="videos/DeformeeConsoleRepartie.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/DeformeeConsoleForce.jpg"><source src="videos/DeformeeConsoleForce.mp4" type="video/mp4"></video>
+<div><h3>Exemple 2 : console, force au milieu</h3><p>Deux tronçons et continuité en C.</p><a href="videos/DeformeeConsoleForce.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/FlecheMax.jpg"><source src="videos/FlecheMax.mp4" type="video/mp4"></video>
+<div><h3>Flèche maximale</h3><p>Définition, formulaire, application à l&#x27;UPE 120.</p><a href="videos/FlecheMax.mp4" download>Télécharger</a></div></article><article class="video">
+<video controls playsinline preload="none" poster="vignettes/DimensionnementFleche.jpg"><source src="videos/DimensionnementFleche.mp4" type="video/mp4"></video>
+<div><h3>Dimensionner avec la flèche</h3><p>I minimal puis choix dans le catalogue.</p><a href="videos/DimensionnementFleche.mp4" download>Télécharger</a></div></article></div></section></main>
+<footer>Animations réalisées avec Manim (manim.community).</footer></body></html>

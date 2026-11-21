@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulation des bétons — Dreux-Gorisse</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-brand">
+        <img src="logo-header.png" alt="MateriauX" class="header-logo">
+        <a class="bug-report" href="mailto:vincent.richefeu@univ-grenoble.fr?subject=Bug%20MateriauX%20-%20Dreux-Gorisse"><span class="bug-long">Un bug ? Écrire à vincent.richefeu@univ-grenoble.fr</span><span class="bug-short">Signaler un bug</span></a>
+    </div>
+    <div class="header-titles">
+        <h1>Formulation des bétons</h1>
+        <span class="sub">méthode de Dreux-Gorisse</span>
+    </div>
+    <img src="Logo_IUT1.svg" alt="IUT1 — Université Grenoble Alpes" class="header-logo-iut">
+</header>
+
+<div class="app-body">
+
+<!-- ── SIDEBAR ────────────────────────────────────────────────────────────── -->
+<aside class="sidebar">
+
+    <div class="section-block">
+        <h2>Béton souhaité</h2>
+        <div class="param-row">
+            <label for="p-sig28">Résistance à 28 j</label>
+            <input type="number" id="p-sig28" data-p="sig28" min="10" max="60" step="1">
+            <span class="unit">MPa</span>
+        </div>
+        <div class="param-row">
+            <label for="p-aff">Affaissement</label>
+            <input type="number" id="p-aff" data-p="aff" min="2" max="12" step="0.5">
+            <span class="unit">cm</span>
+        </div>
+        <div class="param-row">
+            <label for="p-serrage">Serrage</label>
+            <select id="p-serrage" data-p="serrage">
+                <option value="0">Piquage</option>
+                <option value="1">Vibration faible</option>
+                <option value="2">Vibration normale</option>
+                <option value="3">Vibration puissante</option>
+            </select>
+        </div>
+        <div class="param-row">
+            <label for="p-Kp">Pompabilité</label>
+            <select id="p-Kp" data-p="Kp">
+                <option value="0">Non pompable</option>
+                <option value="5">Pompable, Kp = +5</option>
+                <option value="6">Pompable, Kp = +6</option>
+                <option value="7">Pompable, Kp = +7</option>
+                <option value="8">Pompable, Kp = +8</option>
+                <option value="9">Pompable, Kp = +9</option>
+                <option value="10">Pompable, Kp = +10</option>
+            </select>
+        </div>
+        <label class="check-row"><input type="checkbox" data-p="expose"> Exposé aux intempéries</label>
+        <label class="check-row"><input type="checkbox" data-p="agressivite"> Milieu agressif</label>
+    </div>
+
+    <div class="section-block">
+        <h2>Ciment</h2>
+        <div class="param-row">
+            <label for="p-classVraie">Classe vraie</label>
+            <input type="number" id="p-classVraie" data-p="classVraie" min="20" step="0.5">
+            <span class="unit">MPa</span>
+        </div>
+        <div class="param-row">
+            <label for="p-rhos_C">Masse vol. absolue</label>
+            <input type="number" id="p-rhos_C" data-p="rhos_C" min="1" step="0.01">
+            <span class="unit">t/m³</span>
+        </div>
+    </div>
+
+    <div class="section-block">
+        <h2>Granulats</h2>
+        <div class="seg" role="radiogroup">
+            <label><input type="radio" name="nbGranu" data-p="nbGranu" value="2"> Binaire (S + g)</label>
+            <label><input type="radio" name="nbGranu" data-p="nbGranu" value="3"> Ternaire (S + g + G)</label>
+        </div>
+        <div class="param-row">
+            <label for="p-qualite">Qualité</label>
+            <select id="p-qualite" data-p="qualite">
+                <option value="0">Passable</option>
+                <option value="1">Bonne</option>
+                <option value="2">Très bonne</option>
+            </select>
+        </div>
+        <table class="mini-table">
+            <thead><tr><th></th><th>Sable</th><th>Gravette</th><th class="col-G">Gravier</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>Forme</td>
+                    <td><select data-p="S_roule"><option value="1">Roulé</option><option value="0">Concassé</option></select></td>
+                    <td><select data-p="g_roule"><option value="1">Roulé</option><option value="0">Concassé</option></select></td>
+                    <td class="col-G"><select data-p="G_roule"><option value="1">Roulé</option><option value="0">Concassé</option></select></td>
+                </tr>
+                <tr>
+                    <td>ρ (t/m³)</td>
+                    <td><input type="number" data-p="rhos_S" min="1" step="0.01"></td>
+                    <td><input type="number" data-p="rhos_g" min="1" step="0.01"></td>
+                    <td class="col-G"><input type="number" data-p="rhos_G" min="1" step="0.01"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="param-row" style="margin-top:8px">
+            <label for="p-Dmax">D<sub>max</sub></label>
+            <select id="p-Dmax" data-p="Dmax">
+                <option value="0" id="dmax-calc">Calculé</option>
+                <option value="4">imposé : 4 mm</option>
+                <option value="5">imposé : 5 mm</option>
+                <option value="6.3">imposé : 6,3 mm</option>
+                <option value="8">imposé : 8 mm</option>
+                <option value="10">imposé : 10 mm</option>
+                <option value="12.5">imposé : 12,5 mm</option>
+                <option value="16">imposé : 16 mm</option>
+                <option value="20">imposé : 20 mm</option>
+                <option value="25">imposé : 25 mm</option>
+                <option value="31.5">imposé : 31,5 mm</option>
+                <option value="40">imposé : 40 mm</option>
+                <option value="50">imposé : 50 mm</option>
+                <option value="63">imposé : 63 mm</option>
+                <option value="80">imposé : 80 mm</option>
+            </select>
+        </div>
+        <p class="save-hint">Calculé : premier tamis sans refus du plus gros granulat.</p>
+        <div class="param-row">
+            <label for="p-Mfs">Module de finesse du sable</label>
+            <input type="number" id="p-Mfs" data-p="Mfs" min="0" max="5" step="0.01">
+        </div>
+        <p class="save-hint" id="mfs-hint"></p>
+        <label class="check-row"><input type="checkbox" data-p="granuLeger"> Granulats légers</label>
+    </div>
+
+    <div class="section-block">
+        <h2>Gâchée</h2>
+        <div class="param-row">
+            <label for="p-volumeGacher">Volume à gâcher</label>
+            <input type="number" id="p-volumeGacher" data-p="volumeGacher" min="0" step="1">
+            <span class="unit">L</span>
+        </div>
+        <div class="param-row">
+            <label for="p-teneurEauSable">Teneur en eau du sable</label>
+            <input type="number" id="p-teneurEauSable" data-p="teneurEauSable" min="0" step="0.1">
+            <span class="unit">%</span>
+        </div>
+    </div>
+
+    <!-- Sauvegardes -->
+    <details class="section-block save-block">
+        <summary><h2>Sauvegardes et exemples</h2></summary>
+
+        <h3 class="save-title">💻 Dans la mémoire de cet ordinateur</h3>
+        <p class="save-hint">Propres à ce navigateur : elles ne vous suivent pas sur un autre poste.
+            Les exemples sont classés du plus simple au plus complet ; les emplacements vides sont libres pour vos essais.</p>
+        <ul class="slot-list" id="slots-list"></ul>
+        <div class="slot-actions slot-manage">
+            <button id="btn-reset-examples" class="btn-small" title="Réécrit les exemples dans les premiers emplacements">↺ Recharger les exemples</button>
+            <button id="btn-clear-slots" class="btn-small btn-danger" title="Vide tous les emplacements">✕ Tout effacer</button>
+        </div>
+
+        <h3 class="save-title">📄 Dans un fichier .json</h3>
+        <p class="save-hint">Pour conserver ou transférer toutes les sauvegardes ci-dessus.</p>
+        <div class="slot-actions">
+            <button id="btn-export" class="btn-small" title="Enregistre toutes les sauvegardes dans un fichier .json">↓ Exporter vers un fichier</button>
+            <button id="btn-import" class="btn-small" title="Remplace toutes les sauvegardes par celles d'un fichier .json">↑ Importer un fichier</button>
+        </div>
+    </details>
+
+</aside>
+
+<!-- ── MAIN ────────────────────────────────────────────────────────────────── -->
+<main class="main-panel">
+
+    <div class="compute-bar">
+        <div id="status" class="status"></div>
+        <div id="error-msg"></div>
+    </div>
+
+    <div class="always-row">
+        <div class="card always-chart">
+            <div class="card-header card-header-tools">
+                <span>Courbes granulométriques</span>
+                <div class="seg seg-small" role="radiogroup" aria-label="Tracé des courbes">
+                    <label title="Loi log-normale ajustée aux mesures par moindres carrés : la courbe ne passe pas forcément par les points"><input type="radio" name="courbe" data-p="courbe" value="1"> Ajustées</label>
+                    <label title="Interpolation monotone : la courbe passe par tous les points de mesure"><input type="radio" name="courbe" data-p="courbe" value="0"> Par les points</label>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="svg-wrap" id="chart-svg"></div>
+            </div>
+            <div class="legend" id="chart-legend"></div>
+        </div>
+        <div class="card always-granu">
+            <div class="card-header">Analyses granulométriques</div>
+            <div class="granu-scroll">
+                <table class="granu-table">
+                    <thead><tr><th>Tamis (mm)</th><th>Module</th><th>S</th><th>g</th><th class="col-G">G</th></tr></thead>
+                    <tbody id="granu-tbody"></tbody>
+                </table>
+            </div>
+            <p class="card-note">Refus cumulés, en %.</p>
+        </div>
+    </div>
+
+    <div id="results" style="display:none">
+        <div class="card">
+            <div class="card-header">Composition du béton</div>
+            <div class="card-body table-scroll">
+                <table class="compo" id="compo-table"><thead></thead><tbody></tbody></table>
+            </div>
+            <p class="card-note" id="compo-note"></p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Étapes du calcul</div>
+            <div class="card-body table-scroll">
+                <table class="steps" id="steps-table"><tbody></tbody></table>
+            </div>
+        </div>
+    </div>
+
+</main>
+</div><!-- /.app-body -->
+
+<script src="./js/dreux.js"></script>
+<script src="./js/chart.js"></script>
+<script src="./js/ui.js"></script>
+</body>
+</html>

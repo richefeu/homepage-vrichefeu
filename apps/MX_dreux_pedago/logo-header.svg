@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1309" height="336" viewBox="0 0 1309 336">
+  <defs>
+    <linearGradient id="g" x1="40" y1="0" x2="1269" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1f4d"/>
+      <stop offset="0.45" stop-color="#1d4fd8"/>
+      <stop offset="1" stop-color="#2f7bff"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="25" y1="0" x2="1284" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03112b"/>
+      <stop offset="0.65" stop-color="#0e1f39"/>
+      <stop offset="1" stop-color="#2f6bff"/>
+    </linearGradient>
+  </defs>
+  <!-- tamis : fins traits verticaux derrière le X -->
+  <g stroke="#5b9bff" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <line x1="1099" y1="95" x2="1099" y2="225"/>
+    <line x1="1141" y1="60" x2="1141" y2="225"/>
+    <line x1="1225" y1="60" x2="1225" y2="225"/>
+    <line x1="1267" y1="95" x2="1267" y2="225"/>
+  </g>
+  <!-- M (identique à MSolution) -->
+  <path d="M48 222 L148 42 L245 222 L340 42 L432 222" fill="none" stroke="url(#g)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="492" y="225" font-family="Avenir Next" font-weight="400" font-size="178" fill="#03112b" letter-spacing="2">ateriau</text>
+  <!-- X : une branche pleine, l'autre en granulats décroissants -->
+  <line x1="1097" y1="42" x2="1269" y2="222" stroke="url(#g)" stroke-width="44" stroke-linecap="round"/>
+  <g fill="#3d86ff" stroke="#ffffff" stroke-width="5">
+    <circle cx="1269" cy="44" r="27"/>
+    <circle cx="1240" cy="74" r="24"/>
+    <circle cx="1212" cy="103" r="21"/>
+    <circle cx="1185" cy="131" r="19"/>
+    <circle cx="1159" cy="158" r="17"/>
+    <circle cx="1135" cy="183" r="15"/>
+    <circle cx="1112" cy="206" r="13"/>
+  </g>
+  <!-- ligne de base -->
+  <rect x="25" y="243" width="1259" height="15" rx="7.5" fill="url(#beam)"/>
+  <!-- béton : hachure conventionnelle (triangles et points) sous la ligne de base -->
+  <g fill="url(#beam)" stroke="url(#beam)">
+    <polygon points="40.0,293.2 44.6,273.6 59.3,287.4" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="90.5,284.0 90.0,301.3 75.2,292.3" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="105.6,287.1 122.6,272.4 126.8,294.5" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="158.4" cy="289.5" r="4.2" stroke="none"/>
+    <polygon points="195.4,285.8 206.3,302.6 186.3,303.7" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="234.1" cy="281.3" r="4.9" stroke="none"/>
+    <polygon points="255.3,282.8 272.0,268.8 275.8,290.3" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="306.3" cy="297.6" r="5.4" stroke="none"/>
+    <polygon points="351.5,291.6 339.7,307.3 332.0,289.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="392.0,279.7 378.4,292.1 374.4,274.1" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="405.9,292.0 422.7,283.3 421.9,302.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="451.5" cy="287.0" r="4.9" stroke="none"/>
+    <polygon points="500.2,283.6 497.0,305.5 479.7,291.8" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="546.5,290.7 530.5,305.4 525.7,284.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="578.0,303.2 563.4,288.0 583.8,282.9" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="621.2,283.4 619.0,300.9 604.9,290.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="646.4,288.4 656.4,269.4 667.9,287.5" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="688.7" cy="285.9" r="5.3" stroke="none"/>
+    <polygon points="717.3,282.4 728.9,295.5 711.7,299.0" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="753.2" cy="297.6" r="4.8" stroke="none"/>
+    <polygon points="786.9,280.2 804.6,282.0 794.2,296.4" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="825.6" cy="283.9" r="4.9" stroke="none"/>
+    <polygon points="852.5,292.5 849.9,270.8 870.0,279.3" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="899.0" cy="297.9" r="4.7" stroke="none"/>
+    <polygon points="924.2,288.6 944.4,285.5 937.0,304.5" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="972.6" cy="298.8" r="4.6" stroke="none"/>
+    <polygon points="1022.1,283.2 1007.2,294.9 1004.6,276.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="1037.7,285.6 1057.2,285.1 1047.8,302.2" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="1088.8,296.7 1068.5,299.7 1076.0,280.5" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="1115.3" cy="289.3" r="4.5" stroke="none"/>
+    <polygon points="1163.1,298.5 1145.9,301.0 1152.4,284.8" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="1182.4,293.0 1202.1,294.2 1191.3,310.6" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="1218.3,295.3 1222.5,276.8 1236.4,289.7" fill="none" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="1262.9" cy="286.0" r="5.2" stroke="none"/>
+  </g>
+</svg>

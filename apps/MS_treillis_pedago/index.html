@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSolution — Treillis et portiques</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-brand">
+        <img src="logo-header.png" alt="MSolution" class="header-logo">
+        <a class="bug-report" href="mailto:vincent.richefeu@univ-grenoble.fr?subject=Bug%20MSolution%20-%20treillis"><span class="bug-long">Un bug ? Écrire à vincent.richefeu@univ-grenoble.fr</span><span class="bug-short">Signaler un bug</span></a>
+    </div>
+    <div class="header-titles">
+        <h1 class="sub">Calcul de treillis et de portiques plans</h1>
+    </div>
+    <img src="Logo_IUT1.svg" alt="IUT1 — Université Grenoble Alpes" class="header-logo-iut">
+</header>
+
+<div class="app-body">
+
+<!-- ── SIDEBAR ────────────────────────────────────────────────────────────── -->
+<aside class="sidebar">
+
+    <!-- Type de structure -->
+    <div class="section-block">
+        <h2>Type de structure</h2>
+        <div class="seg" role="radiogroup">
+            <label><input type="radio" name="struct-type" value="treillis" checked> Treillis</label>
+            <label><input type="radio" name="struct-type" value="portique"> Portique</label>
+        </div>
+        <p class="save-hint" id="type-hint"></p>
+    </div>
+
+    <!-- Nœuds -->
+    <div class="section-block">
+        <h2>Nœuds</h2>
+        <ul class="item-list" id="nodes-list"></ul>
+        <button id="btn-add-node" class="btn-small">+ Nœud</button>
+    </div>
+
+    <!-- Barres -->
+    <div class="section-block">
+        <h2>Barres</h2>
+        <ul class="item-list" id="bars-list"></ul>
+        <button id="btn-add-bar" class="btn-small">+ Barre</button>
+    </div>
+
+    <!-- Liaisons -->
+    <div class="section-block">
+        <h2>Liaisons</h2>
+        <ul class="item-list" id="supports-list"></ul>
+        <button id="btn-add-support" class="btn-small">+ Liaison</button>
+    </div>
+
+    <!-- Charges -->
+    <div class="section-block">
+        <h2>Charges aux nœuds</h2>
+        <ul class="item-list" id="loads-list"></ul>
+        <button id="btn-add-load" class="btn-small">+ Charge</button>
+        <label class="check-row self-weight">
+            <input type="checkbox" id="self-weight"> Poids propre des barres
+        </label>
+        <p class="save-hint" id="self-weight-hint"></p>
+    </div>
+
+    <!-- Charges réparties (portique) -->
+    <div class="section-block" id="bar-loads-block">
+        <h2>Charges réparties sur les barres</h2>
+        <ul class="item-list" id="bar-loads-list"></ul>
+        <button id="btn-add-bar-load" class="btn-small">+ Charge répartie</button>
+        <p class="save-hint">Charge uniforme par mètre de barre, composantes dans le repère global (q<sub>y</sub> &lt; 0 : vers le bas).</p>
+    </div>
+
+    <!-- Section et matériau -->
+    <div class="section-block">
+        <h2>Section et matériau</h2>
+        <div class="param-row">
+            <label for="section-target">Section de</label>
+            <select id="section-target" class="full-w"></select>
+        </div>
+        <div class="param-row">
+            <label for="section-type">Type</label>
+            <select id="section-type" class="full-w"></select>
+        </div>
+        <div id="section-params"></div>
+        <div class="param-row">
+            <label for="material-select">Matériau</label>
+            <select id="material-select" class="full-w"></select>
+        </div>
+        <div id="material-custom-row" style="display:none">
+            <div class="param-row">
+                <label for="material-custom-E">E (GPa)</label>
+                <input type="number" id="material-custom-E" value="210" step="1">
+            </div>
+            <div class="param-row">
+                <label for="material-custom-rho">ρ (kg/m³)</label>
+                <input type="number" id="material-custom-rho" value="7850" step="10">
+            </div>
+            <div class="param-row">
+                <label for="material-custom-f">f (MPa)</label>
+                <input type="number" id="material-custom-f" value="235" step="1">
+            </div>
+        </div>
+        <p class="save-hint" id="material-props"></p>
+        <p class="save-hint">Pour donner une section (et un matériau) propre à une barre, choisissez « propre » dans la liste des barres.</p>
+    </div>
+
+    <!-- Sauvegardes -->
+    <details class="section-block save-block">
+        <summary><h2>Sauvegardes et exemples</h2></summary>
+
+        <h3 class="save-title">💻 Dans la mémoire de cet ordinateur</h3>
+        <p class="save-hint">Propres à ce navigateur : elles ne vous suivent pas sur un autre poste.
+            Les exemples sont classés du plus simple au plus complet ; les emplacements vides sont libres pour vos essais.</p>
+        <ul class="slot-list" id="slots-list"></ul>
+        <div class="slot-actions slot-manage">
+            <button id="btn-reset-examples" class="btn-small" title="Réécrit les exemples dans les premiers emplacements">↺ Recharger les exemples</button>
+            <button id="btn-clear-slots" class="btn-small btn-danger" title="Vide tous les emplacements">✕ Tout effacer</button>
+        </div>
+
+        <h3 class="save-title">📄 Dans un fichier .json</h3>
+        <p class="save-hint">Pour conserver ou transférer toutes les sauvegardes ci-dessus.</p>
+        <div class="slot-actions">
+            <button id="btn-export" class="btn-small" title="Enregistre toutes les sauvegardes dans un fichier .json">↓ Exporter vers un fichier</button>
+            <button id="btn-import" class="btn-small" title="Remplace toutes les sauvegardes par celles d'un fichier .json">↑ Importer un fichier</button>
+        </div>
+    </details>
+
+</aside>
+
+<!-- ── MAIN ────────────────────────────────────────────────────────────────── -->
+<main class="main-panel">
+
+    <!-- État statique + message d'erreur -->
+    <div class="compute-bar">
+        <div id="static-status" class="status"></div>
+        <div id="error-msg"></div>
+    </div>
+
+    <!-- Schéma + Section — toujours visibles -->
+    <div class="always-row">
+        <div class="card always-schema">
+            <div class="card-header card-header-tools">
+                <span>Structure</span>
+                <div class="tools" role="radiogroup" aria-label="Mode d'édition">
+                    <button class="tool active" data-mode="view" title="Consulter la structure">Consulter</button>
+                    <button class="tool" data-mode="node" title="Cliquer sur la grille pour placer un nœud">+ Nœud</button>
+                    <button class="tool" data-mode="bar" title="Cliquer sur deux nœuds pour les relier">+ Barre</button>
+                </div>
+                <label class="check-row inline"><input type="checkbox" id="show-deformed" checked> Déformée</label>
+            </div>
+            <div class="tool-hint" id="tool-hint"></div>
+            <div class="card-body">
+                <div class="svg-wrap" id="schema-svg"></div>
+            </div>
+        </div>
+        <div class="card always-section">
+            <div class="card-header" id="section-card-title">Section droite</div>
+            <div class="card-body-pad">
+                <div class="svg-wrap" id="section-svg" style="height:170px;"></div>
+            </div>
+            <div id="section-info"></div>
+        </div>
+    </div>
+
+    <!-- Résultats -->
+    <div id="results" style="display:none">
+
+        <!-- Diagrammes (portique) -->
+        <div class="card" id="frame-card">
+            <div class="card-header card-header-tools">
+                <span>Diagrammes des efforts</span>
+                <div class="tools" role="radiogroup" aria-label="Effort affiché">
+                    <button class="tool qty" data-qty="N">N</button>
+                    <button class="tool qty" data-qty="V">V</button>
+                    <button class="tool qty active" data-qty="M">M</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="svg-wrap" id="frame-svg"></div>
+            </div>
+        </div>
+
+        <!-- Réactions -->
+        <div class="card">
+            <div class="card-header">Actions de liaison</div>
+            <div class="card-body table-scroll">
+                <table id="reactions-table"><thead></thead><tbody></tbody></table>
+            </div>
+        </div>
+
+        <!-- Barres -->
+        <div class="card">
+            <div class="card-header">Efforts dans les barres</div>
+            <div class="card-body table-scroll">
+                <table id="bars-table"><thead></thead><tbody></tbody></table>
+            </div>
+            <p class="card-note" id="bars-note"></p>
+        </div>
+
+        <!-- Équilibre des nœuds -->
+        <div class="card" id="equilibrium-card">
+            <div class="card-header">Équilibre des nœuds</div>
+            <div class="card-body-pad clap" id="equilibrium"></div>
+        </div>
+
+        <!-- Déplacements -->
+        <div class="card">
+            <div class="card-header">Déplacements des nœuds</div>
+            <div class="card-body table-scroll">
+                <table id="disp-table"><thead></thead><tbody></tbody></table>
+            </div>
+        </div>
+
+    </div><!-- /#results -->
+
+</main>
+</div><!-- /.app-body -->
+
+<script src="./js/physics.js"></script>
+<script src="./js/truss.js"></script>
+<script src="./js/render.js"></script>
+<script src="./js/render_truss.js"></script>
+<script src="./js/ui.js"></script>
+</body>
+</html>

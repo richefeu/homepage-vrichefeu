@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Presse de flexion IUT</title>
+<style>
+:root{
+  --bg:#f4f5f7; --panel:#fff; --ink:#1d2330; --muted:#667085; --line:#d9dde4;
+  --accent:#2563eb; --ok:#15803d; --warn:#b45309; --bad:#b91c1c;
+  --steel:#64748b; --spec:#c2410c; --wood:#a16207; --link:#94a3b8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:12px 20px;background:var(--panel);border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+header h1{font-size:18px;margin:0}
+header .sub{color:var(--muted)}
+.layout{display:grid;grid-template-columns:360px 1fr;gap:16px;padding:16px;align-items:start}
+@media (max-width:950px){.layout{grid-template-columns:1fr}}
+aside{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;max-height:calc(100vh - 90px);overflow:auto;position:sticky;top:16px}
+@media (max-width:950px){aside{position:static;max-height:none}}
+fieldset{border:none;border-top:1px solid var(--line);margin:0;padding:8px 0 10px}
+fieldset:first-child{border-top:none}
+legend{font-weight:600;padding:0 0 4px}
+label.f{display:grid;grid-template-columns:1fr 92px 46px;gap:6px;align-items:center;margin:3px 0;font-size:13px}
+label.f em{font-style:normal;color:var(--muted);font-size:12px}
+input[type=number],select{width:100%;padding:3px 5px;border:1px solid var(--line);border-radius:4px;font:inherit;background:#fff}
+input[type=number]{text-align:right}
+.rect{display:flex;gap:6px;align-items:center;margin-top:4px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.rect input{width:64px}
+button{font:inherit;padding:4px 10px;border:1px solid var(--line);border-radius:4px;background:#fff;cursor:pointer}
+button:hover{border-color:var(--accent)}
+main{display:flex;flex-direction:column;gap:16px;min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}
+.toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.toolbar button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.toolbar .sp{flex:1}
+.toolbar label{font-size:13px;color:var(--muted);display:flex;gap:4px;align-items:center}
+.toolbar input[type=number]{width:80px}
+#svg{width:100%;height:auto;max-height:70vh;display:block;background:#fff;border:1px solid var(--line);border-radius:6px}
+#err{background:#fef2f2;border:1px solid #fecaca;color:var(--bad);padding:8px 12px;border-radius:6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.kpi{border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+.kpi .t{font-size:12px;color:var(--muted)}
+.kpi .v{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12px;color:var(--muted)}
+.ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:13px}
+th,td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:600;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+#tip{position:fixed;pointer-events:none;background:#111827;color:#fff;font-size:12px;padding:6px 8px;border-radius:4px;display:none;z-index:10;white-space:nowrap}
+details summary{cursor:pointer;font-weight:600}
+details ul{margin:6px 0;padding-left:20px;color:#374151}
+.legend{font-size:12px;color:var(--muted);margin-top:6px}
+.slot{display:grid;grid-template-columns:18px 1fr auto auto auto auto;gap:4px;align-items:center;margin:3px 0}
+.slot b{font-size:12px;color:var(--muted)}
+.slot input[type=text]{width:100%;min-width:0;padding:3px 5px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:13px}
+.slot button,.slotbar button{padding:3px 7px;font-size:12px}
+.slot button:disabled{opacity:.4;cursor:default}
+.slot.cur input[type=text]{border-color:var(--accent)}
+.slotbar{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.prof{background:#f8fafc;border:1px solid var(--line);border-radius:6px;padding:4px 8px;margin:2px 0 6px}
+.prof label.f{grid-template-columns:1fr 160px 0}
+.prof select{font-size:12px}
+.profsvg{width:100%;height:130px;display:block;background:#fff;border:1px solid var(--line);border-radius:4px;margin:4px 0 2px}
+.profsub{font-weight:600;font-size:12px;margin:6px 0 2px;color:#334155}
+.rectrow{display:flex;gap:4px;align-items:center;font-size:12px;margin:3px 0}
+.rectrow input{width:64px}
+.rectrow span{color:var(--muted)}
+.profcap{font-size:11px;color:var(--muted);font-style:italic}
+.profinfo{font-size:12px;color:var(--muted);margin:2px 0}
+input.fromprof{background:#eef2ff}
+.slotmsg{font-size:12px;color:var(--muted);min-height:1.2em;margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Presse de flexion IUT — prédimensionnement</h1>
+  <span class="sub">Modèle 2D en poutres (méthode des déplacements), flexion 3 points</span>
+</header>
+
+<div class="layout">
+  <aside>
+    <fieldset>
+      <legend>Jeux de paramètres</legend>
+      <div id="slots"></div>
+      <div class="slotbar">
+        <button id="exportAll" title="Enregistre les 4 jeux dans un fichier JSON">Exporter les 4 jeux…</button>
+        <button id="importAll" title="Charge un fichier JSON (4 jeux ou un seul)">Importer un fichier…</button>
+      </div>
+      <div class="slotmsg" id="slotmsg"></div>
+      <input type="file" id="fileIn" accept=".json,application/json" hidden>
+    </fieldset>
+    <div id="form"></div>
+    <div style="display:flex;gap:6px;margin:8px 0">
+      <button id="reset">Réinitialiser</button>
+      <button id="share">Copier le lien (paramètres)</button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="card">
+      <div class="toolbar" id="views">
+        <button data-v="geo">Géométrie</button>
+        <button data-v="def">Déformée</button>
+        <button data-v="N">N</button>
+        <button data-v="V">V</button>
+        <button data-v="M">M</button>
+        <button data-v="util">Taux de travail</button>
+        <span class="sp"></span>
+        <label><input type="checkbox" id="ampAuto" checked> ampl. auto</label>
+        <label>×<input type="number" id="amp" value="50" step="any"></label>
+        <label><select id="case"><option value="C">F + poids propre</option><option value="F">F seul</option></select></label>
+      </div>
+      <div id="err" hidden></div>
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div class="card">
+      <div class="kpis" id="kpis"></div>
+    </div>
+
+    <div class="card tablewrap">
+      <table id="tab"></table>
+    </div>
+
+    <div class="card">
+      <details>
+        <summary>Hypothèses du modèle</summary>
+        <ul>
+          <li>Pièces modélisées par leur axe (poutres d'Euler–Bernoulli, petits déplacements, élasticité linéaire). Le modèle traite chaque paire de poteaux avant/arrière comme un seul élément, avec A, I et masse doublés.</li>
+          <li>La traverse basse est posée sur les tubes : rotule à gauche, appui glissant à droite (liens rigides verticaux). Il faut vérifier que ces contacts restent comprimés.</li>
+          <li>L'éprouvette repose sur une rotule et un rouleau. La cote <i>g</i> sépare le dessus de la traverse basse du dessous de l'éprouvette.</li>
+          <li>Le vérin est piloté en effort : deux efforts opposés F, l'un sur la traverse haute, l'autre au sommet de l'éprouvette.</li>
+          <li>Pieds de poteaux, au choix :
+            <b>posés</b> : deux appuis glissants, avec la translation horizontale bloquée sur l'axe de symétrie (milieu de la traverse haute). Le bâti est isostatique, les déplacements sont symétriques et le sol ne reprend que le poids propre ;
+            <b>fixés, articulés</b> ou <b>fixés, encastrés</b> : ancrage ou frottement suffisant. Le bâti devient hyperstatique (degré 1 ou 3) : les têtes de poteaux transmettent des moments, et une poussée H apparaît aux pieds.</li>
+          <li>Treillis : barres articulées (Pratt ou Howe), nombre de panneaux pair. Le vérin appuie sur le nœud supérieur central.</li>
+          <li>Contrainte maximale : σ = |N|/A + |M|·(h/2)/I. Flambement : charge critique d'Euler N<sub>cr</sub> = π²EI/l<sub>f</sub>², dans le plan uniquement. Le flambement hors plan et le déversement ne sont pas vérifiés.</li>
+          <li>Axes (hors plan), calculés comme des axes d'articulation (EN 1993-1-8 §3.13) : appuis à l'entraxe P<sub>z</sub> des poteaux, traverse répartie sur sa longueur d'appui c, d'où M = R(2P<sub>z</sub> − c)/8. On vérifie la flexion, le cisaillement, l'interaction M–V et les pressions d'appui (≤ 1,5·f) de la traverse sur l'axe et de l'axe dans les trous des poteaux.</li>
+          <li>Avec des têtes de poteaux articulées, le bâti devient un mécanisme. Le calcul le signale.</li>
+        </ul>
+      </details>
+    </div>
+  </main>
+</div>
+<div id="tip"></div>
+
+<!-- ================= Cœur de calcul (sans DOM) ================= -->
+<script id="core">
+const G = 9.81;
+
+function sectionGroup(pre, title, d, opt = {}) {
+  return {
+    id: pre, title, rect: opt.rect, show: opt.show, profile: opt.profile,
+    fields: [...(opt.extra || []),
+      { k: pre + 'E', l: 'Module E', u: 'GPa', v: d.E },
+      { k: pre + 'A', l: 'Aire A', u: 'cm²', v: d.A },
+      { k: pre + 'I', l: 'Inertie I (axe ⊥ plan)', u: 'cm⁴', v: d.I },
+      { k: pre + 'h', l: 'Hauteur de section h', u: 'mm', v: d.h },
+      { k: pre + 'm', l: 'Masse linéique', u: 'kg/m', v: d.m },
+      { k: pre + 'f', l: 'Contrainte limite f', u: 'MPa', v: d.f },
+    ],
+  };
+}
+
+const isBeam = p => p.spType === 'poutre';
+const SPEC = ['bm', 'ct', 'cb', 'vt', 'dg'];
+const SCHEMA = [
+  { id: 'geo', title: 'Géométrie', fields: [
+    { k: 'Px', l: 'Entraxe poteaux G/D  Pₓ', u: 'mm', v: 1600 },
+    { k: 'Pz', l: 'Entraxe poteaux av./arr. P_z', u: 'mm', v: 500 },
+    { k: 'H', l: 'Hauteur axe traverse haute H', u: 'mm', v: 1800 },
+    { k: 'Yt', l: 'Hauteur axe des tubes Y_t', u: 'mm', v: 500 },
+    { k: 'Lt', l: 'Longueur traverse basse L_t', u: 'mm', v: 3000 },
+    { k: 'L', l: 'Portée entre appuis L', u: 'mm', v: 2400 },
+    { k: 'g', l: 'Traverse basse → dessous éprouvette g', u: 'mm', v: 100 },
+  ]},
+  { id: 'load', title: 'Vérin et options', fields: [
+    { k: 'F', l: 'Effort max du vérin F', u: 'kN', v: 100 },
+    { k: 'Lj', l: 'Longueur vérin rentré', u: 'mm', v: 500 },
+    { k: 'C', l: 'Course du vérin', u: 'mm', v: 200 },
+    { k: 'top', l: 'Assemblage en tête de poteaux', type: 'select', opts: [['rigide', 'rigide'], ['rotule', 'articulé']], v: 'rigide' },
+    { k: 'feet', l: 'Pieds de poteaux', type: 'select', opts: [['glissants', 'posés (glissants)'], ['articules', 'fixés, articulés'], ['encastres', 'fixés, encastrés']], v: 'glissants' },
+    { k: 'pp', l: 'Poids propre', type: 'check', v: true },
+  ]},
+  sectionGroup('po', 'Poteaux (un poteau ; ×2 dans le modèle)', { E: 210, A: 18.4, I: 271, h: 100, m: 14.4, f: 235 },
+    { profile: { fams: ['SHS', 'RHS', 'RECT'], Fam: 'SHS', Prof: 'SHS 100x100x5', Ori: 'fort', Gr: 'S235H', Gam: 1.0, N: 1, Rb: 100, Rh: 100,
+      caption: 'Coupe d\'un poteau (vue de dessus) : ↕ = direction dans le plan de la presse' } }),
+  sectionGroup('th', 'Traverse haute', { E: 210, A: 78.1, I: 5696, h: 200, m: 61.3, f: 235 },
+    { profile: { fams: ['IPE', 'UPE', 'SHS', 'RHS', 'RECT'], multi: true, Fam: 'manuel', Prof: 'IPE 200', Ori: 'fort', Gr: 'S235', Gam: 1.0, N: 1, Rb: 100, Rh: 200,
+      caption: 'Coupe de la traverse : effort du vérin vertical, profilés côte à côte dans la profondeur' } }),
+  sectionGroup('tb', 'Traverse basse', { E: 210, A: 78.1, I: 5696, h: 200, m: 61.3, f: 235 },
+    { profile: { fams: ['IPE', 'UPE', 'SHS', 'RHS', 'RECT'], multi: true, layers: true, Fam: 'manuel', Prof: 'UPE 200', Ori: 'fort', N: 2, Rb: 100, Rh: 200,
+      Fam2: 'aucun', Prof2: 'IPE 200', Ori2: 'fort', N2: 1, Rb2: 200, Rh2: 20, Sol: true, Gr: 'S235', Gam: 1.0,
+      caption: 'Coupe de la traverse basse : partie haute posée sur la partie basse, profilés côte à côte dans la profondeur' } }),
+  { id: 'tu', title: 'Tubes / axes (vérif. hors plan)', tubeDraw: true, fields: [
+    { k: 'tuD', l: 'Diamètre extérieur D', u: 'mm', v: 88.9 },
+    { k: 'tut', l: 'Épaisseur t', u: 'mm', v: 10 },
+    { k: 'tuf', l: 'Contrainte limite f', u: 'MPa', v: 235 },
+    { k: 'tuC', l: 'Longueur d\'appui traverse/axe c (0 = auto)', u: 'mm', v: 0 },
+    { k: 'tuTp', l: 'Épaisseur d\'appui par poteau Σt (0 = auto)', u: 'mm', v: 0 },
+  ]},
+  { id: 'cu', title: 'Coût matière (estimation HT)', fields: [
+    { k: 'cuChute', l: 'Majoration chutes et coupe', u: '%', v: 15 },
+    { k: 'cuK', l: 'Coefficient sur les prix de la base', u: '', v: 1 },
+  ]},
+  { id: 'sp', title: 'Éprouvette', fields: [
+    { k: 'spType', l: 'Type', type: 'select', opts: [['poutre', 'poutre'], ['treillis', 'treillis']], v: 'poutre' },
+  ]},
+  sectionGroup('bm', 'Poutre testée', { E: 30, A: 300, I: 10000, h: 200, m: 75, f: 3 },
+    { rect: { b: 150, rho: 2500 }, show: isBeam,
+      extra: [{ k: 'bmLp', l: 'Longueur totale de la poutre', u: 'mm', v: 2600 }] }),
+  { id: 'tr', title: 'Treillis', show: p => !isBeam(p), fields: [
+    { k: 'trType', l: 'Type', type: 'select', opts: [['Pratt', 'Pratt (diag. tendues)'], ['Howe', 'Howe (diag. comprimées)']], v: 'Pratt' },
+    { k: 'trn', l: 'Nombre de panneaux (pair)', u: '', v: 6 },
+    { k: 'trH', l: 'Hauteur hors tout', u: 'mm', v: 400 },
+  ]},
+  sectionGroup('ch', 'Membrures (treillis)', { E: 11, A: 42.75, I: 321.5, h: 95, m: 1.8, f: 24 },
+    { rect: { b: 45, rho: 420 }, show: p => !isBeam(p) }),
+  sectionGroup('wb', 'Montants et diagonales (treillis)', { E: 11, A: 42.75, I: 321.5, h: 95, m: 1.8, f: 24 },
+    { rect: { b: 45, rho: 420 }, show: p => !isBeam(p) }),
+];
+
+const GROUPS = {
+  po: 'Poteaux (paire)', th: 'Traverse haute', tb: 'Traverse basse', bm: 'Poutre testée',
+  ct: 'Membrure sup.', cb: 'Membrure inf.', vt: 'Montants', dg: 'Diagonales', lk: 'Liaison',
+};
+
+// clés des paramètres du sélecteur de profilés (couche '2' = partie haute)
+const PROFILE_KEYS = g => ['Fam', 'Prof', 'Ori', 'Gr', 'Gam', 'N', 'Rb', 'Rh', ...(g.profile.layers ? ['Fam2', 'Prof2', 'Ori2', 'N2', 'Rb2', 'Rh2', 'Sol'] : [])];
+function defaults() {
+  const p = {};
+  for (const g of SCHEMA) {
+    for (const f of g.fields) p[f.k] = f.v;
+    if (g.rect) { p[g.id + 'b'] = g.rect.b; p[g.id + 'rho'] = g.rect.rho; }
+    if (g.profile) { for (const k of PROFILE_KEYS(g)) p[g.id + k] = g.profile[k]; p[g.id + 'v'] = 0; }
+    if (g.tubeDraw) { p.tucEff = 0; p.tutpEff = 0; }   // longueurs d'appui effectives (calculées par l'interface)
+  }
+  return p;
+}
+
+// ---------- Construction du modèle (unités SI : m, N, Pa) ----------
+function build(p) {
+  const mm = 1e-3, nodes = [], els = [], loads = [], sup = [];
+  const N = (x, y) => (nodes.push({ x, y }), nodes.length - 1);
+  const sec = (pre, mult = 1) => ({
+    E: p[pre + 'E'] * 1e9, A: p[pre + 'A'] * 1e-4 * mult, I: p[pre + 'I'] * 1e-8 * mult,
+    h: p[pre + 'h'] * mm, q: p.pp ? p[pre + 'm'] * G * mult : 0, mlin: p[pre + 'm'] * mult, f: p[pre + 'f'],
+    v: p[pre + 'v'] > 0 ? p[pre + 'v'] * mm : p[pre + 'h'] * mm / 2,   // fibre extrême (section non symétrique)
+  });
+  const EL = (a, b, s, grp, o = {}) => els.push({
+    a, b, ...s, grp, name: o.name || GROUPS[grp], r1: !!o.r1, r2: !!o.r2, lb: o.lb || 0, link: grp === 'lk', ref: o.ref || null,
+  }) - 1;
+  const LK = { E: 2.1e11, A: 1e-2, I: 1e-2, h: 0, q: 0, mlin: 0, f: 0 };
+  const uniq = xs => xs.slice().sort((u, v) => u - v).filter((x, i, s) => i === 0 || x - s[i - 1] > 1e-9);
+  const key = x => Math.round(x * 1e6);
+
+  const a = p.Px / 2 * mm, H = p.H * mm, Yt = p.Yt * mm, Lt = p.Lt * mm, L = p.L * mm;
+  const hb = p.tbh * mm, hh = p.thh * mm, D = p.tuD * mm, gap = p.g * mm;
+  if (!(a > 0 && Lt > 0 && L > 0 && Yt > 0)) throw new Error('Géométrie incohérente (cotes nulles ou négatives).');
+  if (L > Lt + 1e-9) throw new Error('La portée L dépasse la longueur L_t de la traverse basse.');
+  if (2 * a > Lt + 1e-9) throw new Error("La traverse basse est plus courte que l'entraxe des poteaux : elle ne repose pas sur les tubes.");
+
+  const yb = Yt + D / 2 + hb / 2;          // axe traverse basse
+  const yBot = yb + hb / 2 + gap;          // dessous de l'éprouvette
+
+  // Poteaux (paires) + traverse haute
+  const po = sec('po', 2);
+  const P1 = N(-a, 0), P3 = N(-a, Yt), P5 = N(-a, H);
+  const P2 = N(a, 0), P4 = N(a, Yt), P6 = N(a, H);
+  EL(P1, P3, po, 'po', { lb: H, name: 'Poteaux G', ref: [P1, P5] }); EL(P3, P5, po, 'po', { lb: H, name: 'Poteaux G', ref: [P1, P5] });
+  EL(P2, P4, po, 'po', { lb: H, name: 'Poteaux D', ref: [P2, P6] }); EL(P4, P6, po, 'po', { lb: H, name: 'Poteaux D', ref: [P2, P6] });
+  const N7 = N(0, H), th = sec('th'), rel = p.top === 'rotule';
+  EL(P5, N7, th, 'th', { r1: rel, lb: 2 * a, ref: [P5, P6] }); EL(N7, P6, th, 'th', { r2: rel, lb: 2 * a, ref: [P5, P6] });
+
+  // Traverse basse
+  const tb = sec('tb'), TB = {};
+  const xt = uniq([-Lt / 2, -L / 2, -a, 0, a, L / 2, Lt / 2]);
+  xt.forEach(x => TB[key(x)] = N(x, yb));
+  for (let i = 0; i + 1 < xt.length; i++) EL(TB[key(xt[i])], TB[key(xt[i + 1])], tb, 'tb', { lb: Lt, ref: [TB[key(-a)], TB[key(a)]] });
+  const tbAt = x => TB[key(x)];
+  const tubeLinks = [
+    EL(P3, tbAt(-a), LK, 'lk', { r1: true, name: 'Contact tube G' }),
+    EL(P4, tbAt(a), LK, 'lk', { r1: true, r2: true, name: 'Contact tube D' }),
+  ];
+
+  // Éprouvette
+  let SL, SR, loadN, midN, yTop;
+  if (isBeam(p)) {
+    const bm = sec('bm'), Lp = Math.max(p.bmLp * mm, L), ys = yBot + p.bmh * mm / 2, B = {};
+    const xs = uniq([-Lp / 2, -L / 2, 0, L / 2, Lp / 2]);
+    xs.forEach(x => B[key(x)] = N(x, ys));
+    for (let i = 0; i + 1 < xs.length; i++) EL(B[key(xs[i])], B[key(xs[i + 1])], bm, 'bm', { lb: Lp });
+    SL = B[key(-L / 2)]; SR = B[key(L / 2)]; loadN = midN = B[key(0)];
+    yTop = yBot + p.bmh * mm;
+  } else {
+    let n = Math.max(2, Math.round(p.trn)); if (n % 2) n++;
+    const Ht = p.trH * mm, hc = p.chh * mm, yB = yBot + hc / 2, yT = yBot + Ht - hc / 2;
+    if (yT - yB < 1e-3) throw new Error('Hauteur du treillis trop faible par rapport aux membrures.');
+    const ch = sec('ch'), wb = sec('wb'), dx = L / n, B = [], T = [];
+    for (let i = 0; i <= n; i++) { B.push(N(-L / 2 + i * dx, yB)); T.push(N(-L / 2 + i * dx, yT)); }
+    const pin = { r1: true, r2: true };
+    for (let i = 0; i < n; i++) {
+      EL(B[i], B[i + 1], ch, 'cb', { ...pin, lb: dx });
+      EL(T[i], T[i + 1], ch, 'ct', { ...pin, lb: dx });
+    }
+    for (let i = 0; i <= n; i++) EL(B[i], T[i], wb, 'vt', { ...pin, lb: yT - yB });
+    const ld = Math.hypot(dx, yT - yB);
+    for (let i = 0; i < n; i++) {
+      const left = i < n / 2, downInward = (p.trType === 'Pratt') === left;
+      if (downInward) EL(T[i], B[i + 1], wb, 'dg', { ...pin, lb: ld });
+      else EL(B[i], T[i + 1], wb, 'dg', { ...pin, lb: ld });
+    }
+    SL = B[0]; SR = B[n]; loadN = T[n / 2]; midN = B[n / 2];
+    yTop = yBot + Ht;
+  }
+  for (const e of els) if (SPEC.includes(e.grp)) e.ref = [SL, SR];
+  const supLinks = [
+    EL(tbAt(-L / 2), SL, LK, 'lk', { r2: true, name: 'Appui G éprouvette' }),
+    EL(tbAt(L / 2), SR, LK, 'lk', { r1: true, r2: true, name: 'Appui D éprouvette' }),
+  ];
+
+  const F = p.F * 1e3;
+  loads.push({ n: N7, fy: F }, { n: loadN, fy: -F });
+  if (p.feet === 'articules' || p.feet === 'encastres') {
+    const rz = p.feet === 'encastres' ? 1 : 0;      // pieds fixés : bâti hyperstatique
+    sup.push({ n: P1, ux: 1, uy: 1, rz }, { n: P2, ux: 1, uy: 1, rz });
+  } else {
+    // pieds posés : appuis glissants, translation horizontale bloquée sur l'axe de symétrie
+    sup.push({ n: P1, uy: 1 }, { n: P2, uy: 1 }, { n: N7, ux: 1 });
+  }
+
+  return {
+    nodes, els, loads, sup, F,
+    meta: { P1, P2, N7, loadN, midN, SL, SR, tubeLinks, supLinks, yTop, yThBot: H - hh / 2, yb, hb, hh, yBot, a, H, D },
+  };
+}
+
+// ---------- Méthode des déplacements ----------
+function kLocal(E, A, I, L) {
+  const a = E * A / L, b = 12 * E * I / L ** 3, c = 6 * E * I / L ** 2, d = 4 * E * I / L, e = 2 * E * I / L;
+  return [[a, 0, 0, -a, 0, 0], [0, b, c, 0, -b, c], [0, c, d, 0, -c, e],
+          [-a, 0, 0, a, 0, 0], [0, -b, -c, 0, b, -c], [0, c, e, 0, -c, d]];
+}
+function Tm(c, s) {
+  return [[c, s, 0, 0, 0, 0], [-s, c, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0],
+          [0, 0, 0, c, s, 0], [0, 0, 0, -s, c, 0], [0, 0, 0, 0, 0, 1]];
+}
+const mmul = (A, B) => A.map(r => B[0].map((_, j) => r.reduce((s, v, k) => s + v * B[k][j], 0)));
+const mvec = (A, x) => A.map(r => r.reduce((s, v, k) => s + v * x[k], 0));
+const tr = A => A[0].map((_, j) => A.map(r => r[j]));
+function inv12(M) {
+  if (M.length === 1) return [[1 / M[0][0]]];
+  const [[a, b], [c, d]] = M, det = a * d - b * c;
+  return [[d / det, -b / det], [-c / det, a / det]];
+}
+const ALL6 = [0, 1, 2, 3, 4, 5];
+
+// Condensation statique des rotations libérées (rotules d'extrémité)
+function condense(k, f, R) {
+  if (!R.length) return { kc: k, fc: f };
+  const Ks = ALL6.filter(i => !R.includes(i));
+  const iRR = inv12(R.map(r => R.map(s => k[r][s])));
+  const kc = k.map(r => r.map(() => 0)), fc = f.map(() => 0);
+  for (const i of Ks) {
+    const t = R.map((_, b) => R.reduce((s, r, a) => s + k[i][r] * iRR[a][b], 0));
+    for (const j of Ks) kc[i][j] = k[i][j] - R.reduce((s, r, b) => s + t[b] * k[r][j], 0);
+    fc[i] = f[i] - R.reduce((s, r, b) => s + t[b] * f[r], 0);
+  }
+  return { kc, fc };
+}
+
+function gauss(A, B, n, m, tol) {
+  for (let k = 0; k < n; k++) {
+    let p = k, mx = Math.abs(A[k * n + k]);
+    for (let i = k + 1; i < n; i++) { const v = Math.abs(A[i * n + k]); if (v > mx) { mx = v; p = i; } }
+    if (mx < tol) throw new Error('Structure instable (mécanisme) : vérifiez les liaisons (par ex. des têtes de poteaux articulées rendent le bâti instable).');
+    if (p !== k) {
+      for (let j = 0; j < n; j++) { const t = A[k * n + j]; A[k * n + j] = A[p * n + j]; A[p * n + j] = t; }
+      for (let j = 0; j < m; j++) { const t = B[k * m + j]; B[k * m + j] = B[p * m + j]; B[p * m + j] = t; }
+    }
+    const piv = A[k * n + k];
+    for (let i = k + 1; i < n; i++) {
+      const f = A[i * n + k] / piv; if (!f) continue;
+      for (let j = k; j < n; j++) A[i * n + j] -= f * A[k * n + j];
+      for (let j = 0; j < m; j++) B[i * m + j] -= f * B[k * m + j];
+    }
+  }
+  for (let k = n - 1; k >= 0; k--) {
+    for (let j = 0; j < m; j++) {
+      let s = B[k * m + j];
+      for (let i = k + 1; i < n; i++) s -= A[k * n + i] * B[i * m + j];
+      B[k * m + j] = s / A[k * n + k];
+    }
+  }
+  return B;
+}
+
+function analyze(model) {
+  const { nodes, els, loads, sup } = model;
+  const nd = nodes.length * 3, K = new Float64Array(nd * nd);
+  const fF = new Float64Array(nd), fG = new Float64Array(nd);
+  for (const e of els) {
+    const A = nodes[e.a], B = nodes[e.b], dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy);
+    if (L < 1e-9) throw new Error(`Élément de longueur nulle (${e.name}).`);
+    Object.assign(e, { L, c: dx / L, s: dy / L });
+    e.k = kLocal(e.E, e.A, e.I, L);
+    e.px = -e.q * e.s; e.wy = -e.q * e.c;      // poids propre en repère local
+    e.ffe = [-e.px * L / 2, -e.wy * L / 2, -e.wy * L * L / 12, -e.px * L / 2, -e.wy * L / 2, e.wy * L * L / 12];
+    e.R = []; if (e.r1) e.R.push(2); if (e.r2) e.R.push(5);
+    const { kc, fc } = condense(e.k, e.ffe, e.R);
+    const T = Tm(e.c, e.s), kg = mmul(tr(T), mmul(kc, T)), fg = mvec(tr(T), fc);
+    e.dofs = [3 * e.a, 3 * e.a + 1, 3 * e.a + 2, 3 * e.b, 3 * e.b + 1, 3 * e.b + 2];
+    for (let i = 0; i < 6; i++) {
+      fG[e.dofs[i]] -= fg[i];
+      for (let j = 0; j < 6; j++) K[e.dofs[i] * nd + e.dofs[j]] += kg[i][j];
+    }
+  }
+  for (const l of loads) { fF[3 * l.n] += l.fx || 0; fF[3 * l.n + 1] += l.fy || 0; }
+
+  const fixed = new Uint8Array(nd);
+  for (const s of sup) { if (s.ux) fixed[3 * s.n] = 1; if (s.uy) fixed[3 * s.n + 1] = 1; if (s.rz) fixed[3 * s.n + 2] = 1; }
+  let dmax = 0; for (let i = 0; i < nd; i++) dmax = Math.max(dmax, Math.abs(K[i * nd + i]));
+  // rotations de nœuds uniquement articulés : sans rigidité, on les bloque
+  for (let n = 0; n < nodes.length; n++) { const i = 3 * n + 2; if (Math.abs(K[i * nd + i]) < 1e-12 * dmax) fixed[i] = 1; }
+
+  const free = []; for (let i = 0; i < nd; i++) if (!fixed[i]) free.push(i);
+  const nf = free.length, Ar = new Float64Array(nf * nf), Br = new Float64Array(nf * 2);
+  free.forEach((gi, i) => {
+    Br[2 * i] = fF[gi]; Br[2 * i + 1] = fG[gi];
+    free.forEach((gj, j) => Ar[i * nf + j] = K[gi * nd + gj]);
+  });
+  gauss(Ar, Br, nf, 2, 1e-10 * dmax);
+  const uF = new Float64Array(nd), uG = new Float64Array(nd), uC = new Float64Array(nd);
+  free.forEach((gi, i) => { uF[gi] = Br[2 * i]; uG[gi] = Br[2 * i + 1]; uC[gi] = uF[gi] + uG[gi]; });
+
+  const reac = (u, f) => sup.map(s => {
+    const r = [0, 1, 2].map(d => { const i = 3 * s.n + d; let v = -f[i]; for (let j = 0; j < nd; j++) v += K[i * nd + j] * u[j]; return v; });
+    return { n: s.n, Rx: r[0], Ry: r[1], Mz: r[2] };
+  });
+  const fC = fF.map((v, i) => v + fG[i]);
+  return { uF, uG, uC, reacC: reac(uC, fC), reacF: reac(uF, fF) };
+}
+
+// Efforts d'extrémité (repère local) et rotations libérées reconstituées
+function recover(e, u, grav) {
+  const ul = mvec(Tm(e.c, e.s), e.dofs.map(d => u[d]));
+  const f = grav ? e.ffe : [0, 0, 0, 0, 0, 0];
+  if (e.R.length) {
+    const iRR = inv12(e.R.map(r => e.R.map(s => e.k[r][s])));
+    const Ks = ALL6.filter(i => !e.R.includes(i));
+    const rhs = e.R.map(r => -(f[r] + Ks.reduce((s, j) => s + e.k[r][j] * ul[j], 0)));
+    const uR = e.R.map((_, a) => e.R.reduce((s, _r, b) => s + iRR[a][b] * rhs[b], 0));
+    e.R.forEach((r, a) => ul[r] = uR[a]);
+  }
+  return { ul, fe: mvec(e.k, ul).map((v, i) => v + f[i]), grav };
+}
+
+function sectionAt(e, rc, x) {
+  const px = rc.grav ? e.px : 0, wy = rc.grav ? e.wy : 0, fe = rc.fe;
+  return { N: -fe[0] - px * x, V: fe[1] + wy * x, M: -fe[2] + fe[1] * x + wy * x * x / 2 };
+}
+
+function dispAt(e, rc, x) {
+  const L = e.L, xi = x / L, ul = rc.ul;
+  const ua = ul[0] + (ul[3] - ul[0]) * xi;
+  let v = ul[1] * (1 - 3 * xi ** 2 + 2 * xi ** 3) + ul[2] * L * (xi - 2 * xi ** 2 + xi ** 3)
+        + ul[4] * (3 * xi ** 2 - 2 * xi ** 3) + ul[5] * L * (xi ** 3 - xi ** 2);
+  if (rc.grav && !e.R.length && !e.link) v += e.wy * x * x * (L - x) ** 2 / (24 * e.E * e.I);
+  return [ua * e.c - v * e.s, ua * e.s + v * e.c];
+}
+
+// Flèche = déplacement transversal par rapport à la corde reliant les deux appuis
+// de la pièce (e.ref), et déplacement total max
+function deflection(model, e, rc, u) {
+  const [r1, r2] = e.ref, R1 = model.nodes[r1], R2 = model.nodes[r2], A = model.nodes[e.a];
+  const cx = R2.x - R1.x, cy = R2.y - R1.y, c2 = cx * cx + cy * cy, cl = Math.sqrt(c2);
+  const u1 = [u[3 * r1], u[3 * r1 + 1]], u2 = [u[3 * r2], u[3 * r2 + 1]];
+  let fl = 0, dmax = 0;
+  for (let k = 0; k <= 16; k++) {
+    const x = e.L * k / 16, px = A.x + e.c * x, py = A.y + e.s * x, [dx, dy] = dispAt(e, rc, x);
+    const t = ((px - R1.x) * cx + (py - R1.y) * cy) / c2;
+    const rx = dx - (u1[0] + t * (u2[0] - u1[0])), ry = dy - (u1[1] + t * (u2[1] - u1[1]));
+    fl = Math.max(fl, Math.abs((-cy * rx + cx * ry) / cl));
+    dmax = Math.max(dmax, Math.hypot(dx, dy));
+  }
+  return { fl, dmax };
+}
+
+// Post-traitement : diagrammes échantillonnés, contraintes, flambement, synthèse
+function postprocess(model, res, p) {
+  const NS = 20;
+  for (const e of model.els) {
+    e.rcC = recover(e, res.uC, !!p.pp);
+    e.rcF = recover(e, res.uF, false);
+    for (const [tag, rc] of [['C', e.rcC], ['F', e.rcF]]) {
+      const ns = e.link ? 1 : NS, S = [];
+      for (let k = 0; k <= ns; k++) { const x = e.L * k / ns; S.push({ x, ...sectionAt(e, rc, x) }); }
+      const st = { S, Nmin: Math.min(...S.map(s => s.N)), Nmax: Math.max(...S.map(s => s.N)),
+        Vabs: Math.max(...S.map(s => Math.abs(s.V))), Mabs: Math.max(...S.map(s => Math.abs(s.M))) };
+      if (!e.link) {
+        st.smax = Math.max(...S.map(s => Math.abs(s.N) / e.A + Math.abs(s.M) * e.v / e.I)) / 1e6;
+        st.util = e.f > 0 ? st.smax / e.f : 0;
+        st.Ncr = e.lb > 0 ? Math.PI ** 2 * e.E * e.I / e.lb ** 2 : Infinity;
+        st.buck = st.Nmin < 0 ? -st.Nmin / st.Ncr : 0;
+      }
+      if (e.ref) Object.assign(st, deflection(model, e, rc, tag === 'F' ? res.uF : res.uC));
+      e['st' + tag] = st;
+    }
+  }
+  const m = model.meta, uy = (u, n) => u[3 * n + 1];
+  const specDefl = (u, n) => -(uy(u, n) - (uy(u, m.SL) + uy(u, m.SR)) / 2);
+  const dSpec = specDefl(res.uF, m.loadN), dSpecMid = specDefl(res.uF, m.midN);
+  const dJack = uy(res.uF, m.N7) - uy(res.uF, m.loadN);
+  const dFrame = dJack - dSpec;
+  const contacts = [...m.tubeLinks, ...m.supLinks].map(i => {
+    const e = model.els[i]; return { name: e.name, N: e.stC.Nmin, Nmax: e.stC.Nmax };
+  });
+  // Tubes / axes (hors plan), modèle d'axe d'articulation (EN 1993-1-8 §3.13) :
+  // appuis = parois des poteaux av./arr. (résultante à l'axe de chaque poteau, entraxe P_z),
+  // charge = traverse basse répartie sur la longueur d'appui c, centrée.
+  const D = p.tuD * 1e-3, d = Math.max(0, D - 2 * p.tut * 1e-3), solid = d === 0, Lz = p.Pz * 1e-3;
+  const Itu = Math.PI / 64 * (D ** 4 - d ** 4), Wtu = 2 * Itu / D, Atu = Math.PI / 4 * (D ** 2 - d ** 2);
+  const c = Math.min(Math.max(+p.tucEff || 0, 0) * 1e-3, Lz);     // longueur d'appui traverse/axe (0 : inconnue → charge ponctuelle)
+  const tw = Math.max(+p.tutpEff || 0, 0) * 1e-3;                  // Σ épaisseurs d'appui de l'axe dans un poteau
+  const tubeCheck = tag => {
+    const R = Math.max(...m.tubeLinks.map(i => Math.abs(model.els[i]['st' + tag].Nmin)));
+    const M = R * (2 * Lz - c) / 8, V = R / 2;                     // = F(b + 4c + 2a)/8 de l'EC3
+    const sigma = M / Wtu / 1e6, tau = (solid ? 4 / 3 : 2) * V / Atu / 1e6;
+    const rM = sigma / p.tuf, rV = tau / (p.tuf / Math.sqrt(3)), rMV = Math.hypot(rM, rV);
+    const pTb = c > 0 ? R / (D * c) / 1e6 : null, rTb = pTb !== null ? pTb / (1.5 * Math.min(p.tuf, p.tbf)) : null;
+    const pPo = tw > 0 ? V / (D * tw) / 1e6 : null, rPo = pPo !== null ? pPo / (1.5 * Math.min(p.tuf, p.pof)) : null;
+    const util = Math.max(rM, rMV, rTb || 0, rPo || 0);
+    return { R, V, M, sigma, tau, rM, rV, rMV, pTb, rTb, pPo, rPo, util, utilEq: util, c, tw,
+             defl: R * (8 * Lz ** 3 - 4 * Lz * c * c + c ** 3) / (384 * 210e9 * Itu), solid, I: Itu, W: Wtu, A: Atu };
+  };
+  const tube = tubeCheck('C'), tubeF = tubeCheck('F');
+  const free = m.yThBot - m.yTop;
+  const jack = { free, fits: free >= p.Lj * 1e-3, remain: p.Lj * 1e-3 + p.C * 1e-3 - free };
+  jack.ok = jack.fits && jack.remain >= dJack;
+  const msum = f => model.els.reduce((s, e) => s + (!e.link && f(e) ? e.mlin * e.L : 0), 0);
+  const tubeL = (p.Pz + p.poh) * 1e-3;     // tube : entraxe P_z + débords (≈ une largeur de poteau)
+  const mass = {
+    tb: msum(e => e.grp === 'tb'),
+    po: msum(e => e.grp === 'po'), th: msum(e => e.grp === 'th'),
+    tubes: 2 * 7850 * Atu * tubeL,
+    spec: msum(e => SPEC.includes(e.grp)),
+  };
+  mass.frame = mass.po + mass.th + mass.tubes;
+  return { dSpec, dSpecMid, dJack, dFrame, kFrame: model.F / dFrame, contacts, tube, tubeF, jack, mass };
+}
+
+function runAll(p) {
+  const model = build(p), res = analyze(model), out = postprocess(model, res, p);
+  return { model, res, out };
+}
+</script>
+
+<!-- ================= Données profilés (extrait de profils.json, généré) ================= -->
+<script id="profils-data">
+const PROFILS = {"IPE":{"cols":["name","h","b","tw","tf","r","mass","A","Iy","Iz","Wel_y","Wel_z","iy","iz"],"rows":[["IPE A 80",78.0,46.0,3.3,4.2,5.0,5.0,6.38,64.0,6.85,16.51,2.98,3.18,1.04],["IPE 80",80.0,46.0,3.8,5.2,5.0,6.0,7.64,80.0,8.49,20.03,3.69,3.24,1.05],["IPE A 100",98.0,55.0,3.6,4.7,7.0,6.9,8.78,141.0,13.12,28.82,4.77,4.01,1.22],["IPE 100",100.0,55.0,4.1,5.7,7.0,8.1,10.32,171.0,15.92,34.2,5.79,4.07,1.24],["IPE A 120",117.6,64.0,3.8,5.1,7.0,8.7,11.03,257.0,22.39,43.78,7.0,4.83,1.42],["IPE 120",120.0,64.0,4.4,6.3,7.0,10.4,13.21,318.0,27.67,52.97,8.65,4.9,1.45],["IPE A 140",137.4,73.0,3.8,5.6,7.0,10.5,13.39,435.0,36.42,63.3,9.98,5.7,1.65],["IPE 140",140.0,73.0,4.7,6.9,7.0,12.9,16.43,541.0,44.92,77.31,12.31,5.74,1.65],["IPE A 160",157.0,82.0,4.0,5.9,9.0,12.7,16.18,689.0,54.43,87.81,13.28,6.53,1.83],["IPE 160",160.0,82.0,5.0,7.4,9.0,15.8,20.09,869.0,68.32,108.66,16.66,6.58,1.84],["IPE A 180",177.0,91.0,4.3,6.5,9.0,15.4,19.58,1063.0,81.89,120.11,18.0,7.37,2.04],["IPE 180",180.0,91.0,5.3,8.0,9.0,18.8,23.95,1317.0,100.85,146.33,22.16,7.42,2.05],["IPE O 180",182.0,92.0,6.0,9.0,9.0,21.3,27.1,1505.0,117.29,165.38,25.5,7.45,2.08],["IPE A 200",197.0,100.0,4.5,7.0,12.0,18.4,23.47,1592.0,117.17,161.62,23.43,8.24,2.23],["IPE 200",200.0,100.0,5.6,8.5,12.0,22.4,28.48,1943.0,142.37,194.3,28.47,8.26,2.24],["IPE O 200",202.0,102.0,6.2,9.5,12.0,25.1,31.96,2211.0,168.86,218.91,33.11,8.32,2.3],["IPE A 220",217.0,110.0,5.0,7.7,12.0,22.2,28.26,2317.0,171.42,213.55,31.17,9.05,2.46],["IPE 220",220.0,110.0,5.9,9.2,12.0,26.2,33.37,2772.0,204.89,252.0,37.25,9.11,2.48],["IPE O 220",222.0,112.0,6.6,10.2,12.0,29.4,37.39,3134.0,239.83,282.34,42.83,9.16,2.53],["IPE A 240",237.0,120.0,5.2,8.3,15.0,26.1,33.31,3291.0,240.14,277.72,40.02,9.94,2.68],["IPE 240",240.0,120.0,6.2,9.8,15.0,30.7,39.12,3892.0,283.63,324.33,47.27,9.97,2.69],["IPE O 240",242.0,122.0,7.0,10.8,15.0,34.3,43.71,4369.0,328.54,361.07,53.86,10.0,2.74],["IPE A 270",267.0,135.0,5.5,8.7,15.0,30.7,39.15,4917.0,357.97,368.31,53.03,11.21,3.02],["IPE 270",270.0,135.0,6.6,10.2,15.0,36.1,45.95,5790.0,419.87,428.89,62.2,11.23,3.02],["IPE O 270",274.0,136.0,7.5,12.2,15.0,42.3,53.84,6947.0,513.48,507.08,75.51,11.36,3.09],["IPE A 300",297.0,150.0,6.1,9.2,15.0,36.5,46.53,7174.0,518.97,483.1,69.2,12.42,3.34],["IPE 300",300.0,150.0,7.1,10.7,15.0,42.2,53.81,8356.0,603.78,557.07,80.5,12.46,3.35],["IPE O 300",304.0,152.0,8.0,12.7,15.0,49.3,62.83,9994.0,745.72,657.5,98.12,12.61,3.44],["IPE A 330",327.0,160.0,6.5,10.0,18.0,43.0,54.74,10231.0,685.16,625.75,85.65,13.67,3.54],["IPE 330",330.0,160.0,7.5,11.5,18.0,49.1,62.61,11767.0,788.14,713.15,98.52,13.71,3.55],["IPE O 330",334.0,162.0,8.5,13.5,18.0,57.0,72.62,13910.0,960.38,832.93,118.57,13.84,3.64],["IPE A 360",357.6,170.0,6.6,11.5,18.0,50.2,63.97,14515.0,944.27,811.8,111.09,15.06,3.84],["IPE 360",360.0,170.0,8.0,12.7,18.0,57.1,72.73,16266.0,1043.45,903.67,122.76,14.95,3.79],["IPE O 360",364.0,172.0,9.2,14.7,18.0,66.0,84.13,19048.0,1251.22,1046.59,145.49,15.05,3.86],["IPE A 400",397.0,180.0,7.0,12.0,21.0,57.4,73.1,20293.0,1170.59,1022.32,130.07,16.66,4.0],["IPE 400",400.0,180.0,8.6,13.5,21.0,66.3,84.47,23128.0,1317.82,1156.4,146.42,16.55,3.95],["IPE O 400",404.0,182.0,9.7,15.5,21.0,75.7,96.39,26747.0,1564.25,1324.11,171.9,16.66,4.03],["IPE A 450",447.0,190.0,7.6,13.1,21.0,67.2,85.55,29759.0,1502.4,1331.5,158.15,18.65,4.19],["IPE 450",450.0,190.0,9.4,14.6,21.0,77.6,98.82,33743.0,1675.86,1499.69,176.41,18.48,4.12],["IPE O 450",456.0,192.0,11.0,17.6,21.0,92.4,117.66,40923.0,2085.37,1794.87,217.23,18.65,4.21],["IPE V 450",460.0,194.0,12.4,19.6,21.0,103.6,132.01,46201.0,2396.88,2008.74,247.1,18.71,4.26],["IPE A 500",497.0,200.0,8.4,14.5,21.0,79.4,101.1,42933.0,1939.22,1727.69,193.92,20.61,4.38],["IPE 500",500.0,200.0,10.2,16.0,21.0,90.7,115.52,48199.0,2141.69,1927.96,214.17,20.43,4.31],["IPE O 500",506.0,202.0,12.0,19.0,21.0,107.3,136.71,57777.0,2621.75,2283.68,259.58,20.56,4.38],["IPE 500 x 192",538.0,210.0,20.0,35.0,21.0,191.8,244.39,112206.0,5442.21,4171.23,518.31,21.43,4.72],["IPE A 550",547.0,210.0,9.0,15.7,24.0,92.1,117.29,59979.0,2432.23,2193.02,231.64,22.61,4.55],["IPE 550",550.0,210.0,11.1,17.2,24.0,105.5,134.42,67117.0,2667.58,2440.62,254.06,22.35,4.45],["IPE O 550",556.0,212.0,12.7,20.2,24.0,122.5,156.08,79157.0,3224.38,2847.37,304.19,22.52,4.55],["IPE V 550",566.0,216.0,17.1,25.2,24.0,158.6,201.98,102339.0,4264.68,3616.22,394.88,22.51,4.59],["IPE A 600",597.0,220.0,9.8,17.5,24.0,107.6,137.02,82919.0,3116.28,2777.86,283.3,24.6,4.77],["IPE 600",600.0,220.0,12.0,19.0,24.0,122.5,155.99,92083.0,3387.34,3069.43,307.94,24.3,4.66],["IPE R 600",608.0,218.0,14.0,23.0,24.0,144.4,183.91,110306.0,3992.83,3628.49,366.31,24.49,4.66],["IPE O 600",610.0,224.0,15.0,24.0,24.0,154.5,196.77,118302.0,4520.75,3878.75,403.64,24.52,4.79],["IPE 600 x 216",632.0,230.0,19.5,35.0,24.0,216.3,275.54,176221.0,7144.43,5576.61,621.25,25.29,5.09],["IPE 600 x 241",640.0,228.0,22.0,39.0,24.0,240.5,306.43,197115.0,7768.13,6159.84,681.41,25.36,5.03],["IPE 750 x 134",750.0,264.0,12.0,15.5,17.0,133.9,170.6,150705.0,4766.25,4018.8,361.08,29.72,5.29],["IPE 750 x 137",753.0,263.0,11.5,17.0,17.0,137.1,174.59,159878.0,5165.87,4246.43,392.84,30.26,5.44],["IPE 750 x 147",753.0,265.0,13.2,17.0,17.0,147.2,187.49,166064.0,5289.44,4410.73,399.2,29.76,5.31],["IPE 750 x 173",762.0,267.0,14.4,21.6,17.0,173.7,221.33,205825.0,6873.44,5402.23,514.86,30.5,5.57],["IPE 750 x 196",770.0,268.0,15.6,25.4,17.0,196.9,250.82,240280.0,8175.02,6241.04,610.08,30.95,5.71],["IPE 750 x 210",775.0,268.0,16.0,28.0,17.0,210.1,267.6,262161.0,9011.04,6765.45,672.47,31.3,5.8]]},"UPE":{"cols":["name","h","b","tw","tf","r","mass","A","Iy","Iz","Wel_y","Wel_z","iy","iz","ys"],"rows":[["UPE 80",80.0,50.0,4.0,7.0,10.0,7.9,10.1,107.0,25.41,26.8,7.98,3.26,1.59,18.2],["UPE 100",100.0,55.0,4.5,7.5,10.0,9.8,12.5,207.0,38.21,41.37,10.63,4.07,1.75,19.1],["UPE 120",120.0,60.0,5.0,8.0,12.0,12.1,15.4,364.0,55.4,60.58,13.79,4.86,1.9,19.8],["UPE 140",140.0,65.0,5.0,9.0,12.0,14.4,18.4,600.0,78.7,85.64,18.19,5.71,2.07,21.7],["UPE 160",160.0,70.0,5.5,9.5,12.0,17.0,21.7,911.0,106.8,113.9,22.58,6.48,2.22,22.7],["UPE 180",180.0,75.0,5.5,10.5,12.0,19.7,25.1,1353.0,143.7,150.4,28.56,7.34,2.39,24.7],["UPE 200",200.0,80.0,6.0,11.0,13.0,22.8,29.0,1909.0,187.3,190.9,34.43,8.11,2.54,25.6],["UPE 220",220.0,85.0,6.5,12.0,13.0,26.6,33.9,2682.0,246.4,243.9,42.51,8.9,2.7,27.0],["UPE 240",240.0,90.0,7.0,12.5,15.0,30.2,38.5,3599.0,310.9,299.9,50.08,9.67,2.84,27.9],["UPE 270",270.0,95.0,7.5,13.5,15.0,35.2,44.8,5255.0,401.0,389.2,60.69,10.83,2.99,28.9],["UPE 300",300.0,100.0,9.5,15.0,15.0,44.4,56.6,7823.0,537.7,521.5,75.58,11.76,3.08,28.9],["UPE 330",330.0,105.0,11.0,16.0,18.0,53.2,67.8,11010.0,681.5,667.1,89.66,12.74,3.17,29.0],["UPE 360",360.0,110.0,12.0,17.0,18.0,61.2,77.9,14830.0,843.7,823.6,105.1,13.79,3.29,29.7],["UPE 400",400.0,115.0,13.5,18.0,18.0,72.1,91.9,20980.0,1045.0,1049.0,122.6,15.11,3.37,29.8]]},"SHS":{"cols":["name","h","b","t","mass","A","Iy","Iz","Wel_y","Wel_z","iy","iz"],"rows":[["SHS 20x20x2",20.0,20.0,2.0,1.05,1.34,0.692,0.692,0.692,0.692,0.72,0.72],["SHS 20x20x2.5",20.0,20.0,2.5,1.25,1.59,0.766,0.766,0.766,0.766,0.694,0.694],["SHS 25x25x2",25.0,25.0,2.0,1.36,1.74,1.48,1.48,1.19,1.19,0.924,0.924],["SHS 25x25x2.5",25.0,25.0,2.5,1.64,2.09,1.69,1.69,1.35,1.35,0.899,0.899],["SHS 25x25x3",25.0,25.0,3.0,1.89,2.41,1.84,1.84,1.47,1.47,0.874,0.874],["SHS 30x30x2",30.0,30.0,2.0,1.68,2.14,2.72,2.72,1.81,1.81,1.13,1.13],["SHS 30x30x2.5",30.0,30.0,2.5,2.03,2.59,3.16,3.16,2.1,2.1,1.1,1.1],["SHS 30x30x3",30.0,30.0,3.0,2.36,3.01,3.5,3.5,2.34,2.34,1.08,1.08],["SHS 40x40x2",40.0,40.0,2.0,2.31,2.94,6.94,6.94,3.47,3.47,1.54,1.54],["SHS 40x40x2.5",40.0,40.0,2.5,2.82,3.59,8.22,8.22,4.11,4.11,1.51,1.51],["SHS 40x40x3",40.0,40.0,3.0,3.3,4.21,9.32,9.32,4.66,4.66,1.49,1.49],["SHS 40x40x4",40.0,40.0,4.0,4.2,5.35,11.1,11.1,5.54,5.54,1.44,1.44],["SHS 50x50x2",50.0,50.0,2.0,2.93,3.74,14.1,14.1,5.66,5.66,1.95,1.95],["SHS 50x50x2.5",50.0,50.0,2.5,3.6,4.59,16.9,16.9,6.78,6.78,1.92,1.92],["SHS 50x50x3",50.0,50.0,3.0,4.25,5.41,19.5,19.5,7.79,7.79,1.9,1.9],["SHS 50x50x4",50.0,50.0,4.0,5.45,6.95,23.7,23.7,9.49,9.49,1.85,1.85],["SHS 50x50x5",50.0,50.0,5.0,6.56,8.36,27.0,27.0,10.8,10.8,1.8,1.8],["SHS 60x60x2",60.0,60.0,2.0,3.56,4.54,25.1,25.1,8.38,8.38,2.35,2.35],["SHS 60x60x2.5",60.0,60.0,2.5,4.39,5.59,30.3,30.3,10.1,10.1,2.33,2.33],["SHS 60x60x3",60.0,60.0,3.0,5.19,6.61,35.1,35.1,11.7,11.7,2.31,2.31],["SHS 60x60x4",60.0,60.0,4.0,6.71,8.55,43.6,43.6,14.5,14.5,2.26,2.26],["SHS 60x60x5",60.0,60.0,5.0,8.13,10.4,50.5,50.5,16.8,16.8,2.21,2.21],["SHS 60x60x6",60.0,60.0,6.0,9.45,12.0,56.1,56.1,18.7,18.7,2.16,2.16],["SHS 60x60x6.3",60.0,60.0,6.3,9.55,12.2,54.4,54.4,18.1,18.1,2.11,2.11],["SHS 70x70x2.5",70.0,70.0,2.5,5.17,6.59,49.4,49.4,14.1,14.1,2.74,2.74],["SHS 70x70x3",70.0,70.0,3.0,6.13,7.81,57.5,57.5,16.4,16.4,2.71,2.71],["SHS 70x70x3.6",70.0,70.0,3.6,7.24,9.23,66.5,66.5,19.0,19.0,2.69,2.69],["SHS 70x70x4",70.0,70.0,4.0,7.97,10.1,72.1,72.1,20.6,20.6,2.67,2.67],["SHS 70x70x5",70.0,70.0,5.0,9.7,12.4,84.6,84.6,24.2,24.2,2.62,2.62],["SHS 70x70x6",70.0,70.0,6.0,11.3,14.4,95.2,95.2,27.2,27.2,2.57,2.57],["SHS 70x70x6.3",70.0,70.0,6.3,11.5,14.7,93.8,93.8,26.8,26.8,2.53,2.53],["SHS 80x80x3",80.0,80.0,3.0,7.07,9.01,87.8,87.8,22.0,22.0,3.12,3.12],["SHS 80x80x3.6",80.0,80.0,3.6,8.37,10.7,102.0,102.0,25.5,25.5,3.09,3.09],["SHS 80x80x4",80.0,80.0,4.0,9.22,11.7,111.0,111.0,27.8,27.8,3.07,3.07],["SHS 80x80x5",80.0,80.0,5.0,11.3,14.4,131.0,131.0,32.9,32.9,3.03,3.03],["SHS 80x80x6",80.0,80.0,6.0,13.2,16.8,149.0,149.0,37.3,37.3,2.98,2.98],["SHS 80x80x6.3",80.0,80.0,6.3,13.5,17.2,149.0,149.0,37.1,37.1,2.94,2.94],["SHS 80x80x8",80.0,80.0,8.0,16.4,20.8,168.0,168.0,42.1,42.1,2.84,2.84],["SHS 90x90x3",90.0,90.0,3.0,8.01,10.2,127.0,127.0,28.3,28.3,3.53,3.53],["SHS 90x90x3.6",90.0,90.0,3.6,9.5,12.1,149.0,149.0,33.0,33.0,3.5,3.5],["SHS 90x90x4",90.0,90.0,4.0,10.5,13.3,162.0,162.0,36.0,36.0,3.48,3.48],["SHS 90x90x5",90.0,90.0,5.0,12.8,16.4,193.0,193.0,42.9,42.9,3.43,3.43],["SHS 90x90x6",90.0,90.0,6.0,15.1,19.2,220.0,220.0,49.0,49.0,3.39,3.39],["SHS 90x90x6.3",90.0,90.0,6.3,15.5,19.7,221.0,221.0,49.1,49.1,3.35,3.35],["SHS 90x90x8",90.0,90.0,8.0,18.9,24.0,255.0,255.0,56.6,56.6,3.25,3.25],["SHS 100x100x3",100.0,100.0,3.0,8.96,11.4,177.0,177.0,35.4,35.4,3.94,3.94],["SHS 100x100x4",100.0,100.0,4.0,11.7,14.9,226.0,226.0,45.3,45.3,3.89,3.89],["SHS 100x100x5",100.0,100.0,5.0,14.4,18.4,271.0,271.0,54.2,54.2,3.84,3.84],["SHS 100x100x6",100.0,100.0,6.0,17.0,21.6,311.0,311.0,62.3,62.3,3.79,3.79],["SHS 100x100x6.3",100.0,100.0,6.3,17.5,22.2,314.0,314.0,62.8,62.8,3.76,3.76],["SHS 100x100x8",100.0,100.0,8.0,21.4,27.2,366.0,366.0,73.2,73.2,3.67,3.67],["SHS 100x100x10",100.0,100.0,10.0,25.6,32.6,411.0,411.0,82.2,82.2,3.55,3.55],["SHS 100x100x12",100.0,100.0,12.0,28.3,36.1,408.0,408.0,81.6,81.6,3.36,3.36],["SHS 100x100x12.5",100.0,100.0,12.5,29.1,37.0,410.0,410.0,82.1,82.1,3.33,3.33],["SHS 120x120x3",120.0,120.0,3.0,10.8,13.8,312.0,312.0,52.1,52.1,4.76,4.76],["SHS 120x120x4",120.0,120.0,4.0,14.2,18.1,402.0,402.0,67.0,67.0,4.71,4.71],["SHS 120x120x5",120.0,120.0,5.0,17.5,22.4,485.0,485.0,80.9,80.9,4.66,4.66],["SHS 120x120x6",120.0,120.0,6.0,20.7,26.4,562.0,562.0,93.7,93.7,4.61,4.61],["SHS 120x120x6.3",120.0,120.0,6.3,21.4,27.3,572.0,572.0,95.3,95.3,4.58,4.58],["SHS 120x120x8",120.0,120.0,8.0,26.4,33.6,677.0,677.0,113.0,113.0,4.49,4.49],["SHS 120x120x10",120.0,120.0,10.0,31.8,40.6,777.0,777.0,129.0,129.0,4.38,4.38],["SHS 120x120x12",120.0,120.0,12.0,35.8,45.7,806.0,806.0,134.0,134.0,4.2,4.2],["SHS 120x120x12.5",120.0,120.0,12.5,36.9,47.0,817.0,817.0,136.0,136.0,4.17,4.17],["SHS 140x140x4",140.0,140.0,4.0,16.8,21.3,652.0,652.0,93.1,93.1,5.52,5.52],["SHS 140x140x5",140.0,140.0,5.0,20.7,26.4,791.0,791.0,113.0,113.0,5.48,5.48],["SHS 140x140x6",140.0,140.0,6.0,24.5,31.2,920.0,920.0,131.0,131.0,5.43,5.43],["SHS 140x140x6.3",140.0,140.0,6.3,25.4,32.3,941.0,941.0,134.0,134.0,5.39,5.39],["SHS 140x140x8",140.0,140.0,8.0,31.4,40.0,1127.0,1127.0,161.0,161.0,5.3,5.3],["SHS 140x140x10",140.0,140.0,10.0,38.1,48.6,1312.0,1312.0,187.0,187.0,5.2,5.2],["SHS 140x140x12",140.0,140.0,12.0,43.4,55.3,1398.0,1398.0,200.0,200.0,5.03,5.03],["SHS 140x140x12.5",140.0,140.0,12.5,44.8,57.0,1425.0,1425.0,204.0,204.0,5.0,5.0],["SHS 150x150x4",150.0,150.0,4.0,18.0,22.9,808.0,808.0,108.0,108.0,5.93,5.93],["SHS 150x150x5",150.0,150.0,5.0,22.3,28.4,982.0,982.0,131.0,131.0,5.89,5.89],["SHS 150x150x6",150.0,150.0,6.0,26.4,33.6,1146.0,1146.0,153.0,153.0,5.84,5.84],["SHS 150x150x6.3",150.0,150.0,6.3,27.4,34.8,1174.0,1174.0,156.0,156.0,5.8,5.8],["SHS 150x150x8",150.0,150.0,8.0,33.9,43.2,1412.0,1412.0,188.0,188.0,5.71,5.71],["SHS 150x150x10",150.0,150.0,10.0,41.3,52.6,1653.0,1653.0,220.0,220.0,5.61,5.61],["SHS 150x150x12",150.0,150.0,12.0,47.1,60.1,1780.0,1780.0,237.0,237.0,5.44,5.44],["SHS 150x150x12.5",150.0,150.0,12.5,48.7,62.0,1817.0,1817.0,242.0,242.0,5.41,5.41],["SHS 150x150x16",150.0,150.0,16.0,58.7,74.8,2009.0,2009.0,268.0,268.0,5.18,5.18],["SHS 160x160x4",160.0,160.0,4.0,19.3,24.5,987.0,987.0,123.0,123.0,6.34,6.34],["SHS 160x160x5",160.0,160.0,5.0,23.8,30.4,1202.0,1202.0,150.0,150.0,6.29,6.29],["SHS 160x160x6",160.0,160.0,6.0,28.3,36.0,1405.0,1405.0,176.0,176.0,6.25,6.25],["SHS 160x160x6.3",160.0,160.0,6.3,29.3,37.4,1442.0,1442.0,180.0,180.0,6.21,6.21],["SHS 160x160x8",160.0,160.0,8.0,36.5,46.4,1741.0,1741.0,218.0,218.0,6.12,6.12],["SHS 160x160x10",160.0,160.0,10.0,44.4,56.6,2048.0,2048.0,256.0,256.0,6.02,6.02],["SHS 160x160x12",160.0,160.0,12.0,50.9,64.9,2224.0,2224.0,278.0,278.0,5.86,5.86],["SHS 160x160x12.5",160.0,160.0,12.5,52.6,67.0,2275.0,2275.0,284.0,284.0,5.83,5.83],["SHS 160x160x16",160.0,160.0,16.0,63.7,81.2,2546.0,2546.0,318.0,318.0,5.6,5.6],["SHS 180x180x4",180.0,180.0,4.0,21.8,27.7,1422.0,1422.0,158.0,158.0,7.16,7.16],["SHS 180x180x5",180.0,180.0,5.0,27.0,34.4,1737.0,1737.0,193.0,193.0,7.11,7.11],["SHS 180x180x6",180.0,180.0,6.0,32.1,40.8,2037.0,2037.0,226.0,226.0,7.06,7.06],["SHS 180x180x6.3",180.0,180.0,6.3,33.3,42.4,2096.0,2096.0,233.0,233.0,7.03,7.03],["SHS 180x180x8",180.0,180.0,8.0,41.5,52.8,2546.0,2546.0,283.0,283.0,6.94,6.94],["SHS 180x180x10",180.0,180.0,10.0,50.7,64.6,3017.0,3017.0,335.0,335.0,6.84,6.84],["SHS 180x180x12",180.0,180.0,12.0,58.5,74.5,3322.0,3322.0,369.0,369.0,6.68,6.68],["SHS 180x180x12.5",180.0,180.0,12.5,60.5,77.0,3406.0,3406.0,378.0,378.0,6.65,6.65],["SHS 180x180x16",180.0,180.0,16.0,73.8,94.0,3887.0,3887.0,432.0,432.0,6.43,6.43],["SHS 200x200x4",200.0,200.0,4.0,24.3,30.9,1968.0,1968.0,197.0,197.0,7.97,7.97],["SHS 200x200x5",200.0,200.0,5.0,30.1,38.4,2410.0,2410.0,241.0,241.0,7.93,7.93],["SHS 200x200x6",200.0,200.0,6.0,35.8,45.6,2833.0,2833.0,283.0,283.0,7.88,7.88],["SHS 200x200x6.3",200.0,200.0,6.3,37.2,47.4,2922.0,2922.0,292.0,292.0,7.85,7.85],["SHS 200x200x8",200.0,200.0,8.0,46.5,59.2,3566.0,3566.0,357.0,357.0,7.76,7.76],["SHS 200x200x10",200.0,200.0,10.0,57.0,72.6,4251.0,4251.0,425.0,425.0,7.65,7.65],["SHS 200x200x12",200.0,200.0,12.0,66.0,84.1,4730.0,4730.0,473.0,473.0,7.5,7.5],["SHS 200x200x12.5",200.0,200.0,12.5,68.3,87.0,4859.0,4859.0,486.0,486.0,7.47,7.47],["SHS 200x200x16",200.0,200.0,16.0,83.8,107.0,5625.0,5625.0,562.0,562.0,7.26,7.26],["SHS 220x220x5",220.0,220.0,5.0,33.2,42.4,3238.0,3238.0,294.0,294.0,8.74,8.74],["SHS 220x220x6",220.0,220.0,6.0,39.6,50.4,3813.0,3813.0,347.0,347.0,8.7,8.7],["SHS 220x220x6.3",220.0,220.0,6.3,41.2,52.5,3940.0,3940.0,358.0,358.0,8.66,8.66],["SHS 220x220x8",220.0,220.0,8.0,51.5,65.6,4828.0,4828.0,439.0,439.0,8.58,8.58],["SHS 220x220x10",220.0,220.0,10.0,63.2,80.6,5782.0,5782.0,526.0,526.0,8.47,8.47],["SHS 220x220x12",220.0,220.0,12.0,73.5,93.7,6487.0,6487.0,590.0,590.0,8.32,8.32],["SHS 220x220x12.5",220.0,220.0,12.5,76.2,97.0,6674.0,6674.0,607.0,607.0,8.29,8.29],["SHS 220x220x16",220.0,220.0,16.0,93.9,120.0,7812.0,7812.0,710.0,710.0,8.08,8.08],["SHS 250x250x5",250.0,250.0,5.0,38.0,48.4,4805.0,4805.0,384.0,384.0,9.97,9.97],["SHS 250x250x6",250.0,250.0,6.0,45.2,57.6,5672.0,5672.0,454.0,454.0,9.92,9.92],["SHS 250x250x6.3",250.0,250.0,6.3,47.1,60.0,5873.0,5873.0,470.0,470.0,9.89,9.89],["SHS 250x250x8",250.0,250.0,8.0,59.1,75.2,7229.0,7229.0,578.0,578.0,9.8,9.8],["SHS 250x250x10",250.0,250.0,10.0,72.7,92.6,8707.0,8707.0,697.0,697.0,9.7,9.7],["SHS 250x250x12",250.0,250.0,12.0,84.8,108.0,9859.0,9859.0,789.0,789.0,9.55,9.55],["SHS 250x250x12.5",250.0,250.0,12.5,88.0,112.0,10161.0,10161.0,813.0,813.0,9.52,9.52],["SHS 250x250x16",250.0,250.0,16.0,109.0,139.0,12047.0,12047.0,964.0,964.0,9.32,9.32],["SHS 260x260x6",260.0,260.0,6.0,47.1,60.0,6405.0,6405.0,493.0,493.0,10.3,10.3],["SHS 260x260x6.3",260.0,260.0,6.3,49.1,62.6,6635.0,6635.0,510.0,510.0,10.3,10.3],["SHS 260x260x8",260.0,260.0,8.0,61.6,78.4,8178.0,8178.0,629.0,629.0,10.2,10.2],["SHS 260x260x10",260.0,260.0,10.0,75.8,96.6,9865.0,9865.0,759.0,759.0,10.1,10.1],["SHS 260x260x12",260.0,260.0,12.0,88.6,113.0,11200.0,11200.0,862.0,862.0,9.96,9.96],["SHS 260x260x12.5",260.0,260.0,12.5,91.9,117.0,11548.0,11548.0,888.0,888.0,9.93,9.93],["SHS 260x260x16",260.0,260.0,16.0,114.0,145.0,13739.0,13739.0,1057.0,1057.0,9.73,9.73],["SHS 300x300x6",300.0,300.0,6.0,54.7,69.6,9964.0,9964.0,664.0,664.0,12.0,12.0],["SHS 300x300x6.3",300.0,300.0,6.3,57.0,72.6,10342.0,10342.0,689.0,689.0,11.9,11.9],["SHS 300x300x8",300.0,300.0,8.0,71.6,91.2,12801.0,12801.0,853.0,853.0,11.8,11.8],["SHS 300x300x10",300.0,300.0,10.0,88.4,113.0,15519.0,15519.0,1035.0,1035.0,11.7,11.7],["SHS 300x300x12",300.0,300.0,12.0,104.0,132.0,17767.0,17767.0,1184.0,1184.0,11.6,11.6],["SHS 300x300x12.5",300.0,300.0,12.5,108.0,137.0,18348.0,18348.0,1223.0,1223.0,11.6,11.6],["SHS 300x300x16",300.0,300.0,16.0,134.0,171.0,22076.0,22076.0,1472.0,1472.0,11.4,11.4],["SHS 350x350x8",350.0,350.0,8.0,84.2,107.0,20681.0,20681.0,1182.0,1182.0,13.9,13.9],["SHS 350x350x10",350.0,350.0,10.0,104.0,133.0,25189.0,25189.0,1439.0,1439.0,13.8,13.8],["SHS 350x350x12",350.0,350.0,12.0,123.0,156.0,29054.0,29054.0,1660.0,1660.0,13.6,13.6],["SHS 350x350x12.5",350.0,350.0,12.5,127.0,162.0,30045.0,30045.0,1717.0,1717.0,13.6,13.6],["SHS 350x350x16",350.0,350.0,16.0,159.0,203.0,36511.0,36511.0,2086.0,2086.0,13.4,13.4],["SHS 400x400x10",400.0,400.0,10.0,120.0,153.0,38216.0,38216.0,1911.0,1911.0,15.8,15.8],["SHS 400x400x12",400.0,400.0,12.0,141.0,180.0,44319.0,44319.0,2216.0,2216.0,15.7,15.7],["SHS 400x400x12.5",400.0,400.0,12.5,147.0,187.0,45877.0,45877.0,2294.0,2294.0,15.7,15.7],["SHS 400x400x16",400.0,400.0,16.0,184.0,235.0,56154.0,56154.0,2808.0,2808.0,15.5,15.5]]},"RHS":{"cols":["name","h","b","t","mass","A","Iy","Iz","Wel_y","Wel_z","iy","iz"],"rows":[["RHS 40x20x2",40.0,20.0,2.0,1.68,2.14,4.05,1.34,2.02,1.34,1.38,0.793],["RHS 40x20x2.5",40.0,20.0,2.5,2.03,2.59,4.69,1.54,2.35,1.54,1.35,0.77],["RHS 40x20x3",40.0,20.0,3.0,2.36,3.01,5.21,1.68,2.6,1.68,1.32,0.748],["RHS 50x25x2",50.0,25.0,2.0,2.15,2.74,8.38,2.81,3.35,2.25,1.75,1.01],["RHS 50x25x2.5",50.0,25.0,2.5,2.62,3.34,9.89,3.28,3.95,2.62,1.72,0.991],["RHS 50x25x3",50.0,25.0,3.0,3.07,3.91,11.2,3.67,4.47,2.93,1.69,0.969],["RHS 50x30x2",50.0,30.0,2.0,2.31,2.94,9.54,4.29,3.81,2.86,1.8,1.21],["RHS 50x30x2.5",50.0,30.0,2.5,2.82,3.59,11.3,5.05,4.52,3.37,1.77,1.19],["RHS 50x30x3",50.0,30.0,3.0,3.3,4.21,12.8,5.7,5.13,3.8,1.75,1.16],["RHS 50x30x4",50.0,30.0,4.0,4.2,5.35,15.3,6.69,6.1,4.46,1.69,1.12],["RHS 60x40x2",60.0,40.0,2.0,2.93,3.74,18.4,9.83,6.14,4.92,2.22,1.62],["RHS 60x40x2.5",60.0,40.0,2.5,3.6,4.59,22.1,11.7,7.36,5.87,2.19,1.6],["RHS 60x40x3",60.0,40.0,3.0,4.25,5.41,25.4,13.4,8.46,6.72,2.17,1.58],["RHS 60x40x4",60.0,40.0,4.0,5.45,6.95,31.0,16.3,10.3,8.14,2.11,1.53],["RHS 60x40x5",60.0,40.0,5.0,6.56,8.36,35.3,18.4,11.8,9.21,2.06,1.48],["RHS 70x50x2",70.0,50.0,2.0,3.56,4.54,31.5,18.8,8.99,7.5,2.63,2.03],["RHS 70x50x2.5",70.0,50.0,2.5,4.39,5.59,38.0,22.6,10.9,9.04,2.61,2.01],["RHS 70x50x3",70.0,50.0,3.0,5.19,6.61,44.1,26.1,12.6,10.4,2.58,1.99],["RHS 70x50x4",70.0,50.0,4.0,6.71,8.55,54.7,32.2,15.6,12.9,2.53,1.94],["RHS 70x50x5",70.0,50.0,5.0,8.13,10.4,63.5,37.2,18.1,14.9,2.48,1.9],["RHS 80x40x2",80.0,40.0,2.0,3.56,4.54,37.4,12.7,9.34,6.36,2.87,1.67],["RHS 80x40x2.5",80.0,40.0,2.5,4.39,5.59,45.1,15.3,11.3,7.63,2.84,1.65],["RHS 80x40x3",80.0,40.0,3.0,5.19,6.61,52.3,17.6,13.1,8.78,2.81,1.63],["RHS 80x40x4",80.0,40.0,4.0,6.71,8.55,64.8,21.5,16.2,10.7,2.75,1.59],["RHS 80x40x5",80.0,40.0,5.0,8.13,10.4,75.1,24.6,18.8,12.3,2.69,1.54],["RHS 80x60x2",80.0,60.0,2.0,4.19,5.34,49.5,31.9,12.4,10.6,3.05,2.44],["RHS 80x60x2.5",80.0,60.0,2.5,5.17,6.59,60.1,38.6,15.0,12.9,3.02,2.42],["RHS 80x60x3",80.0,60.0,3.0,6.13,7.81,70.0,44.9,17.5,15.0,3.0,2.4],["RHS 80x60x4",80.0,60.0,4.0,7.97,10.1,87.9,56.1,22.0,18.7,2.94,2.35],["RHS 80x60x5",80.0,60.0,5.0,9.7,12.4,103.0,65.7,25.8,21.9,2.89,2.31],["RHS 90x50x2",90.0,50.0,2.0,4.19,5.34,57.9,23.4,12.9,9.35,3.29,2.09],["RHS 90x50x2.5",90.0,50.0,2.5,5.17,6.59,70.3,28.2,15.6,11.3,3.27,2.07],["RHS 90x50x3",90.0,50.0,3.0,6.13,7.81,81.9,32.7,18.2,13.1,3.24,2.05],["RHS 90x50x3.6",90.0,50.0,3.6,7.24,9.23,94.7,37.7,21.1,15.1,3.2,2.02],["RHS 90x50x4",90.0,50.0,4.0,7.97,10.1,103.0,40.7,22.8,16.3,3.18,2.0],["RHS 90x50x5",90.0,50.0,5.0,9.7,12.4,121.0,47.4,26.8,18.9,3.12,1.96],["RHS 100x40x2.5",100.0,40.0,2.5,5.17,6.59,79.3,18.8,15.9,9.39,3.47,1.69],["RHS 100x40x3",100.0,40.0,3.0,6.13,7.81,92.3,21.7,18.5,10.8,3.44,1.67],["RHS 100x40x4",100.0,40.0,4.0,7.97,10.1,116.0,26.7,23.1,13.3,3.38,1.62],["RHS 100x40x5",100.0,40.0,5.0,9.7,12.4,136.0,30.8,27.1,15.4,3.31,1.58],["RHS 100x50x2.5",100.0,50.0,2.5,5.56,7.09,91.2,31.1,18.2,12.4,3.59,2.09],["RHS 100x50x3",100.0,50.0,3.0,6.6,8.41,106.0,36.1,21.3,14.4,3.56,2.07],["RHS 100x50x4",100.0,50.0,4.0,8.59,10.9,134.0,44.9,26.8,18.0,3.5,2.03],["RHS 100x50x5",100.0,50.0,5.0,10.5,13.4,158.0,52.5,31.6,21.0,3.44,1.98],["RHS 100x50x6",100.0,50.0,6.0,12.3,15.6,179.0,58.7,35.8,23.5,3.38,1.94],["RHS 100x50x6.3",100.0,50.0,6.3,12.5,15.9,176.0,58.2,35.1,23.3,3.32,1.91],["RHS 100x60x3",100.0,60.0,3.0,7.07,9.01,121.0,54.6,24.1,18.2,3.66,2.46],["RHS 100x60x3.6",100.0,60.0,3.6,8.37,10.7,140.0,63.3,28.0,21.1,3.63,2.44],["RHS 100x60x4",100.0,60.0,4.0,9.22,11.7,153.0,68.7,30.5,22.9,3.6,2.42],["RHS 100x60x5",100.0,60.0,5.0,11.3,14.4,181.0,80.8,36.2,26.9,3.55,2.37],["RHS 100x60x6",100.0,60.0,6.0,13.2,16.8,205.0,91.2,41.1,30.4,3.49,2.33],["RHS 100x60x6.3",100.0,60.0,6.3,13.5,17.2,203.0,90.9,40.7,30.3,3.44,2.3],["RHS 100x80x2.5",100.0,80.0,2.5,6.74,8.59,127.0,90.2,25.4,22.5,3.84,3.24],["RHS 100x80x3",100.0,80.0,3.0,8.01,10.2,149.0,106.0,29.8,26.4,3.82,3.22],["RHS 100x80x4",100.0,80.0,4.0,10.5,13.3,189.0,134.0,37.9,33.5,3.77,3.17],["RHS 100x80x5",100.0,80.0,5.0,12.8,16.4,226.0,160.0,45.2,39.9,3.72,3.12],["RHS 100x80x6",100.0,80.0,6.0,15.1,19.2,258.0,182.0,51.7,45.5,3.67,3.08],["RHS 100x80x6.3",100.0,80.0,6.3,15.5,19.7,259.0,183.0,51.8,45.7,3.62,3.04],["RHS 120x60x2.5",120.0,60.0,2.5,6.74,8.59,161.0,55.2,26.9,18.4,4.33,2.53],["RHS 120x60x3",120.0,60.0,3.0,8.01,10.2,189.0,64.4,31.5,21.5,4.3,2.51],["RHS 120x60x3.6",120.0,60.0,3.6,9.5,12.1,221.0,74.8,36.8,24.9,4.27,2.48],["RHS 120x60x4",120.0,60.0,4.0,10.5,13.3,241.0,81.2,40.1,27.1,4.25,2.47],["RHS 120x60x5",120.0,60.0,5.0,12.8,16.4,287.0,96.0,47.8,32.0,4.19,2.42],["RHS 120x60x6",120.0,60.0,6.0,15.1,19.2,328.0,109.0,54.7,36.3,4.13,2.38],["RHS 120x60x6.3",120.0,60.0,6.3,15.5,19.7,327.0,109.0,54.5,36.4,4.07,2.35],["RHS 120x60x8",120.0,60.0,8.0,18.9,24.0,375.0,124.0,62.6,41.3,3.95,2.27],["RHS 120x80x3",120.0,80.0,3.0,8.96,11.4,230.0,123.0,38.4,30.9,4.49,3.29],["RHS 120x80x4",120.0,80.0,4.0,11.7,14.9,295.0,157.0,49.1,39.3,4.44,3.24],["RHS 120x80x5",120.0,80.0,5.0,14.4,18.4,353.0,188.0,58.9,46.9,4.39,3.2],["RHS 120x80x6",120.0,80.0,6.0,17.0,21.6,406.0,215.0,67.7,53.8,4.33,3.15],["RHS 120x80x6.3",120.0,80.0,6.3,17.5,22.2,408.0,217.0,68.1,54.3,4.28,3.12],["RHS 120x80x8",120.0,80.0,8.0,21.4,27.2,476.0,252.0,79.3,62.9,4.18,3.04],["RHS 140x80x4",140.0,80.0,4.0,13.0,16.5,430.0,180.0,61.4,45.1,5.1,3.3],["RHS 140x80x5",140.0,80.0,5.0,16.0,20.4,517.0,216.0,73.9,54.0,5.04,3.26],["RHS 140x80x6",140.0,80.0,6.0,18.9,24.0,597.0,248.0,85.3,62.0,4.98,3.21],["RHS 140x80x6.3",140.0,80.0,6.3,19.4,24.8,603.0,251.0,86.1,62.9,4.93,3.19],["RHS 140x80x8",140.0,80.0,8.0,23.9,30.4,708.0,293.0,101.0,73.3,4.82,3.1],["RHS 150x100x4",150.0,100.0,4.0,14.9,18.9,595.0,319.0,79.3,63.7,5.6,4.1],["RHS 150x100x5",150.0,100.0,5.0,18.3,23.4,719.0,384.0,95.9,76.8,5.55,4.05],["RHS 150x100x6",150.0,100.0,6.0,21.7,27.6,835.0,444.0,111.0,88.8,5.5,4.01],["RHS 150x100x6.3",150.0,100.0,6.3,22.4,28.5,848.0,453.0,113.0,90.5,5.45,3.98],["RHS 150x100x8",150.0,100.0,8.0,27.7,35.2,1008.0,536.0,134.0,107.0,5.35,3.9],["RHS 150x100x10",150.0,100.0,10.0,33.4,42.6,1162.0,614.0,155.0,123.0,5.22,3.8],["RHS 150x100x12",150.0,100.0,12.0,37.7,48.1,1207.0,642.0,161.0,128.0,5.01,3.65],["RHS 150x100x12.5",150.0,100.0,12.5,38.9,49.5,1225.0,651.0,163.0,130.0,4.97,3.63],["RHS 160x80x4",160.0,80.0,4.0,14.2,18.1,598.0,204.0,74.7,50.9,5.74,3.35],["RHS 160x80x5",160.0,80.0,5.0,17.5,22.4,722.0,244.0,90.2,61.0,5.68,3.3],["RHS 160x80x6",160.0,80.0,6.0,20.7,26.4,836.0,281.0,105.0,70.2,5.62,3.26],["RHS 160x80x6.3",160.0,80.0,6.3,21.4,27.3,846.0,286.0,106.0,71.4,5.57,3.24],["RHS 160x80x8",160.0,80.0,8.0,26.4,33.6,1001.0,335.0,125.0,83.7,5.46,3.16],["RHS 160x80x10",160.0,80.0,10.0,31.8,40.6,1146.0,380.0,143.0,95.0,5.32,3.06],["RHS 160x80x12",160.0,80.0,12.0,35.8,45.7,1171.0,391.0,146.0,97.8,5.06,2.93],["RHS 160x80x12.5",160.0,80.0,12.5,36.9,47.0,1185.0,396.0,148.0,98.9,5.02,2.9],["RHS 180x100x4",180.0,100.0,4.0,16.8,21.3,926.0,374.0,103.0,74.8,6.59,4.18],["RHS 180x100x5",180.0,100.0,5.0,20.7,26.4,1124.0,452.0,125.0,90.4,6.53,4.14],["RHS 180x100x6",180.0,100.0,6.0,24.5,31.2,1310.0,524.0,146.0,105.0,6.48,4.1],["RHS 180x100x6.3",180.0,100.0,6.3,25.4,32.3,1335.0,536.0,148.0,107.0,6.43,4.07],["RHS 180x100x8",180.0,100.0,8.0,31.4,40.0,1598.0,637.0,178.0,127.0,6.32,3.99],["RHS 180x100x10",180.0,100.0,10.0,38.1,48.6,1859.0,736.0,207.0,147.0,6.19,3.89],["RHS 180x100x12",180.0,100.0,12.0,43.4,55.3,1965.0,782.0,218.0,156.0,5.96,3.76],["RHS 180x100x12.5",180.0,100.0,12.5,44.8,57.0,2001.0,796.0,222.0,159.0,5.92,3.74],["RHS 200x100x4",200.0,100.0,4.0,18.0,22.9,1200.0,411.0,120.0,82.2,7.23,4.23],["RHS 200x100x5",200.0,100.0,5.0,22.3,28.4,1459.0,497.0,146.0,99.4,7.17,4.19],["RHS 200x100x6",200.0,100.0,6.0,26.4,33.6,1703.0,577.0,170.0,115.0,7.12,4.14],["RHS 200x100x6.3",200.0,100.0,6.3,27.4,34.8,1739.0,591.0,174.0,118.0,7.06,4.12],["RHS 200x100x8",200.0,100.0,8.0,33.9,43.2,2091.0,705.0,209.0,141.0,6.95,4.04],["RHS 200x100x10",200.0,100.0,10.0,41.3,52.6,2444.0,818.0,244.0,164.0,6.82,3.94],["RHS 200x100x12",200.0,100.0,12.0,47.1,60.1,2607.0,876.0,261.0,175.0,6.59,3.82],["RHS 200x100x12.5",200.0,100.0,12.5,48.7,62.0,2659.0,892.0,266.0,178.0,6.55,3.79],["RHS 200x120x4",200.0,120.0,4.0,19.3,24.5,1353.0,618.0,135.0,103.0,7.43,5.02],["RHS 200x120x5",200.0,120.0,5.0,23.8,30.4,1649.0,750.0,165.0,125.0,7.37,4.97],["RHS 200x120x6",200.0,120.0,6.0,28.3,36.0,1929.0,874.0,193.0,146.0,7.32,4.93],["RHS 200x120x6.3",200.0,120.0,6.3,29.3,37.4,1976.0,898.0,198.0,150.0,7.27,4.9],["RHS 200x120x8",200.0,120.0,8.0,36.5,46.4,2386.0,1079.0,239.0,180.0,7.17,4.82],["RHS 200x120x10",200.0,120.0,10.0,44.4,56.6,2806.0,1262.0,281.0,210.0,7.04,4.72],["RHS 200x120x12",200.0,120.0,12.0,50.9,64.9,3031.0,1368.0,303.0,228.0,6.84,4.59],["RHS 200x120x12.5",200.0,120.0,12.5,52.6,67.0,3099.0,1397.0,310.0,233.0,6.8,4.57],["RHS 250x100x5",250.0,100.0,5.0,26.2,33.4,2554.0,610.0,204.0,122.0,8.75,4.28],["RHS 250x100x6",250.0,100.0,6.0,31.1,39.6,2992.0,710.0,239.0,142.0,8.69,4.23],["RHS 250x100x6.3",250.0,100.0,6.3,32.3,41.1,3066.0,730.0,245.0,146.0,8.63,4.21],["RHS 250x100x8",250.0,100.0,8.0,40.2,51.2,3714.0,875.0,297.0,175.0,8.51,4.13],["RHS 250x100x10",250.0,100.0,10.0,49.1,62.6,4384.0,1021.0,351.0,204.0,8.37,4.04],["RHS 250x100x12.5",250.0,100.0,12.5,58.5,74.5,4868.0,1133.0,389.0,227.0,8.08,3.9],["RHS 250x150x5",250.0,150.0,5.0,30.1,38.4,3304.0,1508.0,264.0,201.0,9.28,6.27],["RHS 250x150x6",250.0,150.0,6.0,35.8,45.6,3886.0,1768.0,311.0,236.0,9.23,6.23],["RHS 250x150x6.3",250.0,150.0,6.3,37.2,47.4,4001.0,1825.0,320.0,243.0,9.18,6.2],["RHS 250x150x8",250.0,150.0,8.0,46.5,59.2,4886.0,2219.0,391.0,296.0,9.08,6.12],["RHS 250x150x10",250.0,150.0,10.0,57.0,72.6,5825.0,2634.0,466.0,351.0,8.96,6.02],["RHS 250x150x12",250.0,150.0,12.0,66.0,84.1,6458.0,2925.0,517.0,390.0,8.77,5.9],["RHS 250x150x12.5",250.0,150.0,12.5,68.3,87.0,6633.0,3002.0,531.0,400.0,8.73,5.87],["RHS 250x150x16",250.0,150.0,16.0,83.8,107.0,7660.0,3453.0,613.0,460.0,8.47,5.69],["RHS 260x180x5",260.0,180.0,5.0,33.2,42.4,4121.0,2350.0,317.0,261.0,9.86,7.45],["RHS 260x180x6.3",260.0,180.0,6.3,41.2,52.5,5013.0,2856.0,386.0,317.0,9.77,7.38],["RHS 260x180x8",260.0,180.0,8.0,51.5,65.6,6145.0,3493.0,473.0,388.0,9.68,7.29],["RHS 260x180x10",260.0,180.0,10.0,63.2,80.6,7363.0,4174.0,566.0,464.0,9.56,7.2],["RHS 260x180x12",260.0,180.0,12.0,73.5,93.7,8245.0,4679.0,634.0,520.0,9.38,7.07],["RHS 260x180x12.5",260.0,180.0,12.5,76.2,97.0,8482.0,4812.0,652.0,535.0,9.35,7.04],["RHS 260x180x16",260.0,180.0,16.0,93.9,120.0,9923.0,5614.0,763.0,624.0,9.11,6.85],["RHS 300x100x6",300.0,100.0,6.0,35.8,45.6,4777.0,842.0,318.0,168.0,10.2,4.3],["RHS 300x100x6.3",300.0,100.0,6.3,37.2,47.4,4907.0,868.0,327.0,174.0,10.2,4.28],["RHS 300x100x8",300.0,100.0,8.0,46.5,59.2,5978.0,1045.0,399.0,209.0,10.0,4.2],["RHS 300x100x10",300.0,100.0,10.0,57.0,72.6,7106.0,1224.0,474.0,245.0,9.9,4.11],["RHS 300x100x12",300.0,100.0,12.0,66.0,84.1,7808.0,1343.0,521.0,269.0,9.64,4.0],["RHS 300x100x12.5",300.0,100.0,12.5,68.3,87.0,8010.0,1374.0,534.0,275.0,9.59,3.97],["RHS 300x100x16",300.0,100.0,16.0,83.8,107.0,9157.0,1543.0,610.0,309.0,9.26,3.8],["RHS 300x150x6",300.0,150.0,6.0,40.5,51.6,6074.0,2080.0,405.0,277.0,10.8,6.35],["RHS 300x150x6.3",300.0,150.0,6.3,42.2,53.7,6266.0,2150.0,418.0,287.0,10.8,6.32],["RHS 300x150x8",300.0,150.0,8.0,52.8,67.2,7684.0,2623.0,512.0,350.0,10.7,6.25],["RHS 300x150x10",300.0,150.0,10.0,64.8,82.6,9209.0,3125.0,614.0,417.0,10.6,6.15],["RHS 300x150x12",300.0,150.0,12.0,75.4,96.1,10298.0,3498.0,687.0,466.0,10.4,6.03],["RHS 300x150x12.5",300.0,150.0,12.5,78.1,99.5,10594.0,3595.0,706.0,479.0,10.3,6.01],["RHS 300x150x16",300.0,150.0,16.0,96.4,123.0,12387.0,4174.0,826.0,557.0,10.0,5.83],["RHS 300x200x6",300.0,200.0,6.0,45.2,57.6,7370.0,3962.0,491.0,396.0,11.3,8.29],["RHS 300x200x6.3",300.0,200.0,6.3,47.1,60.0,7624.0,4104.0,508.0,410.0,11.3,8.27],["RHS 300x200x8",300.0,200.0,8.0,59.1,75.2,9389.0,5042.0,626.0,504.0,11.2,8.19],["RHS 300x200x10",300.0,200.0,10.0,72.7,92.6,11313.0,6058.0,754.0,606.0,11.1,8.09],["RHS 300x200x12",300.0,200.0,12.0,84.8,108.0,12788.0,6854.0,853.0,685.0,10.9,7.96],["RHS 300x200x12.5",300.0,200.0,12.5,88.0,112.0,13179.0,7060.0,879.0,706.0,10.8,7.94],["RHS 300x200x16",300.0,200.0,16.0,109.0,139.0,15617.0,8340.0,1041.0,834.0,10.6,7.75],["RHS 350x250x6",350.0,250.0,6.0,54.7,69.6,12457.0,7458.0,712.0,597.0,13.4,10.3],["RHS 350x250x6.3",350.0,250.0,6.3,57.0,72.6,12923.0,7744.0,738.0,620.0,13.3,10.3],["RHS 350x250x8",350.0,250.0,8.0,71.6,91.2,16001.0,9573.0,914.0,766.0,13.2,10.2],["RHS 350x250x10",350.0,250.0,10.0,88.4,113.0,19407.0,11588.0,1109.0,927.0,13.1,10.1],["RHS 350x250x12",350.0,250.0,12.0,104.0,132.0,22197.0,13261.0,1268.0,1061.0,13.0,10.0],["RHS 350x250x12.5",350.0,250.0,12.5,108.0,137.0,22922.0,13690.0,1310.0,1095.0,12.9,9.99],["RHS 350x250x16",350.0,250.0,16.0,134.0,171.0,27580.0,16434.0,1576.0,1315.0,12.7,9.81],["RHS 400x200x8",400.0,200.0,8.0,71.6,91.2,18974.0,6517.0,949.0,652.0,14.4,8.45],["RHS 400x200x10",400.0,200.0,10.0,88.4,113.0,23003.0,7864.0,1150.0,786.0,14.3,8.36],["RHS 400x200x12.5",400.0,200.0,12.5,108.0,137.0,27100.0,9260.0,1355.0,926.0,14.1,8.22],["RHS 400x200x16",400.0,200.0,16.0,134.0,171.0,32547.0,11056.0,1627.0,1106.0,13.8,8.05],["RHS 400x300x8",400.0,300.0,8.0,84.2,107.0,25122.0,16212.0,1256.0,1081.0,15.3,12.3],["RHS 400x300x10",400.0,300.0,10.0,104.0,133.0,30609.0,19726.0,1530.0,1315.0,15.2,12.2],["RHS 400x300x12",400.0,300.0,12.0,123.0,156.0,35284.0,22747.0,1764.0,1516.0,15.0,12.1],["RHS 400x300x12.5",400.0,300.0,12.5,127.0,162.0,36489.0,23517.0,1824.0,1568.0,15.0,12.0],["RHS 400x300x16",400.0,300.0,16.0,159.0,203.0,44350.0,28535.0,2218.0,1902.0,14.8,11.9]]}};
+const NUANCES = {"S235": {"fy": [235, 215], "norme": "EN 10025-2"}, "S275": {"fy": [275, 255], "norme": "EN 10025-2"}, "S355": {"fy": [355, 335], "norme": "EN 10025-2"}, "S235H": {"fy": [235], "norme": "EN 10219-1"}, "S275H": {"fy": [275], "norme": "EN 10219-1"}, "S355H": {"fy": [355], "norme": "EN 10219-1"}};   // fy (MPa) : [t <= 40 mm, 40 < t <= 80 mm] (EN 1993-1-1 tab. 3.1)
+const PRIX = {"familles": {"IPE": [1.2, 1.7, 2.3], "UPE": [1.3, 1.8, 2.4], "SHS": [1.35, 1.9, 2.5], "RHS": [1.35, 1.9, 2.5], "RECT": [1.4, 2.0, 2.8], "ROND": [2.0, 3.0, 4.5], "TUBE_ROND": [1.6, 2.3, 3.2], "defaut": [1.3, 1.9, 2.6]}, "coef_nuance": {"S235": 1.0, "S275": 1.03, "S355": 1.08, "S235H": 1.0, "S275H": 1.03, "S355H": 1.08}, "date": "2026-10"};   // € HT/kg [bas, typique, haut], cf. profils.json → prix
+</script>
+
+<!-- ================= Interface ================= -->
+<script>
+const $ = s => document.querySelector(s);
+let P = defaults(), CUR = null, VIEW = 'geo';
+const fmt = (v, d = 1) => Number.isFinite(v) ? (+v.toFixed(d) || 0).toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d }) : '—';
+
+// ---------- Formulaire ----------
+function renderForm() {
+  let h = '';
+  for (const g of SCHEMA) {
+    h += `<fieldset id="fs-${g.id}"><legend>${g.title}</legend>`;
+    if (g.profile) h += profileBlock(g);
+    for (const f of g.fields) {
+      if (f.type === 'select')
+        h += `<label class="f"><span>${f.l}</span><select id="${f.k}">${f.opts.map(([v, t]) => `<option value="${v}">${t}</option>`).join('')}</select><em></em></label>`;
+      else if (f.type === 'check')
+        h += `<label class="f"><span>${f.l}</span><input type="checkbox" id="${f.k}"><em></em></label>`;
+      else
+        h += `<label class="f"><span>${f.l}</span><input type="number" step="any" id="${f.k}"><em>${f.u}</em></label>`;
+    }
+    if (g.tubeDraw) h += `<svg class="profsvg" id="tuSvg" xmlns="http://www.w3.org/2000/svg"></svg><div class="profinfo" id="tuInfo"></div>`;
+    if (g.rect)
+      h += `<div class="rect">Section rect. : b <input type="number" step="any" id="${g.id}b"> mm, ρ <input type="number" step="any" id="${g.id}rho"> kg/m³ <button data-rect="${g.id}">→ A, I, m</button></div>`;
+    h += '</fieldset>';
+  }
+  $('#form').innerHTML = h;
+  $('#form').addEventListener('input', onInput);
+  $('#form').addEventListener('change', onInput);
+  $('#form').addEventListener('click', e => {
+    const id = e.target.dataset.rect; if (!id) return;
+    const b = +$('#' + id + 'b').value, hh = +$('#' + id + 'h').value, rho = +$('#' + id + 'rho').value;
+    $('#' + id + 'A').value = +(b * hh / 100).toPrecision(5);
+    $('#' + id + 'I').value = +(b * hh ** 3 / 12 / 1e4).toPrecision(5);
+    $('#' + id + 'm').value = +(rho * b * hh * 1e-6).toPrecision(4);
+    onInput();
+  });
+}
+function writeForm() {
+  for (const [k, v] of Object.entries(P)) {
+    const el = document.getElementById(k); if (!el) continue;
+    if (el.type === 'checkbox') el.checked = !!v; else el.value = v;
+  }
+  for (const g of SCHEMA) if (g.profile) refreshProfile(g.id, Object.fromEntries(['Prof', 'Gr', 'Ori', 'Prof2', 'Ori2'].map(k => [k, P[g.id + k]])));
+}
+
+// ---------- Sélecteur de profilés (générique, par couches) ----------
+// Couche '' = partie basse (ou unique), couche '2' = partie haute (traverse basse).
+const FAM_LABEL = { manuel: 'saisie manuelle', aucun: 'aucun', IPE: 'IPE', UPE: 'UPE', SHS: 'tube carré', RHS: 'tube rectangulaire', RECT: 'rectangle plein' };
+const PROP_KEYS = ['E', 'A', 'I', 'h', 'm', 'f'];
+const RHO_ACIER = 7850;
+const isTube = fam => fam === 'SHS' || fam === 'RHS';
+const ORI_LABEL = {
+  IPE: [['fort', 'âme verticale (axe fort)'], ['faible', 'âme horizontale (axe faible)']],
+  UPE: [['fort', 'âme verticale (axe fort)'], ['faible', 'âme horizontale, en haut (axe faible)']],
+  RHS: [['fort', 'grand côté h dans le plan'], ['faible', 'petit côté b dans le plan']],
+};
+const gradeOpts = keys => keys.map(k => `<option value="${k}">${k} (fy = ${NUANCES[k].fy[0]} MPa)</option>`).join('');
+const show = (id, on) => { const el = document.getElementById(id); if (el) el.style.display = on ? '' : 'none'; };
+
+function layerBlock(g, s) {
+  const pre = g.id, top = s === '2', opt = (v, t) => `<option value="${v}">${t}</option>`;
+  const fams = [top ? 'aucun' : 'manuel', ...g.profile.fams];
+  return `<label class="f" id="${pre}FamRow${s}"><span>Profilé</span><select id="${pre}Fam${s}">${fams.map(f => opt(f, FAM_LABEL[f])).join('')}</select><em></em></label>
+    <label class="f" id="${pre}ProfRow${s}"><span>Désignation</span><select id="${pre}Prof${s}"></select><em></em></label>
+    <div class="rectrow" id="${pre}RectRow${s}">b <input type="number" step="any" min="1" id="${pre}Rb${s}"> × h <input type="number" step="any" min="1" id="${pre}Rh${s}"> mm <span>(h dans le plan)</span></div>
+    <label class="f" id="${pre}OriRow${s}"><span>Orientation</span><select id="${pre}Ori${s}">${opt('fort', 'axe fort')}${opt('faible', 'axe faible')}</select><em></em></label>
+    ${top || g.profile.multi ? `<label class="f" id="${pre}NRow${s}"><span>Nombre côte à côte</span><input type="number" min="1" max="4" step="1" id="${pre}N${s}"><em></em></label>` : ''}`;
+}
+function profileBlock(g) {
+  const pre = g.id, L = g.profile.layers;
+  return `<div class="prof">
+    ${L ? `<div class="profsub">Partie basse</div>` : ''}${layerBlock(g, '')}
+    ${L ? `<div class="profsub" id="${pre}TopHead">Partie haute (posée sur la partie basse)</div>${layerBlock(g, '2')}
+      <label class="f" id="${pre}SolRow"><span>Parties solidarisées (section composée)</span><input type="checkbox" id="${pre}Sol"><em></em></label>` : ''}
+    <label class="f" id="${pre}GrRow"><span>Nuance d'acier</span><select id="${pre}Gr">${gradeOpts(Object.keys(NUANCES))}</select><em></em></label>
+    <label class="f" id="${pre}GamRow"><span>Coef. de sécurité γ (f = f<sub>y</sub>/γ)</span><input type="number" step="any" min="1" id="${pre}Gam"><em></em></label>
+    <svg class="profsvg" id="${pre}Svg" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="profcap" id="${pre}Cap">${g.profile.caption || ''}</div>
+    <div class="profinfo" id="${pre}Info"></div>
+  </div>`;
+}
+function findProfile(fam, name) {
+  const T = PROFILS[fam]; if (!T) return null;
+  const row = T.rows.find(r => r[0] === name); if (!row) return null;
+  return Object.fromEntries(T.cols.map((c, i) => [c, row[i]]));
+}
+// fy selon la nuance et l'épaisseur maximale (EN 1993-1-1 tab. 3.1) ; tubes : nuance « H »
+function fyOf(gr, fam, t) {
+  const base = String(gr).replace(/H$/, ''), key = isTube(fam) ? base + 'H' : base;
+  const fy = (NUANCES[key] || NUANCES[gr] || NUANCES.S235).fy;
+  return t <= 40 ? fy[0] : (fy[1] || fy[0]);
+}
+
+function refreshLayer(pre, s, want) {
+  const famEl = $('#' + pre + 'Fam' + s); if (!famEl) return;
+  const fam = famEl.value, T = PROFILS[fam], sel = $('#' + pre + 'Prof' + s), ori = $('#' + pre + 'Ori' + s);
+  if (T && sel.dataset.fam !== fam) {
+    const im = T.cols.indexOf('mass');
+    sel.innerHTML = T.rows.map(r => `<option value="${r[0]}">${r[0]} — ${fmt(r[im], 1)} kg/m</option>`).join('');
+    sel.dataset.fam = fam;
+  }
+  if (T) { const cur = want['Prof' + s] || sel.value; sel.value = T.rows.some(r => r[0] === cur) ? cur : T.rows[0][0]; }
+  if (ORI_LABEL[fam] && ori.dataset.fam !== fam) {
+    const cur = want['Ori' + s] || ori.value;
+    ori.innerHTML = ORI_LABEL[fam].map(([v, t]) => `<option value="${v}">${t}</option>`).join('');
+    ori.value = cur === 'faible' ? 'faible' : 'fort'; ori.dataset.fam = fam;
+  } else if (want['Ori' + s]) ori.value = want['Ori' + s];
+  const none = fam === 'manuel' || fam === 'aucun';
+  show(pre + 'ProfRow' + s, !!T); show(pre + 'RectRow' + s, fam === 'RECT');
+  show(pre + 'OriRow' + s, !!ORI_LABEL[fam]); show(pre + 'NRow' + s, !none);
+}
+// Met à jour les listes et la visibilité des lignes selon les familles choisies
+function refreshProfile(pre, want = {}) {
+  refreshLayer(pre, '', want);
+  const fam = $('#' + pre + 'Fam').value, manual = fam === 'manuel';
+  if ($('#' + pre + 'Fam2')) {
+    show(pre + 'TopHead', !manual); show(pre + 'FamRow2', !manual);
+    if (manual) for (const k of ['ProfRow2', 'RectRow2', 'OriRow2', 'NRow2']) show(pre + k, false);
+    else refreshLayer(pre, '2', want);
+    show(pre + 'SolRow', !manual && $('#' + pre + 'Fam2').value !== 'aucun');
+  }
+  const gr = $('#' + pre + 'Gr');
+  if (!manual && gr.dataset.tube !== String(isTube(fam))) {
+    const grades = Object.keys(NUANCES).filter(k => k.endsWith('H') === isTube(fam));
+    const cur = String(want.Gr || gr.value), base = cur.replace(/H$/, '');
+    gr.innerHTML = gradeOpts(grades);
+    gr.value = grades.includes(cur) ? cur : (grades.find(k => k.replace(/H$/, '') === base) || grades[0]);
+    gr.dataset.tube = String(isTube(fam));
+  } else if (want.Gr && [...gr.options].some(o => o.value === want.Gr)) gr.value = want.Gr;
+  for (const k of ['GrRow', 'GamRow', 'Svg', 'Cap', 'Info']) show(pre + k, !manual);
+  for (const k of PROP_KEYS) $('#' + pre + k).classList.toggle('fromprof', !manual);
+  showProfileInfo(pre);
+}
+
+// Une couche : n profilés identiques côte à côte (unités : mm, cm², cm⁴, kg/m)
+function getLayer(pre, s) {
+  const famEl = $('#' + pre + 'Fam' + s); if (!famEl) return null;
+  const fam = famEl.value; if (fam === 'manuel' || fam === 'aucun') return null;
+  const nEl = $('#' + pre + 'N' + s), n = nEl ? Math.max(1, Math.min(4, Math.round(+nEl.value || 1))) : 1;
+  let p, weak = false;
+  if (fam === 'RECT') {
+    const b = +$('#' + pre + 'Rb' + s).value, h = +$('#' + pre + 'Rh' + s).value;
+    if (!(b > 0 && h > 0)) return null;
+    p = { name: `rectangle ${fmt(b, 0)}×${fmt(h, 0)}`, b, h, t: Math.min(b, h), A: b * h / 100,
+          Iy: b * h ** 3 / 12 / 1e4, Iz: h * b ** 3 / 12 / 1e4, mass: RHO_ACIER * b * h * 1e-6 };
+  } else {
+    p = findProfile(fam, $('#' + pre + 'Prof' + s).value); if (!p) return null;
+    weak = !!ORI_LABEL[fam] && $('#' + pre + 'Ori' + s).value === 'faible';
+  }
+  const hl = weak ? p.b : p.h;                                   // hauteur de la couche dans le plan
+  const yc = fam === 'UPE' && weak ? hl - p.ys : hl / 2;         // centre de gravité depuis le bas (UPE : âme en haut)
+  const t = fam === 'RECT' || isTube(fam) ? p.t : Math.max(p.tf, p.tw);
+  return { fam, p, n, weak, hl, yc, t, w0: weak ? p.h : p.b, A: n * p.A, I: n * (weak ? p.Iz : p.Iy), m: n * p.mass };
+}
+// Assemblage : couches empilées ; section composée (Steiner) si solidarisées
+function getAssembly(pre) {
+  const bot = getLayer(pre, ''); if (!bot) return null;
+  const top = getLayer(pre, '2'), layers = top ? [bot, top] : [bot];
+  let H = 0; for (const L of layers) { L.yb = H; H += L.hl; }
+  const A = layers.reduce((s, L) => s + L.A, 0), m = layers.reduce((s, L) => s + L.m, 0);
+  const yG = layers.reduce((s, L) => s + L.A * (L.yb + L.yc), 0) / A;
+  const solEl = $('#' + pre + 'Sol'), sol = layers.length === 1 || !solEl || solEl.checked;
+  let I, v;
+  if (sol) {
+    I = layers.reduce((s, L) => s + L.I + L.A * ((L.yb + L.yc - yG) / 10) ** 2, 0);
+    v = Math.max(yG, H - yG);
+  } else {   // couches indépendantes : I = ΣI, σ = M·v_i/ΣI dans chaque couche
+    I = layers.reduce((s, L) => s + L.I, 0);
+    v = Math.max(...layers.map(L => Math.max(L.yc, L.hl - L.yc)));
+  }
+  const gr = $('#' + pre + 'Gr').value, fy = Math.min(...layers.map(L => fyOf(gr, L.fam, L.t)));
+  const gam = Math.max(+$('#' + pre + 'Gam').value || 1, 1e-6);
+  return { layers, H, A, I, v, yG, sol, m, W: I / (v / 10), i: Math.sqrt(I / A), gr, fy, gam };
+}
+// Prix € HT/kg [bas, typique, haut] d'une famille et d'une nuance (base PRIX × coefficient utilisateur)
+function eurKg(fam, gr) {
+  const k = (PRIX.coef_nuance[gr] || 1) * (+P.cuK > 0 ? +P.cuK : 1);
+  return (PRIX.familles[fam] || PRIX.familles.defaut).map(x => x * k);
+}
+// Prix moyen au kg d'une pièce (moyenne des couches pondérée par leur masse)
+function pieceEurKg(pre) {
+  const a = getAssembly(pre);
+  if (!a) return { kg: eurKg('defaut'), txt: 'saisie manuelle : prix moyen' };
+  const kg = [0, 1, 2].map(i => a.layers.reduce((s, L) => s + L.m * eurKg(L.fam, a.gr)[i], 0) / a.m);
+  return { kg, txt: a.layers.map(L => `${L.fam === 'RECT' ? 'plein' : L.fam} ${a.gr}`).join(' + ') };
+}
+function layerTxt(L) {
+  return `${L.n > 1 ? L.n + ' × ' : ''}${L.p.name}${ORI_LABEL[L.fam] ? ' (' + (L.weak ? 'axe faible' : 'axe fort') + ')' : ''}`;
+}
+function showProfileInfo(pre) {
+  const a = getAssembly(pre), info = $('#' + pre + 'Info');
+  drawSection(pre, a);
+  if (!a) { info.innerHTML = ''; return; }
+  const [bot, top] = a.layers, multi = a.layers.some(L => L.n > 1);
+  info.innerHTML = (top ? `<b>Haut :</b> ${layerTxt(top)}<br><b>Bas :</b> ${layerTxt(bot)}` : `<b>${layerTxt(bot)}</b>`) +
+    `<br>H = ${fmt(a.H, 0)} mm, I = ${fmt(a.I, 0)} cm⁴, A = ${fmt(a.A, 1)} cm², ${fmt(a.m, 1)} kg/m` +
+    ` ≈ ${fmt(a.m * pieceEurKg(pre).kg[1], 0)} € HT/m` +
+    `<br>W<sub>el</sub> = I/v = ${fmt(a.W, 1)} cm³ (v = ${fmt(a.v, 1)} mm), i = ${fmt(a.i, 2)} cm` +
+    (top ? (a.sol ? `<br>Section composée (Steiner) : centre de gravité à ${fmt(a.yG, 1)} mm du bas`
+                  : '<br>Parties non solidarisées : I = ΣI propres, chaque partie fléchit seule') : '') +
+    `<br>f<sub>y</sub> = ${a.fy} MPa (épaisseur max ${fmt(Math.max(...a.layers.map(L => L.t)), 1)} mm) → f = ${a.fy}/${fmt(a.gam, 2)} = <b>${fmt(a.fy / a.gam, 1)} MPa</b>` +
+    (multi || (top && a.sol) ? '<br><i>Profilés supposés liés (soudure, platines, boulons) : ils travaillent ensemble.</i>' : '');
+}
+// Dessin de la section (coupe) : direction verticale = plan de flexion, axe rouge = centre de gravité
+function shapeOf(fam, p) {
+  const st = 'fill="#94a3b8" stroke="#334155" stroke-width="1" vector-effect="non-scaling-stroke"';
+  if (fam === 'RECT') return `<rect x="${-p.b / 2}" y="${-p.h / 2}" width="${p.b}" height="${p.h}" ${st}/>`;
+  if (isTube(fam))
+    return `<rect x="${-p.b / 2}" y="${-p.h / 2}" width="${p.b}" height="${p.h}" rx="${Math.min(2 * p.t, p.b / 4)}" ${st}/>` +
+      `<rect x="${-p.b / 2 + p.t}" y="${-p.h / 2 + p.t}" width="${p.b - 2 * p.t}" height="${p.h - 2 * p.t}" rx="${Math.min(p.t, p.b / 8)}" fill="#fff" stroke="#334155" stroke-width="1" vector-effect="non-scaling-stroke"/>`;
+  const { h, b, tw, tf } = p, H = h / 2, B = b / 2;
+  const pts = fam === 'IPE'
+    ? [[-B, -H], [B, -H], [B, -H + tf], [tw / 2, -H + tf], [tw / 2, H - tf], [B, H - tf], [B, H], [-B, H], [-B, H - tf], [-tw / 2, H - tf], [-tw / 2, -H + tf], [-B, -H + tf]]
+    : [[-B, -H], [B, -H], [B, -H + tf], [-B + tw, -H + tf], [-B + tw, H - tf], [B, H - tf], [B, H], [-B, H]];
+  return `<polygon points="${pts.map(q => q.join(',')).join(' ')}" ${st}/>`;
+}
+function drawSection(pre, a) {
+  const svg = $('#' + pre + 'Svg'); if (!svg) return;
+  if (!a) { svg.innerHTML = ''; return; }
+  const gapOf = layerGap, widthOf = layerWidth;
+  const W = Math.max(...a.layers.map(widthOf)), S = Math.max(W, a.H), m = 0.22 * S, fs = 0.14 * S;
+  const ns = 'vector-effect="non-scaling-stroke"';
+  let s = '';
+  for (const L of a.layers) {
+    const gap = gapOf(L), WL = widthOf(L), cy = -(L.yb + L.hl / 2 - a.yG);    // écran : y vers le bas
+    for (let i = 0; i < L.n; i++) {
+      const cx = -WL / 2 + L.w0 / 2 + i * (L.w0 + gap);
+      const mir = L.fam === 'UPE' && L.n > 1 && !L.weak && i % 2 === 0 ? -1 : 1;   // UPE par paires : dos à dos
+      s += `<g transform="translate(${cx},${cy})${L.weak ? ' rotate(90)' : ''} scale(${mir},1)">${shapeOf(L.fam, L.p)}</g>`;
+    }
+  }
+  const yTop = -(a.H - a.yG), yBot = a.yG, xd = -W / 2 - m * .45;
+  s += `<line x1="${-W / 2 - m * .8}" y1="0" x2="${W / 2 + m * .8}" y2="0" stroke="#dc2626" stroke-width="1" stroke-dasharray="6 3" ${ns}/>` +
+       `<text x="${W / 2 + m * .1}" y="${fs * .95}" font-size="${fs * .75}" fill="#dc2626">G</text>` +
+       `<line x1="${xd}" y1="${yTop}" x2="${xd}" y2="${yBot}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<line x1="${xd - fs * .3}" y1="${yTop}" x2="${xd + fs * .3}" y2="${yTop}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<line x1="${xd - fs * .3}" y1="${yBot}" x2="${xd + fs * .3}" y2="${yBot}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<text x="${xd - fs * .7}" y="${(yTop + yBot) / 2 + fs * .3}" font-size="${fs * .75}" fill="#334155" text-anchor="end">${fmt(a.H, 0)}</text>`;
+  svg.setAttribute('viewBox', `${-W / 2 - m * 2.4} ${yTop - m * .5} ${W + m * 3.8} ${a.H + m}`);
+  svg.innerHTML = s;
+}
+// Recopie les propriétés de l'assemblage dans les champs E, A, I, h, m, f (et v dans P)
+function applyProfiles() {
+  let changed = false;
+  for (const g of SCHEMA) {
+    if (!g.profile) continue;
+    const pre = g.id, a = getAssembly(pre);
+    if (!a) { P[pre + 'v'] = 0; continue; }
+    const vals = { E: 210, A: +a.A.toPrecision(5), I: +a.I.toPrecision(5), h: +a.H.toFixed(1), m: +a.m.toPrecision(4), f: +(a.fy / a.gam).toFixed(1) };
+    for (const k of PROP_KEYS) $('#' + pre + k).value = vals[k];
+    P[pre + 'v'] = +a.v.toFixed(2);     // distance du centre de gravité à la fibre extrême (mm)
+    showProfileInfo(pre); changed = true;
+  }
+  return changed;
+}
+function readForm() {
+  for (const k of Object.keys(P)) {
+    const el = document.getElementById(k); if (!el) continue;
+    P[k] = el.type === 'checkbox' ? el.checked : el.tagName === 'SELECT' ? el.value : parseFloat(el.value);
+  }
+}
+function toggleGroups() {
+  for (const g of SCHEMA) if (g.show) $('#fs-' + g.id).hidden = !g.show(P);
+}
+let timer = null;
+function onInput(ev) {
+  const id = ev && ev.target && ev.target.id;
+  for (const g of SCHEMA) {
+    if (!g.profile || !id) continue;
+    const pre = g.id;
+    if (id === pre + 'Fam' || id === pre + 'Fam2') refreshProfile(pre);
+    // modification manuelle d'une propriété : on repasse en saisie manuelle
+    else if (PROP_KEYS.some(k => id === pre + k) && $('#' + pre + 'Fam').value !== 'manuel') {
+      $('#' + pre + 'Fam').value = 'manuel'; refreshProfile(pre);
+    }
+  }
+  clearTimeout(timer); timer = setTimeout(update, 120);
+}
+
+function saveHash() {
+  const d = defaults(), diff = {};
+  for (const k in P) if (P[k] !== d[k] && !/Eff$|^(po|th|tb)v$/.test(k)) diff[k] = P[k];   // valeurs calculées exclues
+  history.replaceState(null, '', Object.keys(diff).length ? '#' + encodeURIComponent(JSON.stringify(diff)) : location.pathname);
+}
+function loadHash() {
+  try { if (location.hash.length > 1) Object.assign(P, JSON.parse(decodeURIComponent(location.hash.slice(1)))); } catch (e) {}
+}
+
+// ---------- Calcul ----------
+function update() {
+  readForm();
+  if (applyProfiles()) readForm();
+  setBearings(); drawTube(); toggleGroups(); saveHash();
+  $('#err').hidden = true; CUR = null;
+  let model = null;
+  try {
+    model = build(P);
+    const res = analyze(model), out = postprocess(model, res, P);
+    CUR = { model, res, out };
+  } catch (e) {
+    $('#err').textContent = e.message; $('#err').hidden = false;
+  }
+  draw(model);
+  report();
+}
+
+// ---------- Dessin ----------
+const COL = { po: '#64748b', th: '#475569', tb: '#475569', bm: '#c2410c', ct: '#a16207', cb: '#a16207', vt: '#ca8a04', dg: '#ca8a04', lk: '#94a3b8' };
+function utilColor(u) { return u > 1 ? '#7f1d1d' : `hsl(${120 * (1 - u)},70%,40%)`; }
+
+// ---------- Tube : schéma de la section ----------
+function drawTube() {
+  const svg = $('#tuSvg'), info = $('#tuInfo'); if (!svg) return;
+  const D = +P.tuD, t = Math.min(+P.tut, D / 2);
+  if (!(D > 0 && t > 0)) { svg.innerHTML = ''; info.innerHTML = ''; return; }
+  const d = D - 2 * t, solid = d <= 1e-9, m = 0.25 * D, fs = 0.16 * D, ns = 'vector-effect="non-scaling-stroke"';
+  let s = `<circle cx="0" cy="0" r="${D / 2}" fill="#94a3b8" stroke="#334155" stroke-width="1" ${ns}/>`;
+  if (!solid) s += `<circle cx="0" cy="0" r="${d / 2}" fill="#fff" stroke="#334155" stroke-width="1" ${ns}/>`;
+  const yd = D / 2 + m * .6, tk = fs * .3;
+  s += `<line x1="${-D / 2}" y1="${yd}" x2="${D / 2}" y2="${yd}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<line x1="${-D / 2}" y1="${yd - tk}" x2="${-D / 2}" y2="${yd + tk}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<line x1="${D / 2}" y1="${yd - tk}" x2="${D / 2}" y2="${yd + tk}" stroke="#334155" stroke-width="1" ${ns}/>` +
+       `<text x="0" y="${yd + fs * 1.1}" font-size="${fs}" fill="#334155" text-anchor="middle">Ø ${fmt(D, 1)}</text>`;
+  if (!solid) s += `<text x="${D / 2 + m * .3}" y="${-D / 2 + fs}" font-size="${fs}" fill="#334155">t = ${fmt(t, 1)}</text>`;
+  svg.setAttribute('viewBox', `${-D / 2 - m * 2.2} ${-D / 2 - m * .4} ${D + m * 4.4} ${D + m * 2.4}`);
+  svg.innerHTML = s;
+  const A = Math.PI / 4 * (D ** 2 - d ** 2), I = Math.PI / 64 * (D ** 4 - d ** 4), W = 2 * I / D;
+  info.innerHTML = `${solid ? '<b>Rond plein</b> (t ≥ D/2)' : '<b>Tube</b>'} : A = ${fmt(A / 100, 1)} cm², I = ${fmt(I / 1e4, 0)} cm⁴, ` +
+    `W<sub>el</sub> = ${fmt(W / 1e3, 1)} cm³, ${fmt(RHO_ACIER * A * 1e-6, 1)} kg/m<br>Portée entre poteaux av./arr. : P<sub>z</sub> = ${fmt(P.Pz, 0)} mm, charge au milieu (traverse basse)`;
+}
+
+// Longueur de contact sous une couche, le long de l'axe (mm) : semelles, bords d'ailes ou paroi
+function contactLen(L) {
+  const p = L.p;
+  const c = (L.fam === 'IPE' || L.fam === 'UPE') ? (L.weak ? 2 * p.tf : p.b) : L.fam === 'RECT' ? p.b : (L.weak ? p.h : p.b);
+  return L.n * c;
+}
+// Épaisseur d'appui de l'axe dans un poteau (mm) : 2 parois pour un tube, largeur pour un plein
+function postBearing(L) { return isTube(L.fam) ? 2 * L.p.t : L.fam === 'RECT' ? L.w0 : 0; }
+function setBearings() {
+  const ta = getAssembly('tb'), pa = getAssembly('po');
+  P.tucEff = P.tuC > 0 ? P.tuC : (ta ? contactLen(ta.layers[0]) : 0);
+  P.tutpEff = P.tuTp > 0 ? P.tuTp : (pa ? postBearing(pa.layers[0]) : 0);
+}
+
+// Largeur hors plan d'une pièce (mm) : d'après le profilé choisi, sinon valeur par défaut
+const layerGap = L => L.n > 1 ? (L.fam === 'UPE' && !L.weak ? Math.max(6, 0.05 * L.w0) : 0.25 * L.w0) : 0;
+const layerWidth = L => L.n * L.w0 + (L.n - 1) * layerGap(L);
+function outWidth(pre, fallback) {
+  const a = getAssembly(pre);
+  return a ? Math.max(...a.layers.map(layerWidth)) : fallback;
+}
+
+// ---------- Vue de côté (plan des poteaux avant/arrière), placée à gauche ----------
+function sideView(model, xc, span, fs, pt, amp, useF) {
+  const { meta } = model, ns = 'vector-effect="non-scaling-stroke"', mm = 1e-3;
+  const zP = P.Pz * mm / 2, wpo = outWidth('po', P.poh) * mm, H = meta.H, hh = meta.hh;
+  const yT = model.nodes[meta.P1 + 1].y, D = P.tuD * mm;
+  const rect = (z1, y1, z2, y2, fill, extra = '') =>
+    `<polygon points="${pt(xc + z1, y1)} ${pt(xc + z2, y1)} ${pt(xc + z2, y2)} ${pt(xc + z1, y2)}" fill="${fill}" stroke="#475569" stroke-width=".8" ${extra} ${ns}/>`;
+  const tu = CUR ? (useF ? CUR.out.tubeF : CUR.out.tube) : null;
+  let s = `<text x="${xc}" y="${-(H + hh / 2 + span * .05)}" font-size="${fs}" fill="#334155" text-anchor="middle" font-weight="600">Vue de côté</text>`;
+  // poteaux avant / arrière
+  for (const z of [-zP, zP]) s += rect(z - wpo / 2, 0, z + wpo / 2, H + hh / 2, '#e2e8f0');
+  // traverse haute (section)
+  const wth = outWidth('th', P.thh * 0.5) * mm;
+  s += rect(-wth / 2, H - hh / 2, wth / 2, H + hh / 2, '#cbd5e1');
+  // traverse basse (section) posée sur le tube
+  const wtb = outWidth('tb', P.tbh * 0.5) * mm, yb0 = meta.yb - meta.hb / 2, yb1 = meta.yb + meta.hb / 2;
+  s += rect(-wtb / 2, yb0, wtb / 2, yb1, '#cbd5e1');
+  // éprouvette (section) et appui
+  const wsp = (P.spType === 'poutre' ? P.bmb : P.chb) * mm;
+  s += rect(-wsp * .35, yb1, wsp * .35, meta.yBot, '#e5e7eb');
+  s += rect(-wsp / 2, meta.yBot, wsp / 2, meta.yTop, P.spType === 'poutre' ? '#fed7aa' : '#fde68a');
+  // vérin
+  const bw = span * 0.03, body = Math.min(P.Lj * mm * 0.65, Math.max(0, meta.yThBot - meta.yTop));
+  s += rect(-bw / 2, meta.yThBot - body, bw / 2, meta.yThBot, '#bfdbfe') + rect(-bw / 6, meta.yTop, bw / 6, meta.yThBot - body, '#dbeafe');
+  // tube : couleur selon le taux de travail en vue « taux de travail »
+  const tFill = VIEW === 'util' && tu ? utilColor(Math.min(tu.utilEq, 1.5)) : '#94a3b8';
+  const z0 = zP + wpo / 2 + span * 0.012;
+  s += rect(-z0, yT - D / 2, z0, yT + D / 2, tFill, VIEW === 'def' ? 'fill-opacity=".35"' : '');
+  if (tu && VIEW === 'def') {      // déformée du tube (forme de flexion 3 points, flèche au milieu exacte)
+    const L = 2 * zP, pts = [];
+    for (let k = 0; k <= 20; k++) {
+      const z = -zP + L * k / 20, x = Math.min(z + zP, zP - z);
+      pts.push(pt(xc + z, yT - amp * tu.defl * x * (3 * L * L - 4 * x * x) / (L ** 3)));
+    }
+    s += `<polyline points="${pts.join(' ')}" fill="none" stroke="#2563eb" stroke-width="2" ${ns}/>` +
+         `<text x="${xc}" y="${-(yT - D / 2 - span * .03)}" font-size="${fs * .8}" fill="#2563eb" text-anchor="middle">δ = ${fmt(tu.defl * 1e3, 3)} mm</text>`;
+  }
+  if (tu && VIEW === 'M') {        // moment dans l'axe : linéaire puis parabolique sous la traverse (longueur c)
+    const hM = span * 0.05, y0 = yT - D / 2, c = tu.c, a0 = zP - c / 2, pts = [pt(xc - zP, y0)];
+    for (let k = 0; k <= 40; k++) {
+      const z = -zP + 2 * zP * k / 40, x = zP - Math.abs(z);
+      const Mz = tu.R / 2 * x - (x > a0 && c > 0 ? tu.R / (2 * c) * (x - a0) ** 2 : 0);
+      pts.push(pt(xc + z, y0 - hM * Mz / tu.M));
+    }
+    pts.push(pt(xc + zP, y0));
+    s += `<polygon points="${pts.join(' ')}" fill="#dc2626" fill-opacity=".25" stroke="#dc2626" stroke-width=".8" ${ns}/>` +
+         `<text x="${xc}" y="${-(y0 - hM - span * .02)}" font-size="${fs * .8}" fill="#111" text-anchor="middle">${fmt(tu.M / 1e3, 2)}</text>`;
+  }
+  if (tu && VIEW === 'util')
+    s += `<text x="${xc}" y="${-(yT - D / 2 - span * .03)}" font-size="${fs * .8}" fill="#111" text-anchor="middle">σ/f = ${fmt(tu.utilEq, 2)}</text>`;
+  if (VIEW === 'geo' && tu) {      // zones d'appui : traverse sur l'axe (c), axe dans les poteaux (Σt)
+    const cz = tu.c / 2, yTop = yT + D / 2;
+    if (cz > 0) s += `<line x1="${xc - cz}" y1="${-yTop}" x2="${xc + cz}" y2="${-yTop}" stroke="#dc2626" stroke-width="4" ${ns}/>` +
+      `<text x="${xc}" y="${-(yT - D / 2)}" dy="1.1em" font-size="${fs * .65}" fill="#dc2626" text-anchor="middle">c = ${fmt(tu.c * 1e3, 0)}</text>`;
+    for (const zc of [-zP, zP]) s += `<line x1="${xc + zc - wpo / 2}" y1="${-(yT - D / 2)}" x2="${xc + zc + wpo / 2}" y2="${-(yT - D / 2)}" stroke="#dc2626" stroke-width="3" stroke-dasharray="${tu.tw > 0 ? '2 2' : '0'}" ${ns}/>`;
+  }
+  if (VIEW === 'geo') {            // cotes P_z et D
+    const yd = -span * 0.05, ah = span * 0.008;
+    s += `<line x1="${xc - zP}" y1="${-yd}" x2="${xc + zP}" y2="${-yd}" stroke="#334155" stroke-width=".8" ${ns}/>` +
+         [-1, 1].map(sg => `<polygon points="${pt(xc + sg * zP, yd)} ${pt(xc + sg * (zP - ah * 1.6), yd + ah * .5)} ${pt(xc + sg * (zP - ah * 1.6), yd - ah * .5)}" fill="#334155"/>`).join('') +
+         `<text x="${xc}" y="${-yd}" dy="-0.35em" font-size="${fs * .72}" fill="#334155" text-anchor="middle" paint-order="stroke" stroke="#fff" stroke-width="${span * 0.004}">P<tspan font-size="70%" dy=".3em">z</tspan><tspan dy="-.3em"> = ${fmt(P.Pz, 0)}</tspan></text>` +
+         `<text x="${xc + z0 + span * .01}" y="${-yT}" dy="0.35em" font-size="${fs * .72}" fill="#334155">Ø ${fmt(P.tuD, 1)}</text>`;
+  }
+  return s;
+}
+
+function draw(model) {
+  const svg = $('#svg');
+  if (!model) { svg.innerHTML = ''; return; }
+  const { nodes, els, meta } = model;
+  const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
+  const minx = Math.min(...xs), maxx = Math.max(...xs), maxy = Math.max(...ys) + meta.hh / 2;
+  const w = maxx - minx, hgt = maxy, span = Math.max(w, hgt), pad = 0.1 * span;
+  const padX = VIEW === 'geo' ? 0.22 * span : pad, padB = VIEW === 'geo' ? 0.16 * span : pad;   // place pour les cotes
+  // vue de côté à gauche : centre xc, demi-largeur half
+  const half = P.Pz * 1e-3 / 2 + outWidth('po', P.poh) * 1e-3 / 2 + 0.06 * span;
+  const xc = minx - padX - half, left = xc - half - 0.02 * span;
+  svg.setAttribute('viewBox', [left, -(maxy + pad), maxx + padX - left, hgt + pad + padB].join(' '));
+  const fs = span * 0.02, ns = 'vector-effect="non-scaling-stroke"';
+  const pt = (x, y) => `${x.toFixed(5)},${(-y).toFixed(5)}`;
+  const caseKey = $('#case').value, useF = caseKey === 'F';
+  let s = '';
+
+  // sol
+  s += `<line x1="${left}" y1="0" x2="${maxx + pad * .6}" y2="0" stroke="#111" stroke-width="1.5" ${ns}/>`;
+  for (let x = left + span / 60; x < maxx + pad * .6; x += span / 60)
+    s += `<line x1="${x}" y1="0" x2="${x - span / 100}" y2="${span / 100}" stroke="#999" stroke-width=".7" ${ns}/>`;
+
+  // sections (géométrie réelle)
+  const geoOp = VIEW === 'geo' ? 0.9 : 0.25;
+  for (const e of els) {
+    if (e.link || !e.h) continue;
+    const A = nodes[e.a], B = nodes[e.b], L = Math.hypot(B.x - A.x, B.y - A.y);
+    const nx = -(B.y - A.y) / L * e.h / 2, ny = (B.x - A.x) / L * e.h / 2;
+    const fill = { bm: '#fed7aa', ct: '#fde68a', cb: '#fde68a', vt: '#fef3c7', dg: '#fef3c7' }[e.grp] || '#e2e8f0';
+    s += `<polygon points="${pt(A.x + nx, A.y + ny)} ${pt(B.x + nx, B.y + ny)} ${pt(B.x - nx, B.y - ny)} ${pt(A.x - nx, A.y - ny)}" fill="${fill}" fill-opacity="${geoOp}" stroke="#94a3b8" stroke-opacity="${geoOp}" stroke-width=".6" ${ns}/>`;
+  }
+  // tubes
+  for (const n of [meta.P1, meta.P2]) {
+    const x = nodes[n].x, y = model.nodes[n + 1].y;
+    s += `<circle cx="${x}" cy="${-y}" r="${meta.D / 2}" fill="#94a3b8" fill-opacity="${geoOp}" stroke="#475569" stroke-width=".8" ${ns}/>`;
+  }
+  // vérin
+  if (VIEW === 'geo') {
+    const yb = meta.yThBot, yt = meta.yTop, Lj = P.Lj * 1e-3, bw = span * 0.03;
+    const body = Math.min(Lj * 0.65, Math.max(0, yb - yt));
+    s += `<rect x="${-bw / 2}" y="${-yb}" width="${bw}" height="${body}" fill="#bfdbfe" stroke="#1e40af" stroke-width=".8" ${ns}/>`;
+    s += `<rect x="${-bw / 6}" y="${-(yb - body)}" width="${bw / 3}" height="${Math.max(0, yb - body - yt)}" fill="#dbeafe" stroke="#1e40af" stroke-width=".8" ${ns}/>`;
+  }
+
+  // axes du modèle
+  for (const e of els) {
+    const A = nodes[e.a], B = nodes[e.b];
+    const st = CUR && (useF ? e.stF : e.stC);
+    let col = COL[e.grp], wdt = e.link ? 1 : 2;
+    if (VIEW === 'util' && st && !e.link) { col = utilColor(Math.max(st.util, st.buck)); wdt = 5; }
+    const op = VIEW === 'def' ? 0.35 : 1;
+    s += `<line x1="${A.x}" y1="${-A.y}" x2="${B.x}" y2="${-B.y}" stroke="${col}" stroke-opacity="${op}" stroke-width="${wdt}" ${e.link ? 'stroke-dasharray="4 3"' : ''} ${ns}/>`;
+  }
+  // rotules aux extrémités libérées
+  for (const e of els) {
+    const A = nodes[e.a], B = nodes[e.b], L = Math.hypot(B.x - A.x, B.y - A.y), r = span * 0.006;
+    for (const [rel, P0, sg] of [[e.r1, A, 1], [e.r2, B, -1]]) {
+      if (!rel || e.grp !== 'lk' && e.grp !== 'th') continue;
+      const cx = P0.x + sg * (B.x - A.x) / L * r * 1.5, cy = P0.y + sg * (B.y - A.y) / L * r * 1.5;
+      s += `<circle cx="${cx}" cy="${-cy}" r="${r}" fill="#fff" stroke="#111" stroke-width="1" ${ns}/>`;
+    }
+  }
+  // appuis au sol
+  const foot = n => {
+    const { x, y } = nodes[n], d = span * 0.022;
+    if (P.feet === 'encastres') {
+      let t = `<line x1="${x - d}" y1="${-y}" x2="${x + d}" y2="${-y}" stroke="#111" stroke-width="3" ${ns}/>`;
+      for (let k = -1; k <= 1; k += 0.5) t += `<line x1="${x + k * d}" y1="${-y}" x2="${x + k * d - d * .4}" y2="${-(y - d * .5)}" stroke="#111" stroke-width="1" ${ns}/>`;
+      return t;
+    }
+    let t = `<polygon points="${pt(x, y)} ${pt(x - d * .6, y - d)} ${pt(x + d * .6, y - d)}" fill="#fff" stroke="#111" stroke-width="1" ${ns}/>`;
+    if (P.feet === 'glissants') t += `<line x1="${x - d * .8}" y1="${-(y - d * 1.25)}" x2="${x + d * .8}" y2="${-(y - d * 1.25)}" stroke="#111" stroke-width="1" ${ns}/>`;
+    return t;
+  };
+  s += foot(meta.P1) + foot(meta.P2);
+  if (P.feet === 'glissants') {   // axe de symétrie : u_x bloqué au milieu de la traverse haute
+    const yt = nodes[meta.N7].y;
+    s += `<line x1="0" y1="${span * .03}" x2="0" y2="${-(yt + span * .06)}" stroke="#64748b" stroke-width=".8" stroke-dasharray="8 3 2 3" ${ns}/>` +
+         `<text x="${span * .01}" y="${-(yt + span * .045)}" font-size="${fs * .7}" fill="#64748b">axe de symétrie (uₓ = 0)</text>`;
+  }
+
+  // cotes (vue géométrie)
+  if (VIEW === 'geo') {
+    const ah = span * 0.008, dimCol = '#334155', fsD = fs * 0.72;
+    const ln = (x1, y1, x2, y2, extra = '') => `<line x1="${x1}" y1="${-y1}" x2="${x2}" y2="${-y2}" stroke="${dimCol}" stroke-width=".8" ${extra} ${ns}/>`;
+    const head = (x, y, dx, dy) => `<polygon points="${pt(x, y)} ${pt(x - dx * ah * 1.6 - dy * ah * .5, y - dy * ah * 1.6 + dx * ah * .5)} ${pt(x - dx * ah * 1.6 + dy * ah * .5, y - dy * ah * 1.6 - dx * ah * .5)}" fill="${dimCol}"/>`;
+    const txt = (x, y, t, anchor = 'middle', dy = '-0.35em') =>
+      `<text x="${x}" y="${-y}" dy="${dy}" font-size="${fsD}" fill="${dimCol}" text-anchor="${anchor}" paint-order="stroke" stroke="#fff" stroke-width="${span * 0.004}" stroke-linejoin="round">${t}</text>`;
+    const ext = (x1, y1, x2, y2) => ln(x1, y1, x2, y2, 'stroke-dasharray="3 3" stroke-opacity=".6"');
+    // cote horizontale de x1 à x2 au niveau y, lignes d'attache depuis y0
+    const dimH = (x1, x2, y, t, y0 = null, tx = (x1 + x2) / 2) =>
+      (y0 !== null ? ext(x1, y0, x1, y) + ext(x2, y0, x2, y) : '') +
+      ln(x1, y, x2, y) + head(x1, y, -1, 0) + head(x2, y, 1, 0) + txt(tx, y, t);
+    // cote verticale de y1 à y2 en x, lignes d'attache depuis x0, texte à droite (side=1) ou à gauche (-1)
+    const dimV = (y1, y2, x, t, x0 = null, side = 1) => {
+      const small = Math.abs(y2 - y1) < span * 0.04;
+      return (x0 !== null ? ext(x0, y1, x, y1) + ext(x0, y2, x, y2) : '') +
+        ln(x, y1, x, y2) + (small ? '' : head(x, y1, 0, -Math.sign(y2 - y1)) + head(x, y2, 0, Math.sign(y2 - y1))) +
+        txt(x + side * span * 0.008, (y1 + y2) / 2, t, side > 0 ? 'start' : 'end', '0.35em');
+    };
+    const a = meta.a, Lt = P.Lt * 1e-3, L = nodes[meta.SR].x - nodes[meta.SL].x, H = meta.H, Yt = nodes[meta.P1 + 1].y;
+    const specEls = els.filter(e => SPEC.includes(e.grp));
+    const specMinX = Math.min(...specEls.flatMap(e => [nodes[e.a].x, nodes[e.b].x]));
+    const yTbTop = meta.yb + meta.hb / 2, xr = Lt / 2;
+    const mmT = (lbl, v) => `${lbl} = ${fmt(v * 1e3, 0)}`;
+    s += dimH(-a, a, -span * 0.05, mmT('Pₓ', 2 * a), 0);
+    s += dimH(-Lt / 2, Lt / 2, -span * 0.11, mmT('L<tspan font-size="70%" dy=".3em">t</tspan><tspan dy="-.3em"></tspan>', Lt), meta.yb - meta.hb / 2);
+    s += dimH(-L / 2, L / 2, meta.yTop + span * 0.035, mmT('L', L), meta.yBot, -L / 4);
+    s += dimV(0, H, xr + span * 0.12, mmT('H', H), a);
+    s += dimV(0, Yt, -Lt / 2 - span * 0.05, mmT('Yₜ', Yt), -a, -1);
+    s += dimV(yTbTop, meta.yBot, xr + span * 0.03, mmT('g', meta.yBot - yTbTop), nodes[meta.SR].x);
+    s += dimV(meta.yBot, meta.yTop, specMinX - span * 0.03, mmT(P.spType === 'poutre' ? 'h' : 'H<tspan font-size="70%" dy=".3em">tr</tspan><tspan dy="-.3em"></tspan>', meta.yTop - meta.yBot), specMinX, -1);
+    s += dimV(meta.yTop, meta.yThBot, span * 0.06, mmT('e', meta.yThBot - meta.yTop) + ' (libre sous traverse)', null);
+  }
+
+  // efforts du vérin
+  const arrow = (n, dir) => {
+    const { x, y } = nodes[n], Lr = span * 0.08, hd = span * 0.015;
+    const y0 = dir > 0 ? y - Lr : y + Lr;
+    return `<line x1="${x + span * .012}" y1="${-y0}" x2="${x + span * .012}" y2="${-(y - dir * hd)}" stroke="#dc2626" stroke-width="2" ${ns}/>` +
+      `<polygon points="${pt(x + span * .012, y)} ${pt(x + span * .012 - hd * .5, y - dir * hd)} ${pt(x + span * .012 + hd * .5, y - dir * hd)}" fill="#dc2626"/>` +
+      `<text x="${x + span * .022}" y="${-(y0 + y) / 2}" font-size="${fs}" fill="#dc2626">F</text>`;
+  };
+  s += arrow(meta.N7, 1) + arrow(meta.loadN, -1);
+
+  // superpositions de résultats
+  let legend = '', ampUsed = 1;
+  if (CUR && VIEW === 'def') {
+    const u = useF ? CUR.res.uF : CUR.res.uC;
+    let umax = 0; for (let i = 0; i < nodes.length; i++) umax = Math.max(umax, Math.hypot(u[3 * i], u[3 * i + 1]));
+    let amp = +$('#amp').value || 1;
+    if ($('#ampAuto').checked && umax > 0) {
+      amp = 0.06 * span / umax; const p10 = 10 ** Math.floor(Math.log10(amp));
+      amp = [1, 2, 5, 10].map(k => k * p10).filter(v => v <= amp).pop() || p10;
+      $('#amp').value = amp;
+    }
+    for (const e of els) {
+      const rc = useF ? e.rcF : e.rcC, A = nodes[e.a], n = e.link ? 1 : 16, pts = [];
+      for (let k = 0; k <= n; k++) {
+        const x = e.L * k / n, [dx, dy] = dispAt(e, rc, x);
+        pts.push(pt(A.x + e.c * x + amp * dx, A.y + e.s * x + amp * dy));
+      }
+      s += `<polyline points="${pts.join(' ')}" fill="none" stroke="${e.link ? '#93c5fd' : '#2563eb'}" stroke-width="${e.link ? 1 : 2}" ${ns}/>`;
+    }
+    ampUsed = amp;
+    legend = `Déformée amplifiée ×${fmt(amp, 0)} — déplacement max ${fmt(umax * 1e3, 2)} mm`;
+  }
+  if (CUR && 'NVM'.includes(VIEW) && VIEW.length === 1) {
+    const q = VIEW, unit = q === 'M' ? 'kN·m' : 'kN';
+    let vmax = 0;
+    for (const e of els) if (!e.link) for (const p of (useF ? e.stF : e.stC).S) vmax = Math.max(vmax, Math.abs(p[q]));
+    const sc = vmax > 0 ? 0.07 * span / vmax : 0, sgn = q === 'M' ? -1 : 1;
+    const best = {};
+    for (const e of els) {
+      if (e.link) continue;
+      const A = nodes[e.a], S = (useF ? e.stF : e.stC).S, nx = -e.s, ny = e.c;
+      for (let k = 0; k + 1 < S.length; k++) {
+        const p0 = S[k], p1 = S[k + 1], v0 = sgn * p0[q] * sc, v1 = sgn * p1[q] * sc;
+        const b0 = [A.x + e.c * p0.x, A.y + e.s * p0.x], b1 = [A.x + e.c * p1.x, A.y + e.s * p1.x];
+        const col = (p0[q] + p1[q]) >= 0 ? '#dc2626' : '#2563eb';
+        s += `<polygon points="${pt(...b0)} ${pt(b0[0] + nx * v0, b0[1] + ny * v0)} ${pt(b1[0] + nx * v1, b1[1] + ny * v1)} ${pt(...b1)}" fill="${col}" fill-opacity=".25" stroke="${col}" stroke-width=".8" ${ns}/>`;
+      }
+      for (const p of S) {
+        const key = e.name;
+        if (!best[key] || Math.abs(p[q]) > Math.abs(best[key].v))
+          best[key] = { v: p[q], x: A.x + e.c * p.x + nx * sgn * p[q] * sc, y: A.y + e.s * p.x + ny * sgn * p[q] * sc };
+      }
+    }
+    for (const b of Object.values(best)) if (Math.abs(b.v) > 0.02 * vmax)
+      s += `<text x="${b.x}" y="${-b.y}" font-size="${fs * .8}" fill="#111" text-anchor="middle" dy="-0.3em" paint-order="stroke" stroke="#fff" stroke-width="${span * 0.004}" stroke-linejoin="round">${fmt(b.v / 1e3, 2)}</text>`;
+    legend = { N: 'Effort normal N (kN) — rouge : traction, bleu : compression',
+               V: 'Effort tranchant V (kN)',
+               M: 'Moment fléchissant M (kN·m) — tracé du côté des fibres tendues' }[q] + ` — max |${q}| = ${fmt(vmax / 1e3, 2)} ${unit}`;
+  }
+  if (CUR && VIEW === 'util') legend = 'Couleur = max(σ/f, N/N<sub>cr</sub>) : vert 0 → rouge 1, bordeaux > 1';
+  if (VIEW === 'geo') legend = 'Sections dessinées à leur hauteur réelle ; traits = axes du modèle, pointillés = liaisons rigides, ○ = rotules';
+
+  s += sideView(model, xc, span, fs, pt, ampUsed, useF);
+
+  // zones de survol
+  els.forEach((e, i) => {
+    const A = nodes[e.a], B = nodes[e.b];
+    s += `<line data-i="${i}" x1="${A.x}" y1="${-A.y}" x2="${B.x}" y2="${-B.y}" stroke="transparent" stroke-width="12" ${ns}/>`;
+  });
+  svg.innerHTML = s;
+  $('#legend').innerHTML = legend + (useF ? ' — <b>cas F seul</b>' : '');
+}
+
+// ---------- Info-bulle ----------
+$('#svg').addEventListener('mousemove', ev => {
+  const i = ev.target.dataset && ev.target.dataset.i, tip = $('#tip');
+  if (i === undefined || !CUR) { tip.style.display = 'none'; return; }
+  const e = CUR.model.els[+i], st = $('#case').value === 'F' ? e.stF : e.stC;
+  let h = `<b>${e.name}</b> — L = ${fmt(e.L * 1e3, 0)} mm<br>N : ${fmt(st.Nmin / 1e3, 2)} … ${fmt(st.Nmax / 1e3, 2)} kN`;
+  if (!e.link) h += `<br>|V|max = ${fmt(st.Vabs / 1e3, 2)} kN, |M|max = ${fmt(st.Mabs / 1e3, 2)} kN·m` +
+    `<br>σmax = ${fmt(st.smax, 1)} MPa (σ/f = ${fmt(st.util, 2)})` +
+    (st.buck > 0 ? `<br>N/N<sub>cr</sub> = ${fmt(st.buck, 2)} (N<sub>cr</sub> = ${fmt(st.Ncr / 1e3, 1)} kN, l<sub>f</sub> = ${fmt(e.lb * 1e3, 0)} mm)` : '');
+  tip.innerHTML = h; tip.style.display = 'block';
+  tip.style.left = (ev.clientX + 14) + 'px'; tip.style.top = (ev.clientY + 14) + 'px';
+});
+$('#svg').addEventListener('mouseleave', () => $('#tip').style.display = 'none');
+
+// ---------- Synthèse ----------
+function report() {
+  if (!CUR) { $('#kpis').innerHTML = ''; $('#tab').innerHTML = ''; return; }
+  const { model, res, out } = CUR, useF = $('#case').value === 'F';
+  const cls = ok => ok ? 'ok' : 'bad';
+  const kpi = (t, v, d = '', c = '') => `<div class="kpi"><div class="t">${t}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`;
+  const contactsOk = out.contacts.every(c => c.Nmax <= 1e-6);
+  let umax = 0, bmax = 0;
+  for (const e of model.els) if (!e.link && !['bm', 'ct', 'cb', 'vt', 'dg'].includes(e.grp)) { umax = Math.max(umax, e.stC.util); bmax = Math.max(bmax, e.stC.buck); }
+  const rg = useF ? res.reacF : res.reacC;
+  let h = '';
+  h += kpi('Flèche éprouvette sous F', fmt(out.dSpec * 1e3, 2) + ' mm',
+    'au point de chargement' + (P.spType !== 'poutre' ? ` (membrure inf. : ${fmt(out.dSpecMid * 1e3, 2)} mm)` : ''));
+  h += kpi('Allongement requis du vérin', fmt(out.dJack * 1e3, 2) + ' mm', `dont bâti : ${fmt(out.dFrame * 1e3, 2)} mm`);
+  h += kpi('Raideur du bâti seul', fmt(out.kFrame / 1e6, 1) + ' kN/mm', 'F / déplacement relatif (hors éprouvette)');
+  h += kpi('Bâti : σ/f max', fmt(umax, 2), 'poteaux, traverses', umax <= 1 ? 'ok' : 'bad');
+  h += kpi('Bâti : N/N<sub>cr</sub> max', fmt(bmax, 2), 'flambement plan (Euler)', bmax <= 1 ? 'ok' : 'bad');
+  const tu = useF ? out.tubeF : out.tube;
+  const rTxt = r => r === null ? 'non vérifié' : fmt(r, 2);
+  h += kpi('Axes (hors plan) : taux max', fmt(tu.util, 2),
+    `flexion ${fmt(tu.rM, 2)}, M+V ${fmt(tu.rMV, 2)}, appui traverse ${rTxt(tu.rTb)}, appui poteaux ${rTxt(tu.rPo)}<br>M = ${fmt(tu.M / 1e3, 2)} kN·m, flèche ${fmt(tu.defl * 1e3, 2)} mm`, cls(tu.util <= 1));
+  h += kpi('Contacts unilatéraux', contactsOk ? 'comprimés' : 'décollement !',
+    out.contacts.map(c => `${c.name} : ${fmt(c.N / 1e3, 1)} kN`).join('<br>'), cls(contactsOk));
+  h += kpi('Vérin : encombrement', `${fmt(out.jack.free * 1e3, 0)} mm libres`,
+    out.jack.fits ? `course restante après accostage : ${fmt(out.jack.remain * 1e3, 0)} mm (besoin ≈ ${fmt(out.dJack * 1e3, 1)} mm)`
+                  : `le vérin rentré (${fmt(P.Lj, 0)} mm) ne tient pas`, cls(out.jack.ok));
+  const fixedFeet = P.feet !== 'glissants', clamped = P.feet === 'encastres';
+  const footTxt = (r, side) => `${side} : V = ${fmt(r.Ry / 1e3, 2)} kN` +
+    (fixedFeet ? `, H = ${fmt(r.Rx / 1e3, 2)} kN` : '') + (clamped ? `, M = ${fmt(r.Mz / 1e3, 2)} kN·m` : '');
+  h += kpi(`Réactions au sol (${useF ? 'F seul' : 'F + poids propre'})`, `${fmt((rg[0].Ry + rg[1].Ry) / 1e3, 2)} kN`,
+    footTxt(rg[0], 'G') + '<br>' + footTxt(rg[1], 'D') +
+    (fixedFeet ? '<br>poussée H à reprendre par ancrage ou frottement' : '<br>pieds glissants : pas de réaction horizontale'));
+  const ms = out.mass;
+  h += kpi('Masse traverse basse', fmt(ms.tb, 0) + ' kg', `L<sub>t</sub> = ${fmt(P.Lt, 0)} mm × ${fmt(P.tbm, 1)} kg/m`);
+  h += kpi('Masse du reste du bâti', fmt(ms.frame, 0) + ' kg',
+    `4 poteaux : ${fmt(ms.po, 0)} kg, traverse haute : ${fmt(ms.th, 0)} kg, 2 tubes : ${fmt(ms.tubes, 0)} kg<br>hors vérin, platines, appuis, boulonnerie`);
+  h += kpi('Masse éprouvette', fmt(ms.spec, 0) + ' kg', P.spType === 'poutre' ? 'poutre (longueur totale)' : 'treillis (hors goussets)');
+  const chute = 1 + Math.max(+P.cuChute || 0, 0) / 100;
+  const costs = [['Traverse basse', ms.tb, pieceEurKg('tb')], ['4 poteaux', ms.po, pieceEurKg('po')],
+    ['Traverse haute', ms.th, pieceEurKg('th')],
+    ['2 axes', ms.tubes, { kg: eurKg(tu.solid ? 'ROND' : 'TUBE_ROND'), txt: tu.solid ? 'rond plein' : 'tube rond' }]]
+    .map(([n, m, pk]) => ({ n, m, pk, c: pk.kg.map(x => x * m * chute) }));
+  const tot = [0, 1, 2].map(i => costs.reduce((s, c) => s + c.c[i], 0));
+  const eur = x => fmt(x, 0) + ' €';
+  h += kpi('Coût matière bâti (HT, estimation)', eur(tot[1]),
+    `fourchette ${eur(tot[0])} – ${eur(tot[2])}<br>` +
+    costs.map(c => `${c.n} : ${eur(c.c[1])} <span title="${c.pk.txt}">(${fmt(c.pk.kg[1], 2)} €/kg)</span>`).join('<br>') +
+    `<br>chutes/coupe +${fmt(chute * 100 - 100, 0)} % ; hors vérin, usinage, soudure, peinture, transport (prix ${PRIX.date})`);
+  $('#kpis').innerHTML = h;
+
+  // tableau par groupe
+  const groups = {};
+  for (const e of model.els) {
+    if (e.link) continue;
+    const st = useF ? e.stF : e.stC, g = groups[e.name] || (groups[e.name] = { Nmin: Infinity, Nmax: -Infinity, V: 0, M: 0, s: 0, u: 0, b: 0, fl: 0, d: 0, f: e.f });
+    g.Nmin = Math.min(g.Nmin, st.Nmin); g.Nmax = Math.max(g.Nmax, st.Nmax);
+    g.V = Math.max(g.V, st.Vabs); g.M = Math.max(g.M, st.Mabs); g.s = Math.max(g.s, st.smax);
+    g.u = Math.max(g.u, st.util); g.b = Math.max(g.b, st.buck);
+    g.fl = Math.max(g.fl, st.fl || 0); g.d = Math.max(g.d, st.dmax || 0);
+  }
+  let t = `<tr><th>Pièce</th><th>N min (kN)</th><th>N max (kN)</th><th>|V| max (kN)</th><th>|M| max (kN·m)</th><th>σ max (MPa)</th><th>f (MPa)</th><th>σ/f</th><th>N/N<sub>cr</sub></th><th title="déplacement transversal par rapport à la corde des appuis de la pièce">flèche max (mm)</th><th>dépl. max (mm)</th></tr>`;
+  for (const [n, g] of Object.entries(groups))
+    t += `<tr><td>${n}</td><td>${fmt(g.Nmin / 1e3, 2)}</td><td>${fmt(g.Nmax / 1e3, 2)}</td><td>${fmt(g.V / 1e3, 2)}</td><td>${fmt(g.M / 1e3, 2)}</td>` +
+         `<td>${fmt(g.s, 1)}</td><td>${fmt(g.f, 0)}</td><td class="${g.u > 1 ? 'bad' : 'ok'}">${fmt(g.u, 2)}</td><td class="${g.b > 1 ? 'bad' : ''}">${g.b ? fmt(g.b, 2) : '—'}</td><td>${fmt(g.fl * 1e3, 2)}</td><td>${fmt(g.d * 1e3, 2)}</td></tr>`;
+  // axes : vérification type « axe d'articulation » (EN 1993-1-8 §3.13)
+  const pa = getAssembly('po'), ta = getAssembly('tb');
+  const wpoMm = outWidth('po', P.poh), wtbMm = outWidth('tb', 0), clear = P.Pz - wpoMm;
+  const pct = r => r === null ? '—' : `<span class="${r > 1 ? 'bad' : 'ok'}">${fmt(r, 2)}</span>`;
+  t += `<tr><td>Axes (×2, hors plan)</td><td>—</td><td>—</td><td>${fmt(tu.V / 1e3, 2)}</td><td>${fmt(tu.M / 1e3, 2)}</td>` +
+       `<td>${fmt(tu.sigma, 1)}</td><td>${fmt(P.tuf, 0)}</td><td class="${tu.util > 1 ? 'bad' : 'ok'}">${fmt(tu.util, 2)}</td><td>—</td><td>${fmt(tu.defl * 1e3, 2)}</td><td>—</td></tr>`;
+  t += `<tr><td colspan="11" style="text-align:left;color:var(--muted);white-space:normal"><b>Axes</b> (EN 1993-1-8 §3.13), R = ${fmt(tu.R / 1e3, 1)} kN par axe, entraxe des poteaux P<sub>z</sub> = ${fmt(P.Pz, 0)} mm, ` +
+       `longueur d'appui de la traverse c = ${fmt(tu.c * 1e3, 0)} mm${P.tuC > 0 ? ' (imposée)' : ta ? ' (auto : semelle(s) de la partie basse)' : ' (inconnue : charge ponctuelle)'}, ` +
+       `appui dans un poteau Σt = ${fmt(tu.tw * 1e3, 1)} mm${P.tuTp > 0 ? ' (imposé)' : pa ? (isTube(pa.layers[0].fam) ? ' (auto : 2 parois)' : ' (auto : largeur du plein)') : ' (inconnu)'}.<br>` +
+       `• Flexion : M = R(2P<sub>z</sub> − c)/8 = ${fmt(tu.M / 1e3, 2)} kN·m, σ = M/W = ${fmt(tu.sigma, 1)} MPa → σ/f = ${pct(tu.rM)}<br>` +
+       `• Cisaillement : V = R/2, τ = ${fmt(tu.tau, 1)} MPa${tu.solid ? ' (4V/3A)' : ' (2V/A)'} → τ/(f/√3) = ${pct(tu.rV)} ; interaction √((σ/f)² + (τ/τ<sub>lim</sub>)²) = ${pct(tu.rMV)}<br>` +
+       `• Pression traverse/axe : R/(D·c) = ${tu.pTb === null ? '—' : fmt(tu.pTb, 0) + ' MPa'} ≤ 1,5·min(f<sub>axe</sub>, f<sub>traverse</sub>) → ${pct(tu.rTb)}<br>` +
+       `• Pression axe/poteau : (R/2)/(D·Σt) = ${tu.pPo === null ? '—' : fmt(tu.pPo, 0) + ' MPa'} ≤ 1,5·min(f<sub>axe</sub>, f<sub>poteau</sub>) → ${pct(tu.rPo)}<br>` +
+       `• Flèche (charge répartie sur c) : ${fmt(tu.defl * 1e3, 3)} mm` +
+       (wtbMm > clear ? `<br><b class="bad">La traverse basse (${fmt(wtbMm, 0)} mm hors plan) ne passe pas entre les poteaux (jour ${fmt(clear, 0)} mm).</b>` : '') + `</td></tr>`;
+  $('#tab').innerHTML = t + `<tr><td colspan="11" style="text-align:left;color:var(--muted);white-space:normal">Cas : ${useF ? 'F seul' : 'F + poids propre'}. Flèche : déplacement perpendiculaire à la corde reliant les appuis de la pièce (poteaux : pied–tête ; traverse haute : têtes de poteaux ; traverse basse : tubes, porte-à-faux compris ; éprouvette : ses appuis). Dépl. max : déplacement total. Pour l'éprouvette, σ/f &gt; 1 signifie qu'elle rompt ou fissure avant F<sub>max</sub> : c'est normal pour un essai à rupture.</td></tr>`;
+}
+
+// ---------- Jeux de paramètres (4 emplacements, navigateur + fichiers JSON) ----------
+const SLOTS_KEY = 'presseIUT.jeux';
+let SLOTS = [null, null, null, null], CUR_SLOT = -1;
+try { const s = JSON.parse(localStorage.getItem(SLOTS_KEY)); if (Array.isArray(s) && s.length === 4) SLOTS = s; } catch (e) {}
+const persistSlots = () => { try { localStorage.setItem(SLOTS_KEY, JSON.stringify(SLOTS)); } catch (e) {} };
+const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const slotMsg = t => { $('#slotmsg').textContent = t; };
+
+function renderSlots() {
+  $('#slots').innerHTML = SLOTS.map((s, i) => `<div class="slot${i === CUR_SLOT ? ' cur' : ''}">
+    <b>${i + 1}</b>
+    <input type="text" data-name="${i}" value="${s ? esc(s.name) : ''}" placeholder="(vide)" title="${s ? 'enregistré le ' + new Date(s.date).toLocaleString('fr-FR') : ''}">
+    <button data-save="${i}" title="Enregistrer les paramètres courants dans ce jeu">Enreg.</button>
+    <button data-load="${i}" ${s ? '' : 'disabled'} title="Charger ce jeu">Charger</button>
+    <button data-exp="${i}" ${s ? '' : 'disabled'} title="Exporter ce jeu dans un fichier">⤓</button>
+    <button data-imp="${i}" title="Importer un fichier dans ce jeu">⤒</button>
+  </div>`).join('');
+}
+function download(name, obj) {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' }));
+  const a = Object.assign(document.createElement('a'), { href: url, download: name });
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+const fileName = n => 'presse-' + (n || 'jeu').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\w-]+/g, '_') + '.json';
+const slotFile = s => ({ format: 'presseIUT-jeu', version: 1, name: s.name, date: s.date, params: s.params });
+function cleanParams(obj) {
+  const d = defaults(), out = {};
+  for (const k in d) if (obj && k in obj && typeof obj[k] === typeof d[k]) out[k] = obj[k];
+  return out;
+}
+function asSlot(o, fallbackName) {
+  if (o && o.format === 'presseIUT-jeu') return { name: o.name || fallbackName, date: o.date || new Date().toISOString(), params: cleanParams(o.params) };
+  return { name: fallbackName, date: new Date().toISOString(), params: cleanParams(o) };   // objet de paramètres brut
+}
+
+$('#slots').addEventListener('click', ev => {
+  const d = ev.target.dataset;
+  if (d.save !== undefined) {
+    const i = +d.save, name = $(`[data-name="${i}"]`).value.trim() || `Jeu ${i + 1}`;
+    SLOTS[i] = { name, date: new Date().toISOString(), params: { ...P } };
+    CUR_SLOT = i; persistSlots(); renderSlots(); slotMsg(`« ${name} » enregistré dans le jeu ${i + 1}.`);
+  } else if (d.load !== undefined) {
+    const i = +d.load; if (!SLOTS[i]) return;
+    P = { ...defaults(), ...SLOTS[i].params }; writeForm(); update();
+    CUR_SLOT = i; renderSlots(); slotMsg(`Jeu ${i + 1} « ${SLOTS[i].name} » chargé.`);
+  } else if (d.exp !== undefined) {
+    const s = SLOTS[+d.exp]; if (s) download(fileName(s.name), slotFile(s));
+  } else if (d.imp !== undefined) {
+    $('#fileIn').dataset.target = d.imp; $('#fileIn').click();
+  }
+});
+$('#slots').addEventListener('change', ev => {
+  const i = ev.target.dataset.name; if (i === undefined || !SLOTS[+i]) return;
+  SLOTS[+i].name = ev.target.value.trim() || `Jeu ${+i + 1}`; persistSlots();
+});
+$('#exportAll').addEventListener('click', () =>
+  download('presse-jeux.json', { format: 'presseIUT-jeux', version: 1, slots: SLOTS.map(s => s && slotFile(s)) }));
+$('#importAll').addEventListener('click', () => { $('#fileIn').dataset.target = 'all'; $('#fileIn').click(); });
+$('#fileIn').addEventListener('change', async ev => {
+  const f = ev.target.files[0], target = ev.target.dataset.target; ev.target.value = '';
+  if (!f) return;
+  try {
+    const o = JSON.parse(await f.text());
+    if (o && o.format === 'presseIUT-jeux' && Array.isArray(o.slots)) {
+      if (target === 'all') { SLOTS = [0, 1, 2, 3].map(i => o.slots[i] ? asSlot(o.slots[i], `Jeu ${i + 1}`) : null); slotMsg(`4 jeux importés depuis ${f.name}.`); }
+      else { const first = o.slots.find(Boolean); if (!first) throw new Error('fichier vide'); SLOTS[+target] = asSlot(first, `Jeu ${+target + 1}`); slotMsg(`Premier jeu de ${f.name} importé dans le jeu ${+target + 1}.`); }
+    } else {
+      const i = target === 'all' ? Math.max(0, SLOTS.findIndex(s => !s)) : +target;
+      SLOTS[i] = asSlot(o, f.name.replace(/\.json$/i, ''));
+      if (!Object.keys(SLOTS[i].params).length) throw new Error('aucun paramètre reconnu');
+      slotMsg(`${f.name} importé dans le jeu ${i + 1}.`);
+    }
+    persistSlots(); renderSlots();
+  } catch (e) { slotMsg(`Import impossible : ${e.message}`); }
+});
+renderSlots();
+
+// ---------- Initialisation ----------
+renderForm(); loadHash(); writeForm();
+$('#views').addEventListener('click', e => {
+  const v = e.target.dataset.v; if (!v) return;
+  VIEW = v; document.querySelectorAll('#views button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+  draw(CUR && CUR.model);
+});
+document.querySelector('#views button[data-v="geo"]').classList.add('on');
+$('#amp').addEventListener('input', () => { $('#ampAuto').checked = false; draw(CUR && CUR.model); });
+$('#ampAuto').addEventListener('change', () => draw(CUR && CUR.model));
+$('#case').addEventListener('change', () => { draw(CUR && CUR.model); report(); });
+$('#reset').addEventListener('click', () => { P = defaults(); writeForm(); update(); });
+$('#share').addEventListener('click', () => navigator.clipboard && navigator.clipboard.writeText(location.href));
+{ const v = new URLSearchParams(location.search).get("vue"); if (v) { VIEW = v; document.querySelectorAll("#views button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); } }
+update();
+</script>
+</body>
+</html>

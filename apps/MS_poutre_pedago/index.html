@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSolution — Calcul de poutre isostatique</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-brand">
+        <img src="logo-header.png" alt="MSolution" class="header-logo">
+        <a class="bug-report" href="mailto:vincent.richefeu@univ-grenoble.fr?subject=Bug%20MSolution%20-%20poutre%20isostatique"><span class="bug-long">Un bug ? Écrire à vincent.richefeu@univ-grenoble.fr</span><span class="bug-short">Signaler un bug</span></a>
+    </div>
+    <div class="header-titles">
+        <h1 class="sub">Calcul de poutres horizontales isostatiques</h1>
+    </div>
+    <img src="Logo_IUT1.svg" alt="IUT1 — Université Grenoble Alpes" class="header-logo-iut">
+</header>
+
+<div class="app-body">
+
+<!-- ── SIDEBAR ────────────────────────────────────────────────────────────── -->
+<aside class="sidebar">
+
+    <!-- Poutre -->
+    <div class="section-block">
+        <h2>Poutre</h2>
+        <div class="param-row">
+            <label for="beam-length">Longueur (m)</label>
+            <input type="number" id="beam-length" value="4" step="0.1" min="0.01">
+        </div>
+    </div>
+
+    <!-- Section -->
+    <div class="section-block">
+        <h2>Section droite</h2>
+        <div class="param-row">
+            <label for="section-type">Type</label>
+            <select id="section-type" class="full-w"></select>
+        </div>
+        <div id="section-params"></div>
+    </div>
+
+    <!-- Matériau -->
+    <div class="section-block">
+        <h2>Matériau</h2>
+        <div class="param-row">
+            <label for="material-select">Matériau</label>
+            <select id="material-select" class="full-w"></select>
+        </div>
+        <div class="param-row" id="material-custom-row" style="display:none">
+            <label for="material-custom-E">E (GPa)</label>
+            <input type="number" id="material-custom-E" value="210" step="1">
+        </div>
+    </div>
+
+    <!-- Appuis -->
+    <div class="section-block">
+        <h2>Liaisons</h2>
+        <ul class="item-list" id="supports-list"></ul>
+        <button id="btn-add-support" class="btn-small">+ Liaison</button>
+    </div>
+
+    <!-- Chargements -->
+    <div class="section-block">
+        <h2>Chargements</h2>
+        <ul class="item-list" id="loads-list"></ul>
+        <button id="btn-add-load" class="btn-small">+ Chargement</button>
+    </div>
+
+    <!-- Sauvegardes -->
+    <details class="section-block save-block">
+        <summary><h2>Sauvegardes et exemples</h2></summary>
+
+        <h3 class="save-title">💻 Dans la mémoire de cet ordinateur</h3>
+        <p class="save-hint">Propres à ce navigateur : elles ne vous suivent pas sur un autre poste.
+            Les exemples sont classés du plus simple au plus complet ; les emplacements vides sont libres pour vos essais.</p>
+        <ul class="slot-list" id="slots-list"></ul>
+        <div class="slot-actions slot-manage">
+            <button id="btn-reset-examples" class="btn-small" title="Réécrit les exemples dans les emplacements 1 à 10">↺ Recharger les exemples</button>
+            <button id="btn-clear-slots" class="btn-small btn-danger" title="Vide tous les emplacements">✕ Tout effacer</button>
+        </div>
+
+        <h3 class="save-title">📄 Dans un fichier .json</h3>
+        <p class="save-hint">Pour conserver ou transférer toutes les sauvegardes ci-dessus.</p>
+        <div class="slot-actions">
+            <button id="btn-export" class="btn-small" title="Enregistre toutes les sauvegardes dans un fichier .json">↓ Exporter vers un fichier</button>
+            <button id="btn-import" class="btn-small" title="Remplace toutes les sauvegardes par celles d'un fichier .json">↑ Importer un fichier</button>
+        </div>
+    </details>
+
+
+</aside>
+
+<!-- ── MAIN ────────────────────────────────────────────────────────────────── -->
+<main class="main-panel">
+
+    <!-- Bouton Calculer + message d'erreur -->
+    <div class="compute-bar">
+        <div id="static-status" class="status"></div>
+        <div id="error-msg"></div>
+    </div>
+
+    <!-- Schéma + Section — toujours visibles -->
+    <div class="always-row">
+        <div class="card always-schema">
+            <div class="card-header">Schéma de la poutre</div>
+            <div class="card-body">
+                <div class="svg-wrap schema-wrap" id="schema-svg"></div>
+            </div>
+        </div>
+        <div class="card always-section">
+            <div class="card-header">Section droite</div>
+            <div class="card-body-pad">
+                <div class="svg-wrap" id="section-svg" style="height:170px;"></div>
+            </div>
+            <div id="section-info"></div>
+        </div>
+    </div>
+
+    <!-- Résultats -->
+    <div id="results" style="display:none">
+
+        <!-- Réactions -->
+        <div class="card">
+            <div class="card-header">Actions de liaison</div>
+            <div class="card-body">
+                <table id="reactions-table">
+                    <thead><tr>
+                        <th>Appui</th><th>x (m)</th>
+                        <th>Rx (kN)</th><th>Ry (kN)</th><th>Mz (kN·m)</th>
+                    </tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- N(x) -->
+        <div class="card">
+            <div class="card-header">Effort normal N(x)</div>
+            <div class="card-body">
+                <div class="svg-wrap" id="N-svg"></div>
+            </div>
+        </div>
+
+        <!-- V(x) -->
+        <div class="card">
+            <div class="card-header">Effort tranchant V(x)</div>
+            <div class="card-body">
+                <div class="svg-wrap" id="V-svg"></div>
+            </div>
+        </div>
+
+        <!-- M(x) -->
+        <div class="card">
+            <div class="card-header">Moment fléchissant M(x)</div>
+            <div class="card-body">
+                <div class="svg-wrap" id="M-svg"></div>
+            </div>
+        </div>
+
+        <!-- Déformée -->
+        <div class="card">
+            <div class="card-header">Déformée u(x)</div>
+            <div class="card-body">
+                <div class="svg-wrap" id="defl-svg"></div>
+            </div>
+        </div>
+
+        <!-- Contraintes -->
+        <div class="card">
+            <div class="card-header">Contraintes aux sections clés</div>
+            <div class="card-body">
+                <table id="stress-table">
+                    <thead><tr>
+                        <th>x (m)</th>
+                        <th>σ<sub>inf</sub> (MPa)</th>
+                        <th>σ<sub>sup</sub> (MPa)</th>
+                        <th>τ<sub>max</sub> (MPa)</th>
+                    </tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Navier -->
+        <div class="card">
+            <div class="card-header">Diagramme de répartition des contraintes</div>
+            <div class="navier-inputs">
+                <label for="navier-x">x (m) :</label>
+                <input type="number" id="navier-x" value="2" step="0.01">
+                <button id="btn-navier" class="btn-secondary">Calculer</button>
+            </div>
+            <div id="navier-result" style="display:none">
+                <div class="navier-info">
+                    <span>x = <strong id="navier-x-display"></strong></span>
+                    <span>N = <strong id="navier-N"></strong></span>
+                    <span>V = <strong id="navier-V"></strong></span>
+                    <span>M = <strong id="navier-M"></strong></span>
+                </div>
+                <div class="svg-wrap" id="navier-svg"></div>
+            </div>
+        </div>
+
+    </div><!-- /#results -->
+
+</main>
+</div><!-- /.app-body -->
+
+<script src="./js/physics.js"></script>
+<script src="./js/render.js"></script>
+<script src="./js/ui.js"></script>
+</body>
+</html>
